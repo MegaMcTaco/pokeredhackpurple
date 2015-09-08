@@ -71,7 +71,6 @@ ResetStatusAndHalveMoneyOnBlackout::
 
 	ORG $01, $425b
 
-INCLUDE "data/baseStats/mew.asm"
 
 INCLUDE "engine/battle/safari_zone.asm"
 
@@ -6832,7 +6831,7 @@ INCLUDE "engine/items/tm_prices.asm"
 
 	nop
 	nop
-
+ 
 ; Actually this doesn't do everything needed to spriteify
 ; It copies the tiles and the palette of the player pokemon.
 SpriteifyPlayerPokemon:
@@ -7144,6 +7143,22 @@ JynxPicFront:        INCBIN "pic/gsmon/jynx.pic"
 JynxPicBack:         INCBIN "pic/gsmonback/jynxb.pic"
 MarowakPicFront:     INCBIN "pic/gsmon/marowak.pic"
 MarowakPicBack:      INCBIN "pic/gsmonback/marowakb.pic"
+LeafeonPicFront::    INCBIN "pic/bmon/leafeon.pic"
+LeafeonPicBack::     INCBIN "pic/monback/leafeonb.pic"
+UmbreonPicFront::    INCBIN "pic/bmon/umbreon.pic"
+UmbreonPicBack::     INCBIN "pic/monback/umbreonb.pic"
+GlaceonPicFront::    INCBIN "pic/bmon/glaceon.pic"
+GlaceonPicBack::     INCBIN "pic/monback/glaceonb.pic"
+EspeonPicFront::     INCBIN "pic/bmon/espeon.pic"
+EspeonPicBack::      INCBIN "pic/monback/espeonb.pic"
+SylveonPicFront::    INCBIN "pic/bmon/sylveon.pic"
+SylveonPicBack::     INCBIN "pic/monback/sylveonb.pic"
+HeracrossPicFront::  INCBIN "pic/bmon/heracross.pic"
+HeracrossPicBack::   INCBIN "pic/monback/heracrossb.pic"
+ScizorPicFront::     INCBIN "pic/bmon/scizor.pic"
+ScizorPicBack::      INCBIN "pic/monback/scizorb.pic"
+SkarmoryPicFront::   INCBIN "pic/bmon/skarmory.pic"
+SkarmoryPicBack::    INCBIN "pic/monback/skarmoryb.pic"
 ENDC
 
 IF !GEN_2_GRAPHICS
@@ -7431,6 +7446,8 @@ JynxPicBack:         INCBIN "pic/monback/jynxb.pic"
 MarowakPicFront:     INCBIN "pic/bmon/marowak.pic"
 MarowakPicBack:      INCBIN "pic/monback/marowakb.pic"
 ENDC
+
+
 
 
 IF DEF(_OPTION_BEACH_HOUSE)

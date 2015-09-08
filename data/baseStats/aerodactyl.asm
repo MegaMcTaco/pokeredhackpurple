@@ -5,8 +5,8 @@ db 105 ; base attack
 db 65 ; base defense
 db 130 ; base speed
 db 60 ; base special
-db ROCK ; species type 1
-db FLYING ; species type 2
+db FLYING ; species type 1
+db DRAGON ; species type 2
 db 45 ; catch rate
 db 202 ; base exp yield
 INCBIN "pic/bmon/aerodactyl.pic",0,1 ; 77, sprite dimensions

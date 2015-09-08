@@ -54,7 +54,7 @@ _TM34ExplanationText:: ; 980c0 (26:40c0)
 	cont "carefully!"
 
 	para "TM34 contains"
-	line "BIDE!"
+	line "BONE CLUB!"
 
 	para "Your #MON will"
 	line "absorb damage in"

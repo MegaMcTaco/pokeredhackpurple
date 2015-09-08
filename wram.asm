@@ -2843,6 +2843,7 @@ W_ROUTE18GATECURSCRIPT:: ; d669
 	ds 78
 wGameProgressFlagsEnd::
 
+wEvolutionData::
 	ds 56
 
 wObtainedHiddenItemsFlags::

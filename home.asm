@@ -803,6 +803,7 @@ UncompressMonSprite:: ; 1627 (0:1627)
 	cp MON_GHOST
 	jr z,.RecallBank
 
+
 	ld a, [W_MONHPICBANK] ; Get bank from base stats
 	jr .GotBank
 .RecallBank
@@ -810,6 +811,7 @@ UncompressMonSprite:: ; 1627 (0:1627)
 .GotBank
 	jp UncompressSpriteData
 
+	
 SECTION "LoadMonFrontSprite", ROM0[$1665]
 
 ; de: destination location

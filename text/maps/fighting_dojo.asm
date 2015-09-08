@@ -1,7 +1,7 @@
 _FightingDojoText_5ce8e:: ; a1852 (28:5852)
 	text "Grunt!"
 
-	para "I am the KARATE"
+	para "I am the BUG"
 	line "MASTER! I am the"
 	cont "LEADER here!"
 
@@ -28,7 +28,7 @@ _FightingDojoText_5ce98:: ; a18cf (28:58cf)
 
 	para "In return, I will"
 	line "give you a prized"
-	cont "fighting #MON!"
+	cont "BUG #MON!"
 
 	para "Choose whichever"
 	line "one you like!"
@@ -37,8 +37,8 @@ _FightingDojoText_5ce98:: ; a18cf (28:58cf)
 _FightingDojoText_5ce9d:: ; a1972 (28:5972)
 	text "Ho!"
 
-	para "Stay and train at"
-	line "Karate with us!"
+	para "Stay and train"
+	line "with us!"
 	done
 
 _FightingDojoBattleText1:: ; a1999 (28:5999)
@@ -71,14 +71,14 @@ _FightingDojoEndBattleText2:: ; a1a22 (28:5a22)
 
 _FightingDojoAfterBattleText2:: ; a1a33 (28:5a33)
 	text "Our Master is a"
-	line "pro fighter!"
+	line "pro trainer!"
 	done
 
 _FightingDojoBattleText3:: ; a1a51 (28:5a51)
 	text "Nothing tough"
 	line "frightens me!"
 
-	para "I break boulders"
+	para "I cut trees"
 	line "for training!"
 	done
 
@@ -90,15 +90,15 @@ _FightingDojoEndBattleText3:: ; a1a8d (28:5a8d)
 _FightingDojoAfterBattleText3:: ; a1aa4 (28:5aa4)
 	text "The only thing"
 	line "that frightens us"
-	cont "is psychic power!"
+	cont "is fire power!"
 	done
 
 _FightingDojoBattleText4:: ; a1ad8 (28:5ad8)
 	text "Hoohah!"
 
 	para "You're trespassing"
-	line "in our FIGHTING"
-	cont "DOJO!"
+	line "in our BUG"
+	cont "GYM!"
 	done
 
 _FightingDojoEndBattleText4:: ; a1b09 (28:5b09)
@@ -107,7 +107,7 @@ _FightingDojoEndBattleText4:: ; a1b09 (28:5b09)
 	prompt
 
 _FightingDojoAfterBattleText4:: ; a1b1a (28:5b1a)
-	text "The prime fighters"
+	text "The prime bug trainers"
 	line "across the land"
 	cont "train here."
 	done
@@ -117,9 +117,9 @@ _WantHitmonleeText:: ; a1b4a (28:5b4a)
 IF DEF(_YELLOW)
 	line "hard-kicking"
 ELSE
-	line "hard kicking"
+	line "fast-slicing"
 ENDC
-	cont "HITMONLEE?"
+	cont "SCYTHER?"
 	done
 
 _WantHitmonchanText:: ; a1b70 (28:5b70)
@@ -127,9 +127,9 @@ _WantHitmonchanText:: ; a1b70 (28:5b70)
 IF DEF(_YELLOW)
 	line "piston-punching"
 ELSE
-	line "piston punching"
+	line "hard-crushing"
 ENDC
-	cont "HITMONCHAN?"
+	cont "PINSIR?"
 	done
 
 _OtherHitmonText:: ; a1b9a (28:5b9a)

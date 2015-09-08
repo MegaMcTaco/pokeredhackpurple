@@ -12,7 +12,7 @@ endm
 
 	move POUND,        NO_ADDITIONAL_EFFECT,        40, NORMAL,   100, 35
 MoveEnd:
-	move KARATE_CHOP,  NO_ADDITIONAL_EFFECT,        50, NORMAL,   100, 25
+	move KARATE_CHOP,  NO_ADDITIONAL_EFFECT,        50, FIGHTING, 100, 25
 	move DOUBLESLAP,   TWO_TO_FIVE_ATTACKS_EFFECT,  15, NORMAL,    85, 10
 	move COMET_PUNCH,  TWO_TO_FIVE_ATTACKS_EFFECT,  18, NORMAL,    85, 15
 	move MEGA_PUNCH,   NO_ADDITIONAL_EFFECT,        80, NORMAL,    85, 20
@@ -25,8 +25,8 @@ MoveEnd:
 	move GUILLOTINE,   OHKO_EFFECT,                  1, NORMAL,    30,  5
 	move RAZOR_WIND,   CHARGE_EFFECT,               80, NORMAL,    75, 10
 	move SWORDS_DANCE, ATTACK_UP2_EFFECT,            0, NORMAL,   100, 30
-	move CUT,          NO_ADDITIONAL_EFFECT,        50, NORMAL,    95, 30
-	move GUST,         NO_ADDITIONAL_EFFECT,        40, NORMAL,   100, 35
+	move CUT,          NO_ADDITIONAL_EFFECT,        50, BUG,       95, 30
+	move GUST,         NO_ADDITIONAL_EFFECT,        40, FLYING,   100, 35
 	move WING_ATTACK,  NO_ADDITIONAL_EFFECT,        35, FLYING,   100, 35
 	move WHIRLWIND,    SWITCH_AND_TELEPORT_EFFECT,   0, NORMAL,    85, 20
 	move FLY,          FLY_EFFECT,                  70, FLYING,    95, 15
@@ -105,7 +105,7 @@ MoveEnd:
 	move TOXIC,        POISON_EFFECT,                0, POISON,    85, 10
 	move CONFUSION,    CONFUSION_SIDE_EFFECT,       50, PSYCHIC,  100, 25
 	move PSYCHIC_M,    SPECIAL_DOWN_SIDE_EFFECT,    90, PSYCHIC,  100, 10
-	move HYPNOSIS,     SLEEP_EFFECT,                 0, PSYCHIC,   60, 20
+	move HYPNOSIS,     SLEEP_EFFECT,                 0, GHOST,     60, 20
 	move MEDITATE,     ATTACK_UP1_EFFECT,            0, PSYCHIC,  100, 40
 	move AGILITY,      SPEED_UP2_EFFECT,             0, PSYCHIC,  100, 30
 	move QUICK_ATTACK, NO_ADDITIONAL_EFFECT,        40, NORMAL,   100, 30
@@ -148,7 +148,7 @@ MoveEnd:
 	move SOFTBOILED,   HEAL_EFFECT,                  0, NORMAL,   100, 10
 	move HI_JUMP_KICK, JUMP_KICK_EFFECT,            85, FIGHTING,  90, 20
 	move GLARE,        PARALYZE_EFFECT,              0, NORMAL,    75, 30
-	move DREAM_EATER,  DREAM_EATER_EFFECT,         100, PSYCHIC,  100, 15
+	move DREAM_EATER,  DREAM_EATER_EFFECT,         100, GHOST,    100, 15
 	move POISON_GAS,   POISON_EFFECT,                0, POISON,    55, 40
 	move BARRAGE,      TWO_TO_FIVE_ATTACKS_EFFECT,  15, NORMAL,    85, 20
 	move LEECH_LIFE,   DRAIN_HP_EFFECT,             20, BUG,      100, 15
@@ -176,3 +176,9 @@ MoveEnd:
 	move SLASH,        NO_ADDITIONAL_EFFECT,        70, NORMAL,   100, 20
 	move SUBSTITUTE,   SUBSTITUTE_EFFECT,            0, NORMAL,   100, 10
 	move STRUGGLE,     RECOIL_EFFECT,               50, NORMAL,   100, 10
+    move SLASH,        NO_ADDITIONAL_EFFECT,        50, STEEL,     95, 35 ; Metal Claw
+	move CUT,          DEFENSE_DOWN_SIDE_EFFECT,   100, STEEL,     75, 15 ; Iron Tail 
+	move BITE,         DEFENSE_DOWN_SIDE_EFFECT,    80, DARK,     100, 15 ; Crunch
+	move CUT,          NO_ADDITIONAL_EFFECT,       100, DARK,     100, 15 ; Night Slash 
+	
+	

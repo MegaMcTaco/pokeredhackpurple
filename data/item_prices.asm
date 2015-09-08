@@ -45,7 +45,7 @@ ItemPrices: ; 4608 (1:4608)
 	money 0     ; XXX
 	money 0     ; BIKE_VOUCHER
 	money 950   ; X_ACCURACY
-	money 2100  ; LEAF_STONE
+	money 0     ; LEAF_STONE
 	money 0     ; CARD_KEY
 	money 10000 ; NUGGET
 	money 9800  ; XXX PP_UP
@@ -96,3 +96,4 @@ ItemPrices: ; 4608 (1:4608)
 	money 0     ; FLOOR_10F
 	money 0     ; FLOOR_11F
 	money 0     ; FLOOR_B4F
+	money 20    ; ICE_STONE

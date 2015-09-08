@@ -29,8 +29,8 @@ PokedexEntryPointers: ; 4047e (10:447e)
 	dw BlastoiseDexEntry
 	dw PinsirDexEntry
 	dw TangelaDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw LeafeonDexEntry
+	dw UmbreonDexEntry
 	dw GrowlitheDexEntry
 	dw OnixDexEntry
 	dw FearowDexEntry
@@ -48,20 +48,20 @@ PokedexEntryPointers: ; 4047e (10:447e)
 	dw PsyduckDexEntry
 	dw DrowzeeDexEntry
 	dw GolemDexEntry
-	dw MissingNoDexEntry
+	dw GlaceonDexEntry
 	dw MagmarDexEntry
-	dw MissingNoDexEntry
+	dw EspeonDexEntry
 	dw ElectabuzzDexEntry
 	dw MagnetonDexEntry
 	dw KoffingDexEntry
-	dw MissingNoDexEntry
+	dw SylveonDexEntry
 	dw MankeyDexEntry
 	dw SeelDexEntry
 	dw DiglettDexEntry
 	dw TaurosDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw HeracrossDexEntry
+	dw ScizorDexEntry
+	dw SkarmoryDexEntry
 	dw FarfetchdDexEntry
 	dw VenonatDexEntry
 	dw DragoniteDexEntry
@@ -405,6 +405,20 @@ TangelaDexEntry: ; 407e8 (10:47e8)
 	TX_FAR _TangelaDexEntry
 	db "@"
 
+LeafeonDexEntry
+	db "LEAF@"
+	db 3,3
+	dw 640
+	TX_FAR _LeafeonDexEntry
+	db "@"
+	
+UmbreonDexEntry
+    db "MOONLIGHT@"
+	db 3,3 
+	dw 595 
+	TX_FAR _UmbreonDexEntry
+	db "@"
+	
 GrowlitheDexEntry: ; 407f6 (10:47f6)
 	db "PUPPY@"
 	db 2,4
@@ -524,6 +538,13 @@ GolemDexEntry: ; 408fa (10:48fa)
 	TX_FAR _GolemDexEntry
 	db "@"
 
+GlaceonDexEntry:
+	db "FRESH SNOW@"
+	db 2,7
+	dw 571
+	TX_FAR _GlaceonDexEntry
+	db "@"
+	
 MagmarDexEntry: ; 4090b (10:490b)
 	db "SPITFIRE@"
 	db 4,3
@@ -531,6 +552,13 @@ MagmarDexEntry: ; 4090b (10:490b)
 	TX_FAR _MagmarDexEntry
 	db "@"
 
+EspeonDexEntry:
+    db "SUN@"
+    db 2,11
+    dw 584
+    TX_FAR _EspeonDexEntry
+    db "@"	
+	
 ElectabuzzDexEntry: ; 4091d (10:491d)
 	db "ELECTRIC@"
 	db 3,7
@@ -552,6 +580,13 @@ KoffingDexEntry: ; 4093f (10:493f)
 	TX_FAR _KoffingDexEntry
 	db "@"
 
+SylveonDexEntry:
+    db "AFFECTION@"
+	db 3,3
+	dw 518
+    TX_FAR _SylveonDexEntry
+	db "@"
+	
 MankeyDexEntry: ; 40953 (10:4953)
 	db "PIG MONKEY@"
 	db 1,8
@@ -580,6 +615,27 @@ TaurosDexEntry: ; 40987 (10:4987)
 	TX_FAR _TaurosDexEntry
 	db "@"
 
+HeracrossDexEntry:
+    db "SINGLEHORN@"
+    db 4,11
+    dw 507
+    TX_FAR _HeracrossDexEntry
+    db "@"	
+
+ScizorDexEntry:
+    db "PINCER@"
+	db "5,11"
+	dw 2601
+	TX_FAR _ScizorDexEntry
+	db "@"
+	
+SkarmoryDexEntry:
+    db "ARMOR BIRD@"
+    db 5,7
+    dw 1113
+    TX_FAR _SkarmoryDexEntry
+    db "@"	
+	
 FarfetchdDexEntry: ; 4099a (10:499a)
 	db "WILD DUCK@"
 	db 2,7

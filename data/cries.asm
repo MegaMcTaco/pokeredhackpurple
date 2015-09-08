@@ -30,8 +30,8 @@ CryData: ; 39446 (e:5446)
 	db $13, $00, $80; Blastoise
 	db $14, $00, $80; Pinsir
 	db $12, $00, $80; Tangela
-	db $00, $00, $00; MissingNo.
-	db $00, $00, $00; MissingNo.
+	db $1A, $1A, $FF; Leafeon
+	db $1A, $1A, $FF; Umbreon
 	db $1F, $20, $40; Growlithe
 	db $17, $FF, $C0; Onix
 	db $18, $40, $A0; Fearow
@@ -49,20 +49,20 @@ CryData: ; 39446 (e:5446)
 	db $21, $20, $60; Psyduck
 	db $0D, $88, $20; Drowzee
 	db $12, $E0, $40; Golem
-	db $00, $00, $00; MissingNo.
+	db $1A, $1A, $FF; Glaceon
 	db $04, $FF, $30; Magmar
-	db $00, $00, $00; MissingNo.
+	db $1A, $1A, $FF; Espeon
 	db $06, $8F, $FF; Electabuzz
 	db $1C, $20, $C0; Magneton
 	db $12, $E6, $DD; Koffing
-	db $00, $00, $00; MissingNo.
+	db $1A, $1A, $FF; Sylveon
 	db $0A, $DD, $60; Mankey
 	db $0C, $88, $C0; Seel
 	db $0B, $AA, $01; Diglett
 	db $1D, $11, $40; Tauros
-	db $00, $00, $00; MissingNo.
-	db $00, $00, $00; MissingNo.
-	db $00, $00, $00; MissingNo.
+	db $14, $00, $80; Heracross
+	db $16, $00, $80; Scizor
+	db $23, $20, $F0; Skarmory
 	db $10, $DD, $01; Farfetch'd
 	db $1A, $44, $40; Venonat
 	db $0F, $3C, $C0; Dragonite

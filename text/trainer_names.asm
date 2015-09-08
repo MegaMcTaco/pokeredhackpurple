@@ -22,7 +22,7 @@ TrainerNames: ; 399ff (e:59ff)
 	db "JUGGLER@"
 	db "TAMER@"
 	db "BIRD KEEPER@"
-	db "BLACKBELT@"
+	db "BUG MASTER@"
 	db "RIVAL1@"
 	db "PROF.OAK@"
 	db "CHIEF@"

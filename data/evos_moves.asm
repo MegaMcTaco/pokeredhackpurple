@@ -29,8 +29,8 @@ EvosMovesPointerTable: ; 3b05c (e:705c)
 	dw Mon009_EvosMoves
 	dw Mon127_EvosMoves
 	dw Mon114_EvosMoves
-	dw Mon152_EvosMoves	;MissingNo
-	dw Mon153_EvosMoves	;MissingNo
+	dw Mon152_EvosMoves
+	dw Mon153_EvosMoves
 	dw Mon058_EvosMoves
 	dw Mon095_EvosMoves
 	dw Mon022_EvosMoves
@@ -48,20 +48,20 @@ EvosMovesPointerTable: ; 3b05c (e:705c)
 	dw Mon054_EvosMoves
 	dw Mon096_EvosMoves
 	dw Mon076_EvosMoves
-	dw Mon154_EvosMoves	;MissingNo
+	dw Mon154_EvosMoves
 	dw Mon126_EvosMoves
-	dw Mon155_EvosMoves	;MissingNo
+	dw Mon155_EvosMoves
 	dw Mon125_EvosMoves
 	dw Mon082_EvosMoves
 	dw Mon109_EvosMoves
-	dw Mon156_EvosMoves	;MissingNo
+	dw Mon156_EvosMoves
 	dw Mon056_EvosMoves
 	dw Mon086_EvosMoves
 	dw Mon050_EvosMoves
 	dw Mon128_EvosMoves
-	dw Mon157_EvosMoves	;MissingNo
-	dw Mon158_EvosMoves	;MissingNo
-	dw Mon159_EvosMoves	;MissingNo
+	dw Mon157_EvosMoves
+	dw Mon158_EvosMoves
+	dw Mon159_EvosMoves
 	dw Mon083_EvosMoves
 	dw Mon048_EvosMoves
 	dw Mon149_EvosMoves
@@ -501,6 +501,7 @@ Mon092_EvosMoves: ; 3b31b (e:731b)
 Mon123_EvosMoves: ; 3b324 (e:7324)
 ;SCYTHER
 ;Evolutions
+    db EV_ITEM,FIRE_STONE,1,SCIZOR
 	db 0
 ;Learnset
 	db 17,LEER
@@ -566,17 +567,31 @@ Mon114_EvosMoves: ; 3b362 (e:7362)
 	db 0
 
 Mon152_EvosMoves: ; 3b370 (e:7370)
-;MISSINGNO
+;LEAFEON
 ;Evolutions
 	db 0
 ;Learnset
+    db 7,LEECH_SEED
+	db 13,VINE_WHIP
+	db 22,POISONPOWDER
+	db 30,RAZOR_LEAF
+	db 43,GROWTH
+	db 55,SLEEP_POWDER
+	db 65,SOLARBEAM
 	db 0
 
 Mon153_EvosMoves: ; 3b372 (e:7372)
-;MISSINGNO
+;UMBREON
 ;Evolutions
 	db 0
 ;Learnset
+    db 7, AGILITY
+	db 13,BITE
+	db 22,AMNESIA
+	db 30,CRUNCH
+	db 43,NIGHT_SLASH
+	db 55,GLARE
+	db 65,HYPNOSIS
 	db 0
 
 Mon058_EvosMoves: ; 3b374 (e:7374)
@@ -647,7 +662,7 @@ Mon079_EvosMoves: ; 3b3ad (e:73ad)
 Mon064_EvosMoves: ; 3b3be (e:73be)
 ;KADABRA
 ;Evolutions
-	db EV_TRADE,1,ALAKAZAM
+	db EV_LEVEL,50,ALAKAZAM
 	db 0
 ;Learnset
 	db 16,CONFUSION
@@ -661,7 +676,7 @@ Mon064_EvosMoves: ; 3b3be (e:73be)
 Mon075_EvosMoves: ; 3b3cf (e:73cf)
 ;GRAVELER
 ;Evolutions
-	db EV_TRADE,1,GOLEM
+	db EV_LEVEL,50,GOLEM
 	db 0
 ;Learnset
 	db 11,DEFENSE_CURL
@@ -688,7 +703,7 @@ Mon113_EvosMoves: ; 3b3e0 (e:73e0)
 Mon067_EvosMoves: ; 3b3ee (e:73ee)
 ;MACHOKE
 ;Evolutions
-	db EV_TRADE,1,MACHAMP
+	db EV_LEVEL,50,MACHAMP
 	db 0
 ;Learnset
 	db 20,LOW_KICK
@@ -799,10 +814,15 @@ Mon076_EvosMoves: ; 3b459 (e:7459)
 	db 0
 
 Mon154_EvosMoves: ; 3b467 (e:7467)
-;MISSINGNO
+;GLACEON
 ;Evolutions
 	db 0
 ;Learnset
+	db 13,BITE
+	db 22,TAKE_DOWN
+	db 30,ROAR
+	db 45,BLIZZARD
+	db 55,ICE_BEAM
 	db 0
 
 Mon126_EvosMoves: ; 3b469 (e:7469)
@@ -819,10 +839,18 @@ Mon126_EvosMoves: ; 3b469 (e:7469)
 	db 0
 
 Mon155_EvosMoves: ; 3b477 (e:7477)
-;MISSINGNO
+;ESPEON
 ;Evolutions
 	db 0
 ;Learnset
+	db 5,SAND_ATTACK
+	db 9,CONFUSION
+	db 13,QUICK_ATTACK
+	db 17,SWIFT
+	db 20,PSYBEAM
+	db 25,AMNESIA
+	db 33,RECOVER
+	db 37,PSYCHIC_M
 	db 0
 
 Mon125_EvosMoves: ; 3b479 (e:7479)
@@ -864,10 +892,17 @@ Mon109_EvosMoves: ; 3b493 (e:7493)
 	db 0
 
 Mon156_EvosMoves: ; 3b4a2 (e:74a2)
-;MISSINGNO
+;SYLVEON
 ;Evolutions
 	db 0
 ;Learnset
+	db 5,SAND_ATTACK
+	db 13,QUICK_ATTACK
+	db 17,SWIFT
+	db 30,LIGHT_SCREEN
+	db 40,AMNESIA
+	db 45,SING
+	db 50,AURORA_BEAM
 	db 0
 
 Mon056_EvosMoves: ; 3b4a4 (e:74a4)
@@ -922,24 +957,47 @@ Mon128_EvosMoves: ; 3b4d1 (e:74d1)
 	db 0
 
 Mon157_EvosMoves: ; 3b4dd (e:74dd)
-;MISSINGNO
+;HERACROSS
 ;Evolutions
 	db 0
 ;Learnset
+    db 7,HORN_ATTACK
+	db 12,MEGA_PUNCH
+	db 19,COUNTER
+	db 25,FURY_ATTACK
+	db 31,PIN_MISSILE
+	db 34,TAKE_DOWN
+	db 37,HORN_DRILL
+	db 48,VICEGRIP
 	db 0
 
 Mon158_EvosMoves: ; 3b4df (e:74df)
-;MISSINGNO
+;SCIZOR
 ;Evolutions
 	db 0
 ;Learnset
+    db 5,FOCUS_ENERGY
+	db 9,QUICK_ATTACK
+	db 17,AGILITY
+	db 24,SLASH
+	db 33,SWORDS_DANCE
+	db 40,CLAMP
+	db 49,METAL_CLAW
 	db 0
 
 Mon159_EvosMoves: ; 3b4e1 (e:74e1)
-;MISSINGNO
+;Skarmory
 ;Evolutions
 	db 0
 ;Learnset
+    db 6,SAND_ATTACK
+	db 9,METAL_CLAW
+	db 17,FURY_ATTACK
+	db 20,QUICK_ATTACK
+	db 23,SWIFT
+	db 31,AGILITY
+	db 34,SLASH
+	db 50,NIGHT_SLASH
 	db 0
 
 Mon083_EvosMoves: ; 3b4e3 (e:74e3)
@@ -1344,6 +1402,11 @@ Mon133_EvosMoves: ; 3b644 (e:7644)
 	db EV_ITEM,FIRE_STONE,1,FLAREON
 	db EV_ITEM,THUNDER_STONE,1,JOLTEON
 	db EV_ITEM,WATER_STONE,1,VAPOREON
+	db EV_ITEM,MOON_STONE,1,UMBREON
+	db EV_ITEM,LEAF_STONE,1,LEAFEON
+	db EV_ITEM,ICE_STONE,1,GLACEON
+	db EV_ITEM,POTION,1,ESPEON
+	db EV_ITEM,ANTIDOTE,1,SYLVEON
 	db 0
 Mon133_EvosEnd:
 ;Learnset
@@ -1829,7 +1892,7 @@ Mon178_EvosMoves: ; 3b805 (e:7805)
 Mon093_EvosMoves: ; 3b807 (e:7807)
 ;HAUNTER
 ;Evolutions
-	db EV_TRADE,1,GENGAR
+	db EV_LEVEL,50,GENGAR
 	db 0
 ;Learnset
 	db 29,HYPNOSIS

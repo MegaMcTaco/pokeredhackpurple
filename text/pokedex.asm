@@ -298,6 +298,26 @@ _TangelaDexEntry::
 	next "shake as it walks"
 	dex
 
+_LeafeonDexEntry::
+    text "It is always"
+    next "surrounded by"
+	next "fresh clean air"
+	
+	page "because it uses"
+	next "photosynthesis"
+	next "just like a plant"
+	dex
+	
+_UmbreonDexEntry::
+	text "When darkness"
+	next "falls, the rings"
+	next "on its body begin"
+	
+	page "to glow, striking"
+	next "fear in the hearts"
+	next "of those nearby"
+	dex
+	
 _GrowlitheDexEntry::
 	text "Very protective"
 	next "of its territory."
@@ -468,6 +488,16 @@ _GolemDexEntry::
 	next "without damage"
 	dex
 
+_GlaceonDexEntry::
+	text "It causes tiny ice"
+	next "crystals to form"
+	next "by lowering the"
+	
+	page "temperature of the"
+	next "surrounding"
+	next "atmosphere"
+	dex
+	
 _MagmarDexEntry::
 	text "Its body always"
 	next "burns with an"
@@ -478,6 +508,16 @@ _MagmarDexEntry::
 	next "among flames"
 	dex
 
+_EspeonDexEntry::
+    text "By reading air"
+    next "currents, it can"
+    next "predict things"
+
+    page "such as its foe's"	
+	next "next move, or the"
+	next "weather"
+	dex
+	
 _ElectabuzzDexEntry::
 	text "Normally found"
 	next "near power plants,"
@@ -508,6 +548,15 @@ _KoffingDexEntry::
 	next "without warning"
 	dex
 
+_SylveonDexEntry::
+    text "It sends out a"
+    next "soothing auro from"
+    next "its ribbon-like"
+
+	page "feelers in order"
+	next "to calm fights"
+	dex
+	
 _MankeyDexEntry::
 	text "Extremely quick to"
 	next "anger. It could"
@@ -548,6 +597,36 @@ _TaurosDexEntry::
 	next "long tails"
 	dex
 
+_HeracrossDexEntry::
+    text "Usually docile, if"
+    next "disturbed while"
+    next "sipping honey, it"	
+	
+	page "chases off the"
+	next "intruder with its"
+	next "horn"
+	dex
+
+_ScizorDexEntry::
+    text "Its pincers which"
+	next "contain steel, can"
+	next "crush any hard"
+	
+	page "object it can get"
+	next "a hold of into"
+	next "bits"
+	dex
+
+_SkarmoryDexEntry::
+	text "Its sturdy wings"
+	next "look heavy, but"
+	next "they are actually"
+	
+	page "hollow and light,"
+	next "allowing it to fly"
+	next "freely in the sky"
+	dex	
+	
 _FarfetchdDexEntry::
 	text "The sprig of"
 	next "green onions it"

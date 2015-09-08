@@ -1,22 +1,22 @@
 TitleMons: ; 4588 (1:4588)
 ; mons on the title screen are randomly chosen from here
 IF DEF(_RED)
-	db CHARMANDER
-	db SQUIRTLE
-	db BULBASAUR
-	db WEEDLE
-	db NIDORAN_M
-	db SCYTHER
-	db PIKACHU
-	db CLEFAIRY
-	db RHYDON
-	db ABRA
-	db GASTLY
 	db DITTO
-	db PIDGEOTTO
-	db ONIX
-	db PONYTA
-	db MAGIKARP
+	db CHARIZARD
+	db BLASTOISE
+	db BEEDRILL
+	db NIDOKING
+	db SCYTHER
+	db RAICHU
+	db MEWTWO
+	db ALAKAZAM
+	db GENGAR
+	db MACHAMP
+	db MEW
+	db ZAPDOS
+	db ARTICUNO
+	db MOLTRES
+	db DRAGONITE
 ENDC
 IF DEF(_GREEN)
 	db BULBASAUR
