@@ -96,7 +96,7 @@ _SaffronCityText16:: ; a6577 (29:6577)
 	done
 
 _SaffronCityText17:: ; a65a6 (29:65a6)
-	text "FIGHTING DOJO"
+	text "BUG GYM"
 	done
 
 _SaffronCityText18:: ; a65b5 (29:65b5)
