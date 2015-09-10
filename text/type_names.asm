@@ -7,30 +7,17 @@ TypeNames:
 	dw .Ground
 	dw .Rock
 	dw .Bird
-	dw .Bug
+    dw .Bug
 	dw .Ghost
 	dw .Steel
-
-	dw .Normal
-	dw .Normal
-	dw .Normal
-	dw .Normal
-	dw .Normal
-	dw .Normal
-	dw .Normal
-	dw .Normal
-	dw .Normal
-	dw .Normal
-	dw .Normal
-
-	dw .Fire
+    dw .Dark
+    dw .Fire
 	dw .Water
 	dw .Grass
 	dw .Electric
 	dw .Psychic
 	dw .Ice
 	dw .Dragon
-	dw .Dark
 	dw .Fairy
 
 .Normal:   db "NORMAL@"
