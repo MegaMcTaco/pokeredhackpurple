@@ -7,17 +7,29 @@ TypeNames:
 	dw .Ground
 	dw .Rock
 	dw .Bird
-    dw .Bug
+	dw .Bug
 	dw .Ghost
 	dw .Steel
-    dw .Dark
-    dw .Fire
+	
+	dw .Unk    ; Unused
+	dw .Normal ; Unused
+	dw .Normal ; Unused
+	dw .Normal ; Unused
+	dw .Normal ; Unused
+	dw .Normal ; Unused
+	dw .Normal ; Unused
+	dw .Normal ; Unused
+	dw .Normal ; Unused
+	dw .Normal ; Unused
+
+	dw .Fire
 	dw .Water
 	dw .Grass
 	dw .Electric
 	dw .Psychic
 	dw .Ice
 	dw .Dragon
+	dw .Dark
 	dw .Fairy
 
 .Normal:   db "NORMAL@"
@@ -39,3 +51,4 @@ TypeNames:
 .Steel:    db "STEEL@"
 .Dark:     db "DARK@"
 .Fairy:    db "FAIRY@"
+.Unk       db "???@"

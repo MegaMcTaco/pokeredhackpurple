@@ -4,7 +4,7 @@
 
 ; Viridian
 ViridianMartText6:: ; 2442 (0:2442)
-	db $FE,4,ICE_STONE,SUN_STONE,STEEL_STONE,FAIRY_STONE,$FF
+	db $FE,4,ICE_STONE,SUN_STONE,MASTER_BALL,FAIRY_STONE,$FF
 
 ; Pewter
 PewterMartText1:: ; 2449 (0:2449)
