@@ -36,11 +36,11 @@ ItemUsePtrTable: ; d5e1 (3:55e1)
 	dw ItemUseMedicine   ; HYPER_POTION
 	dw ItemUseMedicine   ; SUPER_POTION
 	dw ItemUseMedicine   ; POTION
-	dw ItemUseBait       ; BOULDERBADGE
-	dw ItemUseRock       ; CASCADEBADGE
-	dw UnusableItem      ; THUNDERBADGE
-	dw UnusableItem      ; RAINBOWBADGE
-	dw UnusableItem      ; SOULBADGE
+	dw ItemUseBait       ; SAFARI_BAIT
+	dw ItemUseRock       ; SAFARI_ROCK
+	dw ItemUseEvoStone   ; ICE_STONE
+	dw ItemUseEvoStone   ; STEEL_STONE
+	dw ItemUseEvoStone   ; FAIRY_STONE
 	dw UnusableItem      ; MARSHBADGE
 	dw UnusableItem      ; VOLCANOBADGE
 	dw UnusableItem      ; EARTHBADGE
@@ -59,7 +59,7 @@ ItemUsePtrTable: ; d5e1 (3:55e1)
 	dw UnusableItem      ; DOME_FOSSIL
 	dw UnusableItem      ; HELIX_FOSSIL
 	dw UnusableItem      ; SECRET_KEY
-	dw UnusableItem
+	dw ItemUseEvoStone 	 ; SUN_STONE
 	dw UnusableItem      ; BIKE_VOUCHER
 	dw ItemUseXAccuracy  ; X_ACCURACY
 	dw ItemUseEvoStone   ; LEAF_STONE
@@ -99,8 +99,7 @@ ItemUsePtrTable: ; d5e1 (3:55e1)
 	dw ItemUsePPRestore  ; MAX_ETHER
 	dw ItemUsePPRestore  ; ELIXER
 	dw ItemUsePPRestore  ; MAX_ELIXER
-	dw ItemUseEvoStone   ; ICE_STONE
-
+	
 ItemUseBall: ; d687 (3:5687)
 	ld a,[W_ISINBATTLE]
 	and a
@@ -922,7 +921,7 @@ ItemUseMedicine: ; dabb (3:5abb)
 	ld [hFlags_0xFFF6],a
 	ld a,$02
 	ld [wHPBarType],a
-	predef UpdateHPBar_Hook ; animate HP bar decrease of pokemon that used Softboiled
+	predef UpdateHPBar2 ; animate HP bar decrease of pokemon that used Softboiled
 	ld a,[hFlags_0xFFF6]
 	res 0,a
 	ld [hFlags_0xFFF6],a
@@ -1072,7 +1071,7 @@ ItemUseMedicine: ; dabb (3:5abb)
 	ld [hFlags_0xFFF6],a
 	ld a,$02
 	ld [wHPBarType],a
-	predef UpdateHPBar_Hook ; animate the HP bar lengthening
+	predef UpdateHPBar2 ; animate the HP bar lengthening
 	ld a,[hFlags_0xFFF6]
 	res 0,a
 	ld [hFlags_0xFFF6],a
@@ -2854,3 +2853,4 @@ CheckMapForMon: ; e9f0 (3:69f0)
 	jr nz, .loop
 	dec hl
 	ret
+

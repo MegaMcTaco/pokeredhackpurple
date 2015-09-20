@@ -90,6 +90,7 @@ PredefPointers:: ; 4fe79 (13:7e79)
 	add_predef ConvertNPCMovementDirectionsToJoypadMasks
 	add_predef PredefShakeScreenHorizontally
 	add_predef UpdateHPBar
+	add_predef UpdateHPBar2
 	add_predef HPBarLength
 	add_predef Diploma_TextBoxBorder
 	add_predef DoubleOrHalveSelectedStats

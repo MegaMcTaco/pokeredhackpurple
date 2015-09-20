@@ -65,8 +65,8 @@ PokedexEntryPointers: ; 4047e (10:447e)
 	dw FarfetchdDexEntry
 	dw VenonatDexEntry
 	dw DragoniteDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw HoundourDexEntry
+	dw HoundoomDexEntry
 	dw MissingNoDexEntry
 	dw DoduoDexEntry
 	dw PoliwagDexEntry
@@ -656,6 +656,20 @@ DragoniteDexEntry: ; 409bd (10:49bd)
 	dw 4630
 	TX_FAR _DragoniteDexEntry
 	db "@"
+	
+HoundourDexEntry:
+    db "DARK@"
+    db 2,0
+    dw 0238
+    TX_FAR _HoundourDexEntry
+    db "@"
+
+HoundoomDexEntry:
+	db "DARK@"
+	db 6,3
+	dw 1091
+	TX_FAR _HoundoomDexEntry
+	db "@"	
 
 DoduoDexEntry: ; 409cd (10:49cd)
 	db "TWIN BIRD@"

@@ -159,5 +159,7 @@ const_value = 1
 	const DEX_HERACROSS  ; 157
 	const DEX_SCIZOR     ; 158
 	const DEX_SKARMORY   ; 159
+	const DEX_HOUNDOUR   ; 160
+	const DEX_HOUNDOOM   ; 161
 	
-NUM_POKEMON    EQU 159
+NUM_POKEMON    EQU 161

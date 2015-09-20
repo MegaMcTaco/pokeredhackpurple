@@ -462,6 +462,10 @@ UsableItems_PartyMenu: ; 13434 (4:7434)
 	db FIRE_STONE
 	db THUNDER_STONE
 	db WATER_STONE
+	db SUN_STONE
+	db ICE_STONE
+	db STEEL_STONE
+	db FAIRY_STONE
 	db HP_UP
 	db PROTEIN
 	db IRON
@@ -484,7 +488,6 @@ UsableItems_PartyMenu: ; 13434 (4:7434)
 	db MAX_ETHER
 	db ELIXER
 	db MAX_ELIXER
-	db ICE_STONE
 	db $ff
 
 ; items which close the item menu when used

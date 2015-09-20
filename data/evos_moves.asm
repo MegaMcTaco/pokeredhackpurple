@@ -65,8 +65,8 @@ EvosMovesPointerTable: ; 3b05c (e:705c)
 	dw Mon083_EvosMoves
 	dw Mon048_EvosMoves
 	dw Mon149_EvosMoves
-	dw Mon160_EvosMoves	;MissingNo
-	dw Mon161_EvosMoves	;MissingNo
+	dw Mon160_EvosMoves
+	dw Mon161_EvosMoves
 	dw Mon162_EvosMoves	;MissingNo
 	dw Mon084_EvosMoves
 	dw Mon060_EvosMoves
@@ -1039,17 +1039,34 @@ Mon149_EvosMoves: ; 3b500 (e:7500)
 	db 0
 
 Mon160_EvosMoves: ; 3b50c (e:750c)
-;MISSINGNO
+;HOUNDOUR
 ;Evolutions
+    db EV_LEVEL,24,HOUNDOOM
 	db 0
 ;Learnset
+    db 4,SMOKESCREEN
+	db 8,SMOG
+	db 13,ROAR
+	db 16,BITE
+	db 20,EMBER
+	db 37,CRUNCH
+	db 44,FLAMETHROWER
+	db 52,AMNESIA
 	db 0
 
 Mon161_EvosMoves: ; 3b50e (e:750e)
-;MISSINGNO
+;HOUNDOOM
 ;Evolutions
 	db 0
 ;Learnset
+    db 4,SMOKESCREEN
+	db 8,SMOG
+	db 13,ROAR
+	db 16,BITE
+	db 20,EMBER
+	db 37,CRUNCH
+	db 44,FLAMETHROWER
+	db 52,AMNESIA
 	db 0
 
 Mon162_EvosMoves: ; 3b510 (e:7510)
@@ -1405,8 +1422,8 @@ Mon133_EvosMoves: ; 3b644 (e:7644)
 	db EV_ITEM,MOON_STONE,1,UMBREON
 	db EV_ITEM,LEAF_STONE,1,LEAFEON
 	db EV_ITEM,ICE_STONE,1,GLACEON
-	db EV_ITEM,POTION,1,ESPEON
-	db EV_ITEM,ANTIDOTE,1,SYLVEON
+	db EV_ITEM,SUN_STONE,1,ESPEON
+	db EV_ITEM,FAIRY_STONE,1,SYLVEON
 	db 0
 Mon133_EvosEnd:
 ;Learnset

@@ -78,4 +78,5 @@ MonPartyData: ; 7190d (1c:590d)
 	dn SPRITE_MON, SPRITE_QUADRUPED         ;Umbreon/Glaceon
 	dn SPRITE_MON, SPRITE_QUADRUPED         ;Espeon/Sylveon
 	dn SPRITE_BUG, SPRITE_BUG               ;Heracross/Scizor
-	dn SPRITE_BIRD_M, SPRITE_BIRD_M         ;Skarmory/
+	dn SPRITE_BIRD_M, SPRITE_QUADRUPED      ;Skarmory/Houndour
+	dn SPRITE_QUADRUPED, SPRITE_QUADRUPED   ;Houndoom/

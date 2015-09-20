@@ -7159,6 +7159,10 @@ ScizorPicFront::     INCBIN "pic/bmon/scizor.pic"
 ScizorPicBack::      INCBIN "pic/monback/scizorb.pic"
 SkarmoryPicFront::   INCBIN "pic/bmon/skarmory.pic"
 SkarmoryPicBack::    INCBIN "pic/monback/skarmoryb.pic"
+HoundourPicFront::   INCBIN "pic/bmon/houndour.pic"
+HoundourPicBack::    INCBIN "pic/monback/houndourb.pic"
+HoundoomPicFront::   INCBIN "pic/bmon/houndoom.pic"
+HoundoomPicBack::    INCBIN "pic/monback/houndoomb.pic"
 ENDC
 
 IF !GEN_2_GRAPHICS

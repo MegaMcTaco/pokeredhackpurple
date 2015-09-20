@@ -66,8 +66,8 @@ CryData: ; 39446 (e:5446)
 	db $10, $DD, $01; Farfetch'd
 	db $1A, $44, $40; Venonat
 	db $0F, $3C, $C0; Dragonite
-	db $00, $80, $10; MissingNo.
-	db $00, $00, $00; MissingNo.
+	db $1F, $20, $40; Houndour
+	db $15, $20, $80; Houndoom
 	db $1D, $E0, $80; MissingNo.
 	db $0B, $BB, $01; Doduo
 	db $0E, $FF, $FF; Poliwag

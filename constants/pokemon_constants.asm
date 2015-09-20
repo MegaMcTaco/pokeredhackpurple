@@ -66,8 +66,8 @@ const_value = 1
 	const FARFETCH_D   ; $40
 	const VENONAT      ; $41
 	const DRAGONITE    ; $42
-	const MISSINGNO_43 ; $43
-	const MISSINGNO_44 ; $44
+	const HOUNDOUR     ; $43
+	const HOUNDOOM     ; $44
 	const MISSINGNO_45 ; $45
 	const DODUO        ; $46
 	const POLIWAG      ; $47

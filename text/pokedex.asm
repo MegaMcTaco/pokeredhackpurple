@@ -657,6 +657,26 @@ _DragoniteDexEntry::
 	next "that of humans"
 	dex
 
+_HoundourDexEntry::
+	text "Around dawn, its"
+	next "ominous howl"
+	next "echoes through the"
+	
+	page "area to announce"
+	next "that this is its"
+	next "territory"
+	dex
+	
+_HoundoomDexEntry::
+	text "If you are burned"
+	next "by the flames it"
+	next "shoots from its"
+	
+	page "mouth, the pain"
+	next "will never go"
+	next "away"
+	dex
+	
 _DoduoDexEntry::
 	text "A bird that makes"
 	next "up for its poor"

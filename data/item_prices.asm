@@ -21,9 +21,9 @@ ItemPrices: ; 4608 (1:4608)
 	money 300   ; POTION
 	money 0     ; BOULDERBADGE
 	money 0     ; CASCADEBADGE
-	money 0     ; THUNDERBADGE
-	money 0     ; RAINBOWBADGE
-	money 0     ; SOULBADGE
+	money 2100  ; ICE_STONE
+	money 2100  ; STEEL_STONE
+	money 2100  ; FAIRY_STONE
 	money 0     ; MARSHBADGE
 	money 0     ; VOLCANOBADGE
 	money 0     ; EARTHBADGE
@@ -42,7 +42,7 @@ ItemPrices: ; 4608 (1:4608)
 	money 0     ; DOME_FOSSIL
 	money 0     ; HELIX_FOSSIL
 	money 0     ; SECRET_KEY
-	money 0     ; XXX
+	money 2100  ; SUN_STONE
 	money 0     ; BIKE_VOUCHER
 	money 950   ; X_ACCURACY
 	money 0     ; LEAF_STONE
@@ -96,4 +96,3 @@ ItemPrices: ; 4608 (1:4608)
 	money 0     ; FLOOR_10F
 	money 0     ; FLOOR_11F
 	money 0     ; FLOOR_B4F
-	money 20    ; ICE_STONE
