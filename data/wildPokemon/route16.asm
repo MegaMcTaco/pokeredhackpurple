@@ -13,15 +13,15 @@ Route16Mons:
 		db 26,RATICATE
 	ELSE
 		db 20,SPEAROW
-		db 22,SPEAROW
+		db 22,PIDGEOTTO
 		db 18,RATTATA
 		db 20,DODUO
 		db 20,RATTATA
-		db 18,DODUO
-		db 22,DODUO
-		db 22,RATTATA
-		db 23,RATICATE
+		db 18,PERSIAN
+		db 22,DODRIO
+		db 24,FEAROW
 		db 25,RATICATE
+		db 20,SKARMORY
 	ENDC
 
 	db $00

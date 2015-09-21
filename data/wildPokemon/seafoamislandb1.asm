@@ -8,7 +8,7 @@ IslandMonsB1:
 		db 28,SLOWPOKE
 		db 30,SEEL
 		db 30,SLOWPOKE
-		db 28,SEEL
+		db 28,JYNX
 		db 38,DEWGONG
 		db 37,SEADRA
 	ENDC

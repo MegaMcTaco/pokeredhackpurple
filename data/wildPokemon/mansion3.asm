@@ -3,14 +3,14 @@ MansionMons3:
 	IF DEF(_RED)
 		db 31,KOFFING
 		db 33,GROWLITHE
-		db 35,KOFFING
+		db 35,VULPIX
 		db 32,PONYTA
-		db 34,PONYTA
+		db 34,MAGMAR
 		db 40,WEEZING
 		db 34,GRIMER
 		db 38,WEEZING
-		db 36,PONYTA
-		db 42,MUK
+		db 36,HOUNDOUR
+		db 42,HOUNDOOM
 	ENDC
 
 	IF DEF(_GREEN) || !DEF(_JAPAN) && DEF(_BLUE)

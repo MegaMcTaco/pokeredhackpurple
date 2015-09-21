@@ -4,14 +4,14 @@ Route5Mons:
 	IF DEF(_RED)
 		db 13,ODDISH
 		db 13,PIDGEY
-		db 15,PIDGEY
+		db 15,DODUO
 		db 10,MANKEY
-		db 12,MANKEY
+		db 12,BELLSPROUT
 		db 15,ODDISH
-		db 16,ODDISH
-		db 16,PIDGEY
+		db 16,BELLSPROUT
+		db 16,MEOWTH
 		db 14,MANKEY
-		db 16,MANKEY
+		db 16,VULPIX
 	ENDC
 
 	IF DEF(_GREEN) || !DEF(_JAPAN) && DEF(_BLUE)

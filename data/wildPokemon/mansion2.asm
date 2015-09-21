@@ -3,13 +3,13 @@ MansionMons2:
 	IF DEF(_RED)
 		db 32,GROWLITHE
 		db 34,KOFFING
-		db 34,KOFFING
+		db 34,VULPIX
 		db 30,PONYTA
-		db 30,KOFFING
+		db 30,MAGMAR
 		db 32,PONYTA
 		db 30,GRIMER
-		db 28,PONYTA
-		db 39,WEEZING
+		db 28,HOUNDOUR
+		db 39,HOUNDOOM
 		db 37,MUK
 	ENDC
 

@@ -7,9 +7,9 @@ Route4Mons:
 		db 8,MANKEY
 		db 6,EKANS
 		db 8,SPEAROW
-		db 10,EKANS
+		db 10,PIDGEY
 		db 12,RATTATA
-		db 12,PIDGEY
+		db 12,MEOWTH
 		db 8,JIGGLYPUFF
 		db 12,FARFETCH_D
 	ENDC

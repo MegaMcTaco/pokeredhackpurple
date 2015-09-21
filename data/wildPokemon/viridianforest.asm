@@ -21,7 +21,7 @@ ForestMons:
 			db 6,ODDISH
 			db 6,VENONAT
 			db 6,PIKACHU
-			db 8,PIDGEY
+			db 8,HERACROSS
 		ENDC
 		IF DEF(_BLUE) || DEF(_GREEN)
 			db 4,CATERPIE

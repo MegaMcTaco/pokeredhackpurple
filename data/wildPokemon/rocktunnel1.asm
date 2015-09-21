@@ -14,10 +14,10 @@ TunnelMonsB1:
 		db 21,MACHOP
 	ELSE
 		db 16,ZUBAT
-		db 17,ZUBAT
+		db 17,SANDSHREW
 		db 17,GEODUDE
 		db 15,MACHOP
-		db 16,GEODUDE
+		db 16,ONIX
 		IF DEF(_RED) || DEF(_GREEN) || (DEF(_BLUE) && !DEF(_JAPAN))
 			db 18,ZUBAT
 		ENDC

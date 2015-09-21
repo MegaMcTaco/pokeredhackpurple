@@ -12,14 +12,14 @@ IF DEF(_YELLOW)
 	db GROWLITHE, DEWGONG,   2,"CEZANNE@@@@"
 	db CUBONE,    MACHOKE,   2,"RICKY@@@@@@"
 ELSE
-	db NIDORINO,  NIDORINA,  0,"TERRY@@@@@@"
-	db ABRA,      MR_MIME,   0,"MARCEL@@@@@"
-	db BUTTERFREE,BEEDRILL,  2,"CHIKUCHIKU@"
-	db PONYTA,    SEEL,      0,"SAILOR@@@@@"
-	db SPEAROW,   FARFETCH_D,2,"DUX@@@@@@@@"
-	db SLOWBRO,   LICKITUNG, 0,"MARC@@@@@@@"
-	db POLIWHIRL, JYNX,      1,"LOLA@@@@@@@"
-	db RAICHU,    ELECTRODE, 1,"DORIS@@@@@@"
-	db VENONAT,   TANGELA,   2,"CRINKLES@@@"
-	db NIDORAN_M, NIDORAN_F, 2,"SPOT@@@@@@@"
+	db POLIWAG,   CHARMANDER,0,"BLAZE@@@@@@" ; Route 11 - Only place (if not starter)
+	db ABRA,      MR_MIME,   0,"MARCEL@@@@@" ; Route 2 - Only place to find
+	db BUTTERFREE,BEEDRILL,  2,"CHIKUCHIKU@" 
+	db PONYTA,    HITMONLEE, 0,"BRUCE@@@@@@" ; Cinnabar Island - Only place to find
+	db SPEAROW,   FARFETCH_D,2,"DUX@@@@@@@@" ; Vermillion City - Can find in wild
+	db SLOWBRO,   LICKITUNG, 0,"GENE@@@@@@@" ; Route 18 - Only place to find
+	db ODDISH,    SQUIRTLE,  1,"HYDRO@@@@@@" ; Cerulean City - Only place (if not starter)
+	db RAICHU,    HITMONCHAN,1,"JACKIE@@@@@" ; Cinnabar Island - Only place to find
+	db VENONAT,   HOUNDOUR,  2,"FRED@@@@@@@" ; Cinnabar Island - Can find in wild
+	db NIDORAN_M, BULBASAUR, 2,"MOW@@@@@@@@" ; Route 5 - Only place (if not starter)
 ENDC

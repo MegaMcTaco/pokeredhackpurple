@@ -10,7 +10,7 @@ IslandMonsB4:
 		db 31,SLOWPOKE
 		db 29,SEEL
 		db 39,SLOWBRO
-		db 32,GOLBAT
+		db 32,JYNX
 	ENDC
 
 	IF DEF(_GREEN) || !DEF(_JAPAN) && DEF(_BLUE)

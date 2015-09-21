@@ -1,20 +1,20 @@
 _CeruleanHouse2Text_74e77:: ; 990c9 (26:50c9)
-	text "#MON BADGEs"
-	line "are owned only by"
-	cont "skilled trainers."
+	text "Evolution STONEs"
+	line "can make certain"
+	cont "#MON evolve."
 
 	para "I see you have"
 	line "at least one."
 
-	para "Those BADGEs have"
-	line "amazing secrets!"
+	para "Those STONEs have"
+	line "mysterious power!"
 	prompt
 
 _CeruleanHouse2Text_74e7c:: ; 9913a (26:513a)
 	text "Now then..."
 
-	para "Which of the 8"
-	line "BADGEs should I"
+	para "Which of the 9"
+	line "Stones should I"
 	cont "describe?"
 	done
 
@@ -27,80 +27,83 @@ ENDC
 	line "time you wish."
 	done
 
-_CeruleanHouse2Text_74e96:: ; 99192 (26:5192)
-	text "The ATTACK of all"
-	line "#MON increases"
-	cont "a little bit."
-
-	para "It also lets you"
-IF DEF(_YELLOW)
-	line "use FLASH any-"
-ELSE
-	line "use FLASH any"
-ENDC
-	cont "time you desire."
+_FireStoneText::
+	text "Evolves Fire"
+	line "type #MON."
+	
+	para "Use it on"
+	line "#MON such as"
+	cont "VULPIX."
 	prompt
 
-_CeruleanHouse2Text_74e9b:: ; 991f2 (26:51f2)
-	text "#MON up to L30"
-	line "will obey you."
-
-	para "Any higher, they"
-	line "become unruly!"
-
-	para "It also lets you"
-	line "use CUT outside"
-	cont "of battle."
+_WaterStoneText::
+	text "Evolves Water"
+	line "type #MON."
+	
+	para "Use it on"
+	line "#MON such as"
+	cont "SHELLDER."
+	prompt
+	
+_ThunderStoneText::
+	text "Evolves Thunder"
+	line "type #MON."
+	
+	para "Use it on"
+	line "#MON such as"
+	cont "PIKACHU."
 	prompt
 
-_CeruleanHouse2Text_74ea0:: ; 9925d (26:525d)
-	text "The SPEED of all"
-	line "#MON increases"
-	cont "a little bit."
-
-	para "It also lets you"
-	line "use FLY outside"
-	cont "of battle."
+_LeafStoneText::
+	text "Evolves Grass"
+	line "type #MON."
+	
+	para "Use it on"
+	line "#MON such as"
+	cont "GLOOM."
 	prompt
 
-_CeruleanHouse2Text_74ea5:: ; 992b8 (26:52b8)
-	text "#MON up to L50"
-	line "will obey you."
-
-	para "Any higher, they"
-	line "become unruly!"
-
-	para "It also lets you"
-	line "use STRENGTH out-"
-	cont "side of battle."
+_IceStoneText::
+	text "Evolves a"
+	line "special #MON."
+	
+	para "Use it on"
+	line "#MON such as"
+	cont "EEVEE."
 	prompt
 
-_CeruleanHouse2Text_74eaa:: ; 9932a (26:532a)
-	text "The DEFENSE of all"
-	line "#MON increases"
-	cont "a little bit."
-
-	para "It also lets you"
-	line "use SURF outside"
-	cont "of battle."
+_SteelStoneText::
+	text "Evolves a"
+	line "special #MON."
+	
+	para "Use it on"
+	line "#MON such as"
+	cont "SCYTHER."
 	prompt
 
-_CeruleanHouse2Text_74eaf:: ; 99388 (26:5388)
-	text "#MON up to L70"
-	line "will obey you."
-
-	para "Any higher, they"
-	line "become unruly!"
+_FairyStoneText::
+	text "Evolves a"
+	line "special #MON."
+	
+	para "Use it on"
+	line "#MON such as"
+	cont "EEVEE."
 	prompt
 
-_CeruleanHouse2Text_74eb4:: ; 993c7 (26:53c7)
-	text "Your #MON's"
-	line "SPECIAL abilities"
-	cont "increase a bit."
+_SunStoneText::
+	text "Evolves a"
+	line "special #MON."
+	
+	para "Use it on"
+	line "#MON such as"
+	cont "EEVEE."
 	prompt
-
-_CeruleanHouse2Text_74eb9:: ; 993f5 (26:53f5)
-	text "All #MON will"
-	line "obey you!"
+	
+_MoonStoneText::
+    text "Evolves a"
+	line "special #MON."
+	
+	para "Use it on"
+	line "#MON such as"
+	cont "EEVEE."
 	prompt
-

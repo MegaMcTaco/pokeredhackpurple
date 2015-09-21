@@ -6,7 +6,7 @@ ZoneMonsCenter:
 		db 22,VENONAT
 		db 24,EXEGGCUTE
 		db 31,NIDORINO
-		db 25,EXEGGCUTE
+		db 25,HERACROSS
 		db 31,NIDORINA
 		db 30,PARASECT
 		db 23,SCYTHER

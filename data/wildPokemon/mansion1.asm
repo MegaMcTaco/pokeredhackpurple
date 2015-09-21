@@ -8,9 +8,9 @@ MansionMons1:
 		db 34,GROWLITHE
 		db 32,PONYTA
 		db 30,GRIMER
-		db 28,PONYTA
-		db 37,WEEZING
-		db 39,MUK
+		db 28,WEEZING
+		db 37,MUK
+		db 39,MAGMAR
 	ENDC
 
 	IF DEF(_GREEN) || DEF(_BLUE)

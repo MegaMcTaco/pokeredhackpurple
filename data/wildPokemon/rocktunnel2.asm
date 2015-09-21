@@ -14,10 +14,10 @@ TunnelMonsB2:
 		db 22,ONIX
 	ELSE
 		db 16,ZUBAT
-		db 17,ZUBAT
+		db 17,ONIX
 		db 17,GEODUDE
 		db 15,MACHOP
-		db 16,GEODUDE
+		db 24,GRAVELER
 		IF DEF(_RED) || DEF(_GREEN) || (DEF(_BLUE) && !DEF(_JAPAN))
 			db 18,ZUBAT
 		ENDC

@@ -18,7 +18,7 @@ CeruleanHouse2Text1: ; 74e15 (1d:4e15)
 .asm_74e23
 	ld hl, CeruleanHouse2Text_74e7c
 	call PrintText
-	ld hl, BadgeItemList
+	ld hl, StoneItemList
 	call LoadItemList
 	ld hl, wItemList
 	ld a, l
@@ -32,9 +32,9 @@ CeruleanHouse2Text1: ; 74e15 (1d:4e15)
 	ld [wListMenuID], a
 	call DisplayListMenuID
 	jr c, .asm_74e60
-	ld hl, TextPointers_74e86
+	ld hl, MenuTextPointers
 	ld a, [wcf91]
-	sub $15
+	sub FIRE_STONE
 	add a
 	ld d, $0
 	ld e, a
@@ -51,8 +51,8 @@ CeruleanHouse2Text1: ; 74e15 (1d:4e15)
 	call PrintText
 	jp TextScriptEnd
 
-BadgeItemList: ; 74e6d (1d:4e6d)
-	db $8,SAFARI_BAIT,SAFARI_ROCK,ICE_STONE,STEEL_STONE,FAIRY_STONE,MARSHBADGE,VOLCANOBADGE,EARTHBADGE,$FF
+StoneItemList: ; 74e6d (1d:4e6d)
+	db 9,FIRE_STONE,WATER_STONE,THUNDER_STONE,LEAF_STONE,ICE_STONE,STEEL_STONE,FAIRY_STONE,SUN_STONE,MOON_STONE,$FF
 
 CeruleanHouse2Text_74e77: ; 74e77 (1d:4e77)
 	TX_FAR _CeruleanHouse2Text_74e77
@@ -66,44 +66,49 @@ CeruleanHouse2Text_74e81: ; 74e81 (1d:4e81)
 	TX_FAR _CeruleanHouse2Text_74e81
 	db "@"
 
-TextPointers_74e86: ; 74e86 (1d:4e86)
-	dw CeruleanHouse2Text_74e96
-	dw CeruleanHouse2Text_74e9b
-	dw CeruleanHouse2Text_74ea0
-	dw CeruleanHouse2Text_74ea5
-	dw CeruleanHouse2Text_74eaa
-	dw CeruleanHouse2Text_74eaf
-	dw CeruleanHouse2Text_74eb4
-	dw CeruleanHouse2Text_74eb9
+MenuTextPointers:
+    dw FireStoneText
+	dw ThunderStoneText
+	dw WaterStoneText
+	dw LeafStoneText
+	dw IceStoneText
+	dw SteelStoneText
+	dw FairyStoneText
+	dw SunStoneText
+	dw MoonStoneText
 
-CeruleanHouse2Text_74e96: ; 74e96 (1d:4e96)
-	TX_FAR _CeruleanHouse2Text_74e96
+FireStoneText:
+	TX_FAR _FireStoneText
 	db "@"
 
-CeruleanHouse2Text_74e9b: ; 74e9b (1d:4e9b)
-	TX_FAR _CeruleanHouse2Text_74e9b
+WaterStoneText: 
+	TX_FAR _WaterStoneText
 	db "@"
 
-CeruleanHouse2Text_74ea0: ; 74ea0 (1d:4ea0)
-	TX_FAR _CeruleanHouse2Text_74ea0
+ThunderStoneText:
+	TX_FAR _ThunderStoneText
 	db "@"
 
-CeruleanHouse2Text_74ea5: ; 74ea5 (1d:4ea5)
-	TX_FAR _CeruleanHouse2Text_74ea5
+LeafStoneText:
+	TX_FAR _LeafStoneText
 	db "@"
 
-CeruleanHouse2Text_74eaa: ; 74eaa (1d:4eaa)
-	TX_FAR _CeruleanHouse2Text_74eaa
+IceStoneText:
+	TX_FAR _IceStoneText
 	db "@"
 
-CeruleanHouse2Text_74eaf: ; 74eaf (1d:4eaf)
-	TX_FAR _CeruleanHouse2Text_74eaf
+SteelStoneText:
+	TX_FAR _SteelStoneText
 	db "@"
 
-CeruleanHouse2Text_74eb4: ; 74eb4 (1d:4eb4)
-	TX_FAR _CeruleanHouse2Text_74eb4
+FairyStoneText:
+	TX_FAR _FairyStoneText
 	db "@"
 
-CeruleanHouse2Text_74eb9: ; 74eb9 (1d:4eb9)
-	TX_FAR _CeruleanHouse2Text_74eb9
+SunStoneText:
+	TX_FAR _SunStoneText
+	db "@"
+
+MoonStoneText:
+    TX_FAR _MoonStoneText
 	db "@"
