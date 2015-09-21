@@ -16,7 +16,7 @@ ELSE
 	db ABRA,      MR_MIME,   0,"MARCEL@@@@@" ; Route 2 - Only place to find
 	db BUTTERFREE,BEEDRILL,  2,"CHIKUCHIKU@" 
 	db PONYTA,    HITMONLEE, 0,"BRUCE@@@@@@" ; Cinnabar Island - Only place to find
-	db SPEAROW,   FARFETCH_D,2,"DUX@@@@@@@@" ; Vermillion City - Can find in wild
+	db FEAROW,    SKARMORY,  2,"DUX@@@@@@@@" ; Vermillion City - Only place to find
 	db SLOWBRO,   LICKITUNG, 0,"GENE@@@@@@@" ; Route 18 - Only place to find
 	db ODDISH,    SQUIRTLE,  1,"HYDRO@@@@@@" ; Cerulean City - Only place (if not starter)
 	db RAICHU,    HITMONCHAN,1,"JACKIE@@@@@" ; Cinnabar Island - Only place to find

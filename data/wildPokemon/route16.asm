@@ -21,7 +21,7 @@ Route16Mons:
 		db 22,DODRIO
 		db 24,FEAROW
 		db 25,RATICATE
-		db 20,SKARMORY
+		db 25,EEVEE
 	ENDC
 
 	db $00

@@ -22,7 +22,7 @@ PlateauMons3:
 		db 43,GRAVELER
 		db 41,GOLBAT
 		db 42,NIDOQUEEN
-		db 30,SKARMORY
+		db 50,RHYDON
 	ENDC
 
 	db $00
