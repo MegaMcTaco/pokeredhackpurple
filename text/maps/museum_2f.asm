@@ -28,10 +28,12 @@ _Museum2FText4:: ; 968cf (25:68cf)
 	line "to catch me one!"
 	done
 
-_Museum2FText5:: ; 96911 (25:6911)
-	text "Yeah, a PIKACHU"
-	line "soon, I promise!"
-	done
+_Museum2FText5:: ; 5c33c (17:433c)
+    TX_ASM
+    ld a, $2
+    ld [wWhichTrade], a
+    predef DoInGameTradeDialogue
+    jp TextScriptEnd
 
 IF DEF(_YELLOW)
 _Museum2FPikachuText1::
