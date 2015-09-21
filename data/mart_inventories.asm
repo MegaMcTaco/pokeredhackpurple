@@ -4,7 +4,7 @@
 
 ; Viridian
 ViridianMartText6:: ; 2442 (0:2442)
-	db $FE,4,ICE_STONE,SUN_STONE,STEEL_STONE,FAIRY_STONE,$FF
+	db $FE,4,POKE_BALL,POTION,PARLYZ_HEAL,ANTIDOTE,$FF
 
 ; Pewter
 PewterMartText1:: ; 2449 (0:2449)
@@ -40,7 +40,8 @@ CeladonMart2Text2:: ; 2482 (0:2482)
 
 ; Celadon Dept. Store 4F
 CeladonMart4Text1:: ; 248e (0:248e)
-	db $FE,5,POKE_DOLL,FIRE_STONE,THUNDER_STONE,WATER_STONE,LEAF_STONE,$FF
+	db $FE,8,POKE_DOLL,FIRE_STONE,THUNDER_STONE,WATER_STONE,LEAF_STONE
+	db ICE_STONE,STEEL_STONE,FAIRY_STONE,$FF
 
 ; Celadon Dept. Store 5F (1)
 CeladonMart5Text3:: ; 2496 (0:2496)
@@ -49,7 +50,7 @@ CeladonMart5Text3:: ; 2496 (0:2496)
 
 ; Celadon Dept. Store 5F (2)
 CeladonMart5Text4:: ; 24a0 (0:24a0)
-	db $FE,5,HP_UP,PROTEIN,IRON,CARBOS,CALCIUM,$FF
+	db $FE,6,HP_UP,PROTEIN,IRON,CARBOS,CALCIUM,PP_UP,$FF
 
 ; Fuchsia
 FuchsiaMartText1:: ; 24a8 (0:24a8)

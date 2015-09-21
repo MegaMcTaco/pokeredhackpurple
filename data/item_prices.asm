@@ -45,7 +45,7 @@ ItemPrices: ; 4608 (1:4608)
 	money 2100  ; SUN_STONE
 	money 0     ; BIKE_VOUCHER
 	money 950   ; X_ACCURACY
-	money 0     ; LEAF_STONE
+	money 2100  ; LEAF_STONE
 	money 0     ; CARD_KEY
 	money 10000 ; NUGGET
 	money 9800  ; XXX PP_UP
@@ -77,7 +77,7 @@ ItemPrices: ; 4608 (1:4608)
 	money 0     ; OLD_ROD
 	money 0     ; GOOD_ROD
 	money 0     ; SUPER_ROD
-	money 0     ; PP_UP
+	money 9800  ; PP_UP
 	money 0     ; ETHER
 	money 0     ; MAX_ETHER
 	money 0     ; ELIXER

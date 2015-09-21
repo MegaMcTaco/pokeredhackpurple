@@ -844,7 +844,7 @@ VermilionCityHiddenObjects: ; 47096 (11:7096)
 	dbw BANK(HiddenItems),HiddenItems
 	db $FF
 CeruleanCityHiddenObjects: ; 4709d (11:709d)
-	db $08,$0f,RARE_CANDY
+	db $08,$0f,SUN_STONE
 	dbw BANK(HiddenItems),HiddenItems
 	db $FF
 Route4HiddenObjects: ; 470a4 (11:70a4)
