@@ -13,9 +13,9 @@ Route2Mons:
 		db 7,PIDGEY
 		db 7,PIDGEY
 	ELSE
-		db 5,HOUNDOUR
-		db 5,HOUNDOOM
-		db 5,SKARMORY
+		db 5,PIDGEY
+		db 5,RATTATA
+		db 5,SPEAROW
 		db 5,NIDORAN_F
 		db 5,NIDORAN_M
 		if DEF(_RED)
