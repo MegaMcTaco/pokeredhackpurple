@@ -7163,6 +7163,10 @@ HoundourPicFront::   INCBIN "pic/bmon/houndour.pic"
 HoundourPicBack::    INCBIN "pic/monback/houndourb.pic"
 HoundoomPicFront::   INCBIN "pic/bmon/houndoom.pic"
 HoundoomPicBack::    INCBIN "pic/monback/houndoomb.pic"
+SpinarakPicFront::   INCBIN "pic/bmon/spinarak.pic"
+SpinarakPicBack::    INCBIN "pic/monback/spinarakb.pic"
+AriadosPicFront::    INCBIN "pic/bmon/ariados.pic"
+AriadosPicBack::     INCBIN "pic/monback/ariadosb.pic"
 ENDC
 
 IF !GEN_2_GRAPHICS

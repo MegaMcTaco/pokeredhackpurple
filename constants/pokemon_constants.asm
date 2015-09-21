@@ -68,7 +68,7 @@ const_value = 1
 	const DRAGONITE    ; $42
 	const HOUNDOUR     ; $43
 	const HOUNDOOM     ; $44
-	const MISSINGNO_45 ; $45
+	const SPINARAK     ; $45
 	const DODUO        ; $46
 	const POLIWAG      ; $47
 	const JYNX         ; $48
@@ -78,7 +78,7 @@ const_value = 1
 	const DITTO        ; $4C
 	const MEOWTH       ; $4D
 	const KRABBY       ; $4E
-	const MISSINGNO_4F ; $4F
+	const ARIADOS      ; $4F
 	const MISSINGNO_50 ; $50
 	const MISSINGNO_51 ; $51
 	const VULPIX       ; $52

@@ -2,8 +2,8 @@ Route24Mons:
 	db $19
 
 	IF DEF(_RED)
-		db 7,WEEDLE
-		db 8,KAKUNA
+		db 7,SPINARAK
+		db 8,ARIADOS
 		db 12,PIDGEY
 		db 12,ODDISH
 		db 13,BELLSPROUT

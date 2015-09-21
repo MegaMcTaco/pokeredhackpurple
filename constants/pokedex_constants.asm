@@ -161,5 +161,7 @@ const_value = 1
 	const DEX_SKARMORY   ; 159
 	const DEX_HOUNDOUR   ; 160
 	const DEX_HOUNDOOM   ; 161
+	const DEX_SPINARAK   ; 162
+	const DEX_ARIADOS    ; 163
 	
-NUM_POKEMON    EQU 161
+NUM_POKEMON    EQU 163

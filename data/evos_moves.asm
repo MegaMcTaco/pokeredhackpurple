@@ -67,7 +67,7 @@ EvosMovesPointerTable: ; 3b05c (e:705c)
 	dw Mon149_EvosMoves
 	dw Mon160_EvosMoves
 	dw Mon161_EvosMoves
-	dw Mon162_EvosMoves	;MissingNo
+	dw Mon162_EvosMoves
 	dw Mon084_EvosMoves
 	dw Mon060_EvosMoves
 	dw Mon124_EvosMoves
@@ -77,7 +77,7 @@ EvosMovesPointerTable: ; 3b05c (e:705c)
 	dw Mon132_EvosMoves
 	dw Mon052_EvosMoves
 	dw Mon098_EvosMoves
-	dw Mon163_EvosMoves	;MissingNo
+	dw Mon163_EvosMoves
 	dw Mon164_EvosMoves	;MissingNo
 	dw Mon165_EvosMoves	;MissingNo
 	dw Mon037_EvosMoves
@@ -1070,10 +1070,17 @@ Mon161_EvosMoves: ; 3b50e (e:750e)
 	db 0
 
 Mon162_EvosMoves: ; 3b510 (e:7510)
-;MISSINGNO
+;SPINARAK
 ;Evolutions
+    db EV_LEVEL,22,ARIADOS
 	db 0
 ;Learnset
+    db 11,CONSTRICT
+	db 17,NIGHT_SHADE
+	db 23,LEECH_LIFE
+	db 30,FURY_SWIPES
+	db 45,SCREECH
+	db 53,PSYCHIC_M
 	db 0
 
 Mon084_EvosMoves: ; 3b512 (e:7512)
@@ -1181,10 +1188,16 @@ Mon098_EvosMoves: ; 3b56b (e:756b)
 	db 0
 
 Mon163_EvosMoves: ; 3b57a (e:757a)
-;MISSINGNO
+;ARIADOS
 ;Evolutions
 	db 0
 ;Learnset
+    db 11,CONSTRICT
+	db 17,NIGHT_SHADE
+	db 25,LEECH_LIFE
+	db 34,FURY_SWIPES
+	db 53,AGILITY
+	db 63,PSYCHIC_M
 	db 0
 
 Mon164_EvosMoves: ; 3b57c (e:757c)

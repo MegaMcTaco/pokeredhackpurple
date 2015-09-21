@@ -162,6 +162,8 @@ IF GEN_2_GRAPHICS
 	db PAL_GREYMON   ; SKARMORY
     db PAL_MEWMON    ; HOUNDOUR
 	db PAL_MEWMON    ; HOUNDOOM
+	db PAL_GREENMON  ; SPINARAK
+	db PAL_REDMON    ; ARIADOS
 	
 TrainerPalettes: ; Gen II trainer sprites are given their own palettes
 	db PAL_HERO
@@ -375,6 +377,8 @@ ELSE
 	db PAL_GREYMON   ; SKARMORY
 	db PAL_MEWMON    ; HOUNDOUR
 	db PAL_MEWMON    ; HOUNDOOM
+	db PAL_GREENMON  ; SPINARAK
+	db PAL_REDMON    ; ARIADOS
 	
 ; Trainers use index 0 of MonsterPalettes
 ENDC

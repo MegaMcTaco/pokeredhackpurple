@@ -676,6 +676,16 @@ _HoundoomDexEntry::
 	next "will never go"
 	next "away"
 	dex
+
+_SpinarakDexEntry::
+	text "It lies in the"
+	next "same pose for"
+	next "days in its web,"
+
+	page "waiting for its"
+	next "unsuspecting prey"
+	next "to wander close"
+	dex	
 	
 _DoduoDexEntry::
 	text "A bird that makes"
@@ -767,6 +777,16 @@ _KrabbyDexEntry::
 	next "sideways"
 	dex
 
+_AriadosDexEntry::
+	text "It spins string"
+	next "not only from its"
+	next "rear, but also"
+
+	page "from its mouth. It"
+	next "is hard to tell"
+	next "what end is what"
+	dex	
+	
 _VulpixDexEntry::
 	text "At the time of"
 	next "birth, it has"

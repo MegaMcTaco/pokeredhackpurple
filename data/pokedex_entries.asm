@@ -67,7 +67,7 @@ PokedexEntryPointers: ; 4047e (10:447e)
 	dw DragoniteDexEntry
 	dw HoundourDexEntry
 	dw HoundoomDexEntry
-	dw MissingNoDexEntry
+	dw SpinarakDexEntry
 	dw DoduoDexEntry
 	dw PoliwagDexEntry
 	dw JynxDexEntry
@@ -77,7 +77,7 @@ PokedexEntryPointers: ; 4047e (10:447e)
 	dw DittoDexEntry
 	dw MeowthDexEntry
 	dw KrabbyDexEntry
-	dw MissingNoDexEntry
+	dw AriadosDexEntry
 	dw MissingNoDexEntry
 	dw MissingNoDexEntry
 	dw VulpixDexEntry
@@ -671,6 +671,13 @@ HoundoomDexEntry:
 	TX_FAR _HoundoomDexEntry
 	db "@"	
 
+SpinarakDexEntry:
+	db "SPIDER@"
+	db 1,4
+	dw 80
+	TX_FAR _SpinarakDexEntry
+	db "@"	
+	
 DoduoDexEntry: ; 409cd (10:49cd)
 	db "TWIN BIRD@"
 	db 4,7
@@ -734,6 +741,13 @@ KrabbyDexEntry: ; 40a5d (10:4a5d)
 	TX_FAR _KrabbyDexEntry
 	db "@"
 
+AriadosDexEntry:
+	db "TARANTULA@"
+	db 3,3
+	dw 340
+	TX_FAR _AriadosDexEntry
+	db "@"	
+	
 VulpixDexEntry: ; 40a71 (10:4a71)
 	db "FOX@"
 	db 2,0

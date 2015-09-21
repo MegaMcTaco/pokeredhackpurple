@@ -68,7 +68,7 @@ CryData: ; 39446 (e:5446)
 	db $0F, $3C, $C0; Dragonite
 	db $1F, $20, $40; Houndour
 	db $15, $20, $80; Houndoom
-	db $1D, $E0, $80; MissingNo.
+	db $15, $EE, $01; Spinarak
 	db $0B, $BB, $01; Doduo
 	db $0E, $FF, $FF; Poliwag
 	db $0D, $FF, $FF; Jynx
@@ -78,7 +78,7 @@ CryData: ; 39446 (e:5446)
 	db $0E, $FF, $FF; Ditto
 	db $19, $77, $10; Meowth
 	db $20, $20, $E0; Krabby
-	db $22, $FF, $40; MissingNo.
+	db $13, $60, $80; Ariados
 	db $00, $00, $00; MissingNo.
 	db $0E, $E0, $60; MissingNo.
 	db $24, $4F, $10; Vulpix
