@@ -36,8 +36,8 @@ ENDC
 
 PrizeMenuMon2Entries: ; 52864 (14:6864)
 IF DEF(_RED)
-	db DRATINI
-	db SCYTHER
+	db HOUNDOUR
+	db SPINARAK
 ENDC
 IF DEF(_BLUE)
 	db PINSIR

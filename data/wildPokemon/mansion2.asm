@@ -8,8 +8,8 @@ MansionMons2:
 		db 30,MAGMAR
 		db 32,PONYTA
 		db 30,GRIMER
-		db 28,HOUNDOUR
-		db 39,HOUNDOOM
+		db 28,WEEZING
+		db 39,MAGMAR
 		db 37,MUK
 	ENDC
 

@@ -2,13 +2,13 @@ Route24Mons:
 	db $19
 
 	IF DEF(_RED)
-		db 7,SPINARAK
-		db 8,ARIADOS
+		db 7,ODDISH
+		db 8,VENONAT
 		db 12,PIDGEY
 		db 12,ODDISH
 		db 13,BELLSPROUT
 		db 10,ABRA
-		db 14,ODDISH
+		db 14,VENONAT
 		db 13,PIDGEY
 		db 8,ABRA
 		db 12,ABRA

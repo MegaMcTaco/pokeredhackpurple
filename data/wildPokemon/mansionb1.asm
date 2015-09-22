@@ -1,7 +1,7 @@
 MansionMonsB1:
 	db $0A
 	IF DEF(_RED)
-		db 33,KOFFING
+		db 33,VULPIX
 		db 31,KOFFING
 		db 35,GROWLITHE
 		db 32,PONYTA

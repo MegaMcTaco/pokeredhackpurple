@@ -2,11 +2,11 @@ PrizeMonLevelDictionary: ; 5298a (14:698a)
 IF DEF(_RED)
 	db ABRA,9
 	db CLEFAIRY,8
-	db NIDORINA,17
+	db NIDORINA,15
 
-	db DRATINI,18
-	db SCYTHER,25
-	db PORYGON,26
+	db HOUNDOUR,10
+	db SPINARAK,10
+	db PORYGON,25
 ENDC
 IF DEF(_BLUE)
 	db ABRA,6

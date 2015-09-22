@@ -1,7 +1,7 @@
 MansionMons1:
 	db $0A
 	IF DEF(_RED)
-		db 32,KOFFING
+		db 32,RATICATE
 		db 30,KOFFING
 		db 34,PONYTA
 		db 30,PONYTA

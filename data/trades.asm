@@ -20,6 +20,6 @@ ELSE
 	db SLOWBRO,   LICKITUNG, 0,"GENE@@@@@@@" ; Route 18 - Only place to find
 	db ODDISH,    SQUIRTLE,  1,"HYDRO@@@@@@" ; Cerulean City - Only place (if not starter)
 	db RAICHU,    HITMONCHAN,1,"JACKIE@@@@@" ; Cinnabar Island - Only place to find
-	db VENONAT,   KABUTO,    2,"CHOPS@@@@@@" ; Cinnabar Island - Only place (if not starter)
+	db VENONAT,   KABUTO,    2,"CHOPS@@@@@@" ; Cinnabar Island - Only place (if not fossil)
 	db NIDORAN_M, BULBASAUR, 2,"MOW@@@@@@@@" ; Route 5 - Only place (if not starter)
 ENDC
