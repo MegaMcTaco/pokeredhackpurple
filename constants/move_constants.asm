@@ -170,9 +170,8 @@ const_value = 1
 	const CRUNCH       ; a8
 	const NIGHT_SLASH  ; a9
 	
-	
-	
-NUM_ATTACKS EQU const_value + 1
+NUM_ATTACKS EQU const_value
+const_value = STRUGGLE + 1
 
 
 	; Moves do double duty as animation identifiers.
