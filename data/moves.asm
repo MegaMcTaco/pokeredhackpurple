@@ -180,5 +180,18 @@ MoveEnd:
 	move CUT,          DEFENSE_DOWN_SIDE_EFFECT,   100, STEEL,     75, 15 ; Iron Tail 
 	move BITE,         DEFENSE_DOWN_SIDE_EFFECT,    80, DARK,     100, 15 ; Crunch
 	move CUT,          NO_ADDITIONAL_EFFECT,       100, DARK,     100, 15 ; Night Slash 
+	move WING_ATTACK,  NO_ADDITIONAL_EFFECT,        70, STEEL,     90, 25 ; Steel Wing
+	move WING_ATTACK,  SWIFT_EFFECT,                60, FLYING,   100, 20 ; Aerial Ace
+	move CUT,          NO_ADDITIONAL_EFFECT,        60, FLYING,   100, 25 ; Air Cutter
+	move PSYWAVE,      FLINCH_SIDE_EFFECT1,         80, DARK,     100, 15 ; Dark Pulse
+	move SEISMIC_TOSS, SPECIAL_DOWN_SIDE_EFFECT,    95, FAIRY,    100, 15 ; Moonblast
+	move AURORA_BEAM,  HYPER_BEAM_EFFECT,          150, WATER,     90,  5 ; Hydro Cannon
+	move VINE_WHIP,    HYPER_BEAM_EFFECT,          150, GRASS,     90,  5 ; Frenzy Plant
+	move BARRAGE,      SPECIAL_DOWN_SIDE_EFFECT,    80, GHOST,    100, 15 ; Shadow Ball
+	move EMBER,        BURN_SIDE_EFFECT1,           60, FIRE,     100, 25 ; Flame Wheel
+	move FOCUS_ENERGY, HEAL_EFFECT,                  0, FAIRY,    100, 20 ; Moonlight
+	move GUST,         SPEED_DOWN_SIDE_EFFECT,      55, ICE,       95, 15 ; Icy Wind
+	move BLIZZARD,     OHKO_EFFECT,                  1, ICE,       30,  5 ; Sheer Cold
+	move THUNDERBOLT,  PARALYZE_SIDE_EFFECT1,       80, ELECTRIC, 100, 15 ; Discharge
 	
 	
