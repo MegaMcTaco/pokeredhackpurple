@@ -25,5 +25,5 @@ db 5 ; growth rate
 	tmlearn 25,26,27,29,31,32
 	tmlearn 33,34,35,36,38,40
 	tmlearn 44,46,48
-	tmlearn 50,53,54
+	tmlearn 49,50,53,54
 db BANK(SnorlaxPicFront)

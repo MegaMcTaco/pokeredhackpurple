@@ -522,7 +522,7 @@ Mon092_EvosMoves: ; 3b31b (e:731b)
 Mon123_EvosMoves: ; 3b324 (e:7324)
 ;SCYTHER
 ;Evolutions
-    db EV_ITEM,FIRE_STONE,1,SCIZOR
+    db EV_ITEM,STEEL_STONE,1,SCIZOR
 	db 0
 ;Learnset
 	db 17,LEER

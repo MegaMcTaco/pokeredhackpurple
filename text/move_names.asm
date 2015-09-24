@@ -168,7 +168,7 @@ MoveNames:: ; b0000 (2c:4000)
 	db "IRON TAIL@"
 	db "CRUNCH@"
 	db "NIGHT SLASH@"
-	db "STEEL SWING@"
+	db "STEEL WING@"
 	db "AERIAL ACE@"
 	db "AIR CUTTER@"
 	db "DARK PULSE@"

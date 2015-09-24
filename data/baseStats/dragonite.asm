@@ -25,5 +25,5 @@ db 5 ; growth rate
 	tmlearn 25,31,32
 	tmlearn 33,34,38,39,40
 	tmlearn 44,45
-	tmlearn 50,53,54
+	tmlearn 49,50,53,54
 db BANK(DragonitePicFront)

@@ -25,5 +25,5 @@ db 5 ; growth rate
 	tmlearn 30,31,32
 	tmlearn 33,34,36,39
 	tmlearn 44,47
-	tmlearn 49,50,53
+	tmlearn 50,53
 db BANK(ShellderPicFront)

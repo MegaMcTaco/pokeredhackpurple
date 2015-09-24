@@ -29,5 +29,5 @@ db 4 ; growth rate
 	tmlearn 25,29,30,31,32
 	tmlearn 33,34,35,37,38,40
 	tmlearn 41,44,45,46
-	tmlearn 49,50,54,55
+	tmlearn 50,54,55
 db BANK(ChanseyPicFront)
