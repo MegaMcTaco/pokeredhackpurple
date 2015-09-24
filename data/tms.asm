@@ -2,7 +2,7 @@ TechnicalMachines: ; 13773 (4:7773)
 	db MEGA_PUNCH
 	db RAZOR_WIND
 	db SWORDS_DANCE
-	db WHIRLWIND
+	db FIRE_PUNCH
 	db MEGA_KICK
 	db TOXIC
 	db HORN_DRILL
@@ -21,7 +21,7 @@ TechnicalMachines: ; 13773 (4:7773)
 	db RAGE
 	db MEGA_DRAIN
 	db SOLARBEAM
-	db DRAGON_RAGE
+	db SLASH
 	db THUNDERBOLT
 	db THUNDER
 	db EARTHQUAKE
@@ -35,11 +35,11 @@ TechnicalMachines: ; 13773 (4:7773)
 	db BIDE
 	db METRONOME
 	db SELFDESTRUCT
-	db EGG_BOMB
+	db THUNDERPUNCH
 	db FIRE_BLAST
 	db SWIFT
 	db SKULL_BASH
-	db SOFTBOILED
+	db ICE_PUNCH
 	db DREAM_EATER
 	db SKY_ATTACK
 	db REST
