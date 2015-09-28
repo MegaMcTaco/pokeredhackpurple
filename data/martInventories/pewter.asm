@@ -5,7 +5,7 @@ PewterMartText1:: ; 2449 (0:2449)
 	db POTION
 	db ESCAPE_ROPE
 	db ANTIDOTE
-	db BURN_HEAL
+	db REPEL
 	db AWAKENING
 	db PARLYZ_HEAL
 	db $FF
