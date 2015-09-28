@@ -277,7 +277,14 @@ OverworldLoopLessDelay::
 	bit 6,a ; jumping a ledge?
 	jr nz,.normalPlayerSpriteAdvancement
 	call BikeSpeedup ; if riding a bike and not jumping a ledge
+	jr .notRunning
 .normalPlayerSpriteAdvancement
+; Add running shoes
+	ld a, [hJoyHeld] ; Check what buttons are being pressed
+	and B_BUTTON ; Are you holding B?
+	jr z, .notRunning ; If you aren't holding B, skip ahead to step normally.
+	call BikeSpeedup ; Make you go faster if you were holding B
+.notRunning ; Normal code resumes here
 	call AdvancePlayerSprite
 	ld a,[wWalkCounter]
 	and a
