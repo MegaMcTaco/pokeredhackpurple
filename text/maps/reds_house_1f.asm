@@ -8,6 +8,10 @@ ELSE
 ENDC
 	cont "It said so on TV."
 
+	para "It's a good thing"
+	line "that you have new"
+	cont "running shoes!"
+	
 	para "PROF.OAK, next"
 	line "door, is looking"
 	cont "for you."
@@ -41,11 +45,11 @@ _MomHealText2::
 
 _StandByMeText::
 	text "There's a movie"
-	line "on TV. Four boys"
-	cont "are walking on"
-	cont "railroad tracks."
+	line "on TV. Arnold"
+	cont "Schwarzenegger"
+	cont "is a cyborg!."
 
-	para "I better go too."
+	para "I better go!"
 	done
 
 _TVWrongSideText::
