@@ -9,15 +9,21 @@ HiddenItems: ; 76688 (1d:6688)
 	predef FlagActionPredef
 	ld a, c
 	and a
-	ret nz
+	jr nz, .nope ; originally ret nz
 	call EnableAutoTextBoxDrawing
 	ld a, 1
 	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
-	ld a, [wHiddenObjectFunctionArgument] ; item ID
+	ld a, [wWhichTrade] ; item ID
 	ld [wd11e], a
 	call GetItemName
-	tx_pre_jump FoundHiddenItemText
+	ld a, $24
+	jp PrintPredefTextID
 
+; added for field move hack
+.nope
+	predef TryFieldMove
+	ret
+	
 INCLUDE "data/hidden_item_coords.asm"
 
 FoundHiddenItemText: ; 7675b (1d:675b)

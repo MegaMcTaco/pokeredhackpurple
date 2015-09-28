@@ -5,7 +5,7 @@ LavenderMartTextPointers: ; 5c92f (17:492f)
 	dw LavenderMartText1
 	dw LavenderMartText2
 	dw LavenderMartText3
-
+	
 LavenderMartText2: ; 5c935 (17:4935)
 	TX_FAR _LavenderMartText2
 	db "@"

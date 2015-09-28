@@ -991,7 +991,7 @@ SafariZoneRestHouses:
 	db -1
 
 ; function that performs initialization for DisplayTextID
-DisplayTextIDInit: ; 7096 (1:7096)
+DisplayTextIDInit:: ; 7096 (1:7096)
 	xor a
 	ld [wListMenuID],a
 	ld a,[wAutoTextBoxDrawingControl]
@@ -5221,6 +5221,7 @@ INCLUDE "data/mapObjects/oakslab.asm"
 INCLUDE "data/mapHeaders/viridianmart.asm"
 INCLUDE "scripts/viridianmart.asm"
 INCLUDE "data/mapObjects/viridianmart.asm"
+INCLUDE "data/martInventories/viridian.asm"
 ViridianMartBlocks: INCBIN "maps/viridianmart.blk"
 
 INCLUDE "data/mapHeaders/school.asm"
@@ -5280,6 +5281,7 @@ INCLUDE "data/mapObjects/celadonmansion5.asm"
 INCLUDE "data/mapHeaders/fuchsiamart.asm"
 INCLUDE "scripts/fuchsiamart.asm"
 INCLUDE "data/mapObjects/fuchsiamart.asm"
+INCLUDE "data/martInventories/fuchsia.asm"
 FuchsiaMartBlocks: INCBIN "maps/fuchsiamart.blk"
 
 INCLUDE "data/mapHeaders/saffronhouse1.asm"
@@ -5772,6 +5774,7 @@ CeladonMart3Blocks: INCBIN "maps/celadonmart3.blk"
 INCLUDE "data/mapHeaders/celadonmart4.asm"
 INCLUDE "scripts/celadonmart4.asm"
 INCLUDE "data/mapObjects/celadonmart4.asm"
+INCLUDE "data/martInventories/celadon_4.asm"
 CeladonMart4Blocks: INCBIN "maps/celadonmart4.blk"
 
 INCLUDE "data/mapHeaders/celadonmartroof.asm"
@@ -5821,6 +5824,7 @@ CeladonGameCornerBlocks: INCBIN "maps/celadongamecorner.blk"
 INCLUDE "data/mapHeaders/celadonmart5.asm"
 INCLUDE "scripts/celadonmart5.asm"
 INCLUDE "data/mapObjects/celadonmart5.asm"
+INCLUDE "data/martInventories/celadon_5.asm"
 CeladonMart5Blocks: INCBIN "maps/celadonmart5.blk"
 
 INCLUDE "data/mapHeaders/celadonprizeroom.asm"
@@ -6057,6 +6061,7 @@ Route25Blocks: INCBIN "maps/route25.blk"
 INCLUDE "data/mapHeaders/indigoplateau.asm"
 INCLUDE "scripts/indigoplateau.asm"
 INCLUDE "data/mapObjects/indigoplateau.asm"
+INCLUDE "data/martInventories//indigo_plateau.asm"
 IndigoPlateauBlocks: INCBIN "maps/indigoplateau.blk"
 
 INCLUDE "data/mapHeaders/saffroncity.asm"
@@ -6182,6 +6187,7 @@ INCLUDE "data/mapObjects/vermilionhouse2.asm"
 INCLUDE "data/mapHeaders/celadonmart2.asm"
 INCLUDE "scripts/celadonmart2.asm"
 INCLUDE "data/mapObjects/celadonmart2.asm"
+INCLUDE "data/martInventories/celadon_2.asm"
 CeladonMart2Blocks: INCBIN "maps/celadonmart2.blk"
 
 INCLUDE "data/mapHeaders/fuchsiahouse3.asm"
@@ -6364,6 +6370,7 @@ CeruleanGymBlocks: INCBIN "maps/ceruleangym.blk"
 INCLUDE "data/mapHeaders/ceruleanmart.asm"
 INCLUDE "scripts/ceruleanmart.asm"
 INCLUDE "data/mapObjects/ceruleanmart.asm"
+INCLUDE "data/martInventories/cerulean.asm"
 
 INCLUDE "data/mapHeaders/lavenderpokecenter.asm"
 INCLUDE "scripts/lavenderpokecenter.asm"
@@ -6372,6 +6379,7 @@ INCLUDE "data/mapObjects/lavenderpokecenter.asm"
 INCLUDE "data/mapHeaders/lavendermart.asm"
 INCLUDE "scripts/lavendermart.asm"
 INCLUDE "data/mapObjects/lavendermart.asm"
+INCLUDE "data/martInventories/lavender.asm"
 
 INCLUDE "data/mapHeaders/vermilionpokecenter.asm"
 INCLUDE "scripts/vermilionpokecenter.asm"
@@ -6380,6 +6388,7 @@ INCLUDE "data/mapObjects/vermilionpokecenter.asm"
 INCLUDE "data/mapHeaders/vermilionmart.asm"
 INCLUDE "scripts/vermilionmart.asm"
 INCLUDE "data/mapObjects/vermilionmart.asm"
+INCLUDE "data/martInventories/vermillion.asm"
 
 INCLUDE "data/mapHeaders/vermiliongym.asm"
 INCLUDE "scripts/vermiliongym.asm"
@@ -6403,6 +6412,7 @@ SaffronGymBlocks: INCBIN "maps/saffrongym.blk"
 INCLUDE "data/mapHeaders/saffronmart.asm"
 INCLUDE "scripts/saffronmart.asm"
 INCLUDE "data/mapObjects/saffronmart.asm"
+INCLUDE "data/martInventories/saffron.asm"
 
 INCLUDE "data/mapHeaders/silphco1.asm"
 INCLUDE "scripts/silphco1.asm"
@@ -6706,6 +6716,7 @@ ViridianGymBlocks: INCBIN "maps/viridiangym.blk"
 INCLUDE "data/mapHeaders/pewtermart.asm"
 INCLUDE "scripts/pewtermart.asm"
 INCLUDE "data/mapObjects/pewtermart.asm"
+INCLUDE "data/martInventories/pewter.asm"
 
 INCLUDE "data/mapHeaders/unknowndungeon1.asm"
 INCLUDE "scripts/unknowndungeon1.asm"
@@ -6778,6 +6789,7 @@ INCLUDE "data/mapObjects/cinnabarpokecenter.asm"
 INCLUDE "data/mapHeaders/cinnabarmart.asm"
 INCLUDE "scripts/cinnabarmart.asm"
 INCLUDE "data/mapObjects/cinnabarmart.asm"
+INCLUDE "data/martInventories/cinnabar.asm"
 
 INCLUDE "data/mapHeaders/copycatshouse1f.asm"
 INCLUDE "scripts/copycatshouse1f.asm"
@@ -7455,8 +7467,9 @@ MarowakPicFront:     INCBIN "pic/bmon/marowak.pic"
 MarowakPicBack:      INCBIN "pic/monback/marowakb.pic"
 ENDC
 
+SECTION "field moves", ROMX,BANK[$37]
 
-
+INCLUDE "engine/overworld/field_moves.asm"
 
 IF DEF(_OPTION_BEACH_HOUSE)
 SECTION "bank3C",ROMX[$4314],BANK[$3C]

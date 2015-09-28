@@ -152,3 +152,4 @@ PredefPointers:: ; 4fe79 (13:7e79)
 	add_predef DrawHP2
 	add_predef DisplayElevatorFloorMenu
 	add_predef OaksAideScript
+	add_predef TryFieldMove
