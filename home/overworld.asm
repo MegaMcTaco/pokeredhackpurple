@@ -2003,6 +2003,7 @@ LoadSurfingPlayerSpriteGraphics:: ; 1055 (0:1055)
 LoadBikePlayerSpriteGraphics:: ; 105d (0:105d)
     ld de,RedCyclingSprite
     ld hl,vNPCSprites
+	
 
 LoadPlayerSpriteGraphicsCommon:: ; 1063 (0:1063)
 	push de

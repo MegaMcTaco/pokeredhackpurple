@@ -1018,6 +1018,10 @@ OaksLabText5: ; 1d248 (7:5248)
 .asm_1d2c8
 	ld hl, OaksLabAroundWorldText
 	call PrintText
+	lb bc, POKE_BALL, 5
+	call GiveItem
+	ld hl, OaksLabGivePokeballsText
+	call PrintText
 	jr .asm_1d2ed
 .asm_1d2d0
 	CheckAndSetEvent EVENT_GOT_POKEBALLS_FROM_OAK

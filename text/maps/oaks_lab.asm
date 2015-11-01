@@ -164,7 +164,7 @@ _OaksLabAroundWorldText:: ; 95045 (25:5045)
 	done
 
 _OaksLabGivePokeballsText1:: ; 9506d (25:506d)
-	text "OAK: You can't get"
+	text "You can't get"
 	line "detailed data on"
 	cont "#MON by just"
 	cont "seeing them."
