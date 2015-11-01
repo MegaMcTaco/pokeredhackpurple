@@ -1991,18 +1991,18 @@ RunMapScript:: ; 101b (0:101b)
 	ret
 
 LoadWalkingPlayerSpriteGraphics:: ; 104d (0:104d)
-	ld de,RedSprite
-	ld hl,vNPCSprites
-	jr LoadPlayerSpriteGraphicsCommon
+    ld de,RedSprite ; $4180
+    ld hl,vNPCSprites
+    jr LoadPlayerSpriteGraphicsCommon
 
 LoadSurfingPlayerSpriteGraphics:: ; 1055 (0:1055)
-	ld de,SeelSprite
-	ld hl,vNPCSprites
-	jr LoadPlayerSpriteGraphicsCommon
+    ld de,SeelSprite
+    ld hl,vNPCSprites
+    jr LoadPlayerSpriteGraphicsCommon
 
 LoadBikePlayerSpriteGraphics:: ; 105d (0:105d)
-	ld de,RedCyclingSprite
-	ld hl,vNPCSprites
+    ld de,RedCyclingSprite
+    ld hl,vNPCSprites
 
 LoadPlayerSpriteGraphicsCommon:: ; 1063 (0:1063)
 	push de

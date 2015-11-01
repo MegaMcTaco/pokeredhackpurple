@@ -1687,8 +1687,8 @@ TwoOptionMenu_RestoreScreenTiles: ; 7656 (1:7656)
 TwoOptionMenuStrings: ; 7671 (1:7671)
 	db 4,3,0
 	dw .YesNoMenu
-	db 6,3,0
-	dw .NorthWestMenu
+	db 5,3,0
+	dw .BoyGirlMenu
 	db 6,3,0
 	dw .SouthEastMenu
 	db 6,3,0
@@ -1706,8 +1706,8 @@ TwoOptionMenuStrings: ; 7671 (1:7671)
 	db "NO",$4E,"YES@"
 .YesNoMenu ; 76a0 (1:36a0)
 	db "YES",$4E,"NO@"
-.NorthWestMenu ; 76a7 (1:36a7)
-	db "NORTH",$4E,"WEST@"
+.BoyGirlMenu ; 76a7 (1:36a7)
+	db "BOY",$4E,"GIRL@"
 .SouthEastMenu ; 76b2 (1:36b2)
 	db "SOUTH",$4E,"EAST@"
 .NorthEastMenu ; 76bd (1:36bd)
@@ -4939,6 +4939,8 @@ UpdateHPBar_Hook:
 
 SECTION "NPC Sprites 1", ROMX, BANK[NPC_SPRITES_1]
 
+GiovanniSprite:        INCBIN "gfx/sprites/giovanni.2bpp"
+RocketSprite:          INCBIN "gfx/sprites/rocket.2bpp"
 OakAideSprite:         INCBIN "gfx/sprites/oak_aide.2bpp"
 RockerSprite:          INCBIN "gfx/sprites/rocker.2bpp"
 SwimmerSprite:         INCBIN "gfx/sprites/swimmer.2bpp"
@@ -5021,6 +5023,7 @@ INCLUDE "engine/menu/status_screen.asm"
 INCLUDE "engine/menu/party_menu.asm"
 
 RedPicFront:: INCBIN "pic/gstrainer/red.pic"
+GreenPicFront:: INCBIN "pic/trainer/green.pic"
 ShrinkPic1::  INCBIN "pic/trainer/shrink1.pic"
 ShrinkPic2::  INCBIN "pic/trainer/shrink2.pic"
 
@@ -5044,6 +5047,8 @@ SECTION "NPC Sprites 2", ROMX, BANK[NPC_SPRITES_2]
 
 RedCyclingSprite:     INCBIN "gfx/sprites/cycling.2bpp"
 RedSprite:            INCBIN "gfx/sprites/red.2bpp"
+GreenSprite:          INCBIN "gfx/sprites/green.2bpp"
+GreenCyclingSprite:   INCBIN "gfx/sprites/greencycling.2bpp"
 BlueSprite:           INCBIN "gfx/sprites/blue.2bpp"
 OakSprite:            INCBIN "gfx/sprites/oak.2bpp"
 BugCatcherSprite:     INCBIN "gfx/sprites/bug_catcher.2bpp"
@@ -5065,8 +5070,6 @@ SailorSprite:         INCBIN "gfx/sprites/sailor.2bpp"
 CookSprite:           INCBIN "gfx/sprites/cook.2bpp"
 BikeShopGuySprite:    INCBIN "gfx/sprites/bike_shop_guy.2bpp"
 MrFujiSprite:         INCBIN "gfx/sprites/mr_fuji.2bpp"
-GiovanniSprite:       INCBIN "gfx/sprites/giovanni.2bpp"
-RocketSprite:         INCBIN "gfx/sprites/rocket.2bpp"
 MediumSprite:         INCBIN "gfx/sprites/medium.2bpp"
 WaiterSprite:         INCBIN "gfx/sprites/waiter.2bpp"
 ErikaSprite:          INCBIN "gfx/sprites/erika.2bpp"
@@ -5467,7 +5470,11 @@ PidgeotPicBack:     INCBIN "pic/gsmonback/pidgeotb.pic"
 StarmiePicFront:    INCBIN "pic/gsmon/starmie.pic"
 StarmiePicBack:     INCBIN "pic/gsmonback/starmieb.pic"
 RedPicBack:         INCBIN "pic/gstrainer/redb.pic"
+GreenPicBack:       INCBIN "pic/trainer/greenb.pic"
 OldManPic:          INCBIN "pic/gstrainer/oldman.pic"
+GreenFishingTilesFront: INCBIN "gfx/green_fishing_tile_front.2bpp"
+GreenFishingTilesBack:  INCBIN "gfx/green_fishing_tile_back.2bpp"
+GreenFishingTilesSide:  INCBIN "gfx/green_fishing_tile_side.2bpp"
 
 GastlyPicFront:     INCBIN "pic/gsmon/gastly.pic"
 GastlyPicBack:      INCBIN "pic/gsmonback/gastlyb.pic"

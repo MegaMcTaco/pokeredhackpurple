@@ -528,6 +528,12 @@ StartMenu_TrainerInfo: ; 13460 (4:7460)
 DrawTrainerInfo: ; 1349a (4:749a)
 	ld de,RedPicFront
 	lb bc, BANK(RedPicFront), $01
+	ld a, [wPlayerGender]
+	and a 
+	jr z, .AreBoy
+	ld de, GreenPicFront
+	ld bc,(BANK(GreenPicFront) << 8) | $01
+.AreBoy
 	predef DisplayPicCenteredOrUpperRight
 	call DisableLCD
 	coord hl, 0, 2

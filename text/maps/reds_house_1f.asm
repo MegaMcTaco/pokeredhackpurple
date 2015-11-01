@@ -17,6 +17,25 @@ ENDC
 	cont "for you."
 	done
 
+_MomWakeUpText2::
+	text "MOM: Right."
+	line "All girls leave"
+IF DEF(_YELLOW)
+	cont "home someday."
+ELSE
+	cont "home some day."
+ENDC
+	cont "It said so on TV."
+
+	para "It's a good thing"
+	line "that you have new"
+	cont "running shoes!"
+	
+	para "PROF.OAK, next"
+	line "door, is looking"
+	cont "for you."
+	done	
+	
 _MomHealText1::
 IF DEF(_YELLOW)
 	text "MOM: ",$52,", if"

@@ -2274,7 +2274,6 @@ wPokedexSeen:: ; d30a
 	flag_array NUM_POKEMON
 wPokedexSeenEnd::
 
-
 wNumBagItems:: ; d31d
 	ds 1
 wBagItems:: ; d31e
@@ -3089,6 +3088,9 @@ W_DAYCAREMONNAME:: ds NAME_LENGTH ; da49
 W_DAYCAREMONOT::   ds NAME_LENGTH ; da54
 
 wDayCareMon:: box_struct wDayCareMon ; da5f
+
+wPlayerGender::
+    ds 1
 
 wMainDataEnd::
 

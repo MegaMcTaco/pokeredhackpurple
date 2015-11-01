@@ -10,9 +10,16 @@ RedsHouse1FText1: ; 4816f (12:416f) Mom
 	ld a, [wd72e]
 	bit 3, a
 	jr nz, .heal ; if player has received a Pokémon from Oak, heal team
+	ld a, [wPlayerGender]
+	and a 
+	jr nz, .girl
 	ld hl, MomWakeUpText
 	call PrintText
 	jr .done
+.girl 
+    ld hl, MomWakeUpText2
+    call PrintText
+    jr .done	
 .heal
 	call MomHealPokemon
 .done
@@ -21,6 +28,10 @@ RedsHouse1FText1: ; 4816f (12:416f) Mom
 MomWakeUpText: ; 48185 (12:4185)
 	TX_FAR _MomWakeUpText
 	db "@"
+	
+MomWakeUpText2: ; 48185 (12:4185)
+    TX_FAR _MomWakeUpText2
+    db "@"	
 
 MomHealPokemon: ; 4818a (12:418a)
 	ld hl, MomHealText1

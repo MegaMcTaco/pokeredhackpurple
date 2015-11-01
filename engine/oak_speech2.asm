@@ -1,5 +1,8 @@
 ChoosePlayerName: ; 695d (1:695d)
 	call OakSpeechSlidePicRight
+	ld a, [wPlayerGender]   ; Added gender check
+    and a        ; Added gender check
+    jr nz, .AreGirl ; Skip to girl names if you are a girl instead
 	ld de, DefaultNamesPlayer
 	call DisplayIntroNameTextBox
 	ld a, [wCurrentMenuItem]
@@ -10,6 +13,17 @@ ChoosePlayerName: ; 695d (1:695d)
 	ld de, wPlayerName
 	call OakSpeechSlidePicLeft
 	jr .done
+.AreGirl ; Copy of the boy naming routine, just with girl's names
+    ld de, DefaultNamesGirl ; $6aa8
+    call DisplayIntroNameTextBox
+    ld a, [wCurrentMenuItem] ; wCurrentMenuItem
+    and a
+    jr z, .customName
+    ld hl, DefaultNamesGirlList ; $6af2
+    call GetDefaultName
+    ld de, wPlayerName ; wd158
+    call OakSpeechSlidePicLeft
+    jr .done ; End of new Girl Names routine
 .customName
 	ld hl, wPlayerName
 	xor a ; NAME_PLAYER_SCREEN
@@ -22,6 +36,12 @@ ChoosePlayerName: ; 695d (1:695d)
 	call Delay3
 	ld de, RedPicFront
 	ld b, BANK(RedPicFront)
+	ld a, [wPlayerGender] ; Added gender check
+    and a      ; Added gender check
+    jr z, .AreBoy3
+    ld de, GreenPicFront
+    ld b, BANK(GreenPicFront)
+.AreBoy3
 	call IntroDisplayPicCenteredOrUpperRight
 .done
 	ld hl, YourNameIsText
@@ -195,6 +215,13 @@ DefaultNamesPlayer: ; 6aa8 (1:6aa8)
 	next "JACK"
 	db   "@"
 
+DefaultNamesGirl:
+    db   "NEW NAME"
+    next "GREEN"
+    next "LAYLA"
+    next "LILY"
+    db   "@"	
+	
 DefaultNamesRival: ; 6abe (1:6abe)
 	db   "NEW NAME"
 	next "BLUE"
@@ -211,6 +238,13 @@ DefaultNamesPlayer: ; 6aa8 (1:6aa8)
 	next "JOHN"
 	db   "@"
 
+DefaultNamesGirl:
+    db   "NEW NAME"
+    next "GREEN"
+    next "LAYLA"
+    next "LILY"
+    db   "@"		
+	
 DefaultNamesRival: ; 6abe (1:6abe)
 	db   "NEW NAME"
 	next "RED"
@@ -264,12 +298,17 @@ DefaultNamesPlayerList: ; 6af2 (1:6af2)
 	db "NEW NAME@RED@ASH@JACK@"
 DefaultNamesRivalList: ; 6b08 (1:6b08)
 	db "NEW NAME@BLUE@GARY@JOHN@"
+DefaultNamesGirlList:
+    db "NEW NAME@GREEN@LAYLA@LILY@"
 ENDC
+
 IF DEF(_BLUE)
 DefaultNamesPlayerList: ; 6af2 (1:6af2)
 	db "NEW NAME@BLUE@GARY@JOHN@"
 DefaultNamesRivalList: ; 6b08 (1:6b08)
 	db "NEW NAME@RED@ASH@JACK@"
+DefaultNamesGirlList:
+    db "NEW NAME@GREEN@LAYLA@LILY@"	
 ENDC
 IF DEF(_YELLOW)
 DefaultNamesPlayerList:

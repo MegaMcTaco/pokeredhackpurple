@@ -1,12 +1,12 @@
 MtMoon3Object: ; 0x49fdb (size=102)
 	db $3 ; border block
 
-	db $4 ; warps
+	db $5 ; warps
 	db $9, $19, $1, MT_MOON_2
 	db $11, $15, $4, MT_MOON_2
 	db $1b, $f, $5, MT_MOON_2
 	db $7, $5, $6, MT_MOON_2
-
+	
 	db $0 ; signs
 
 	db $9 ; objects
