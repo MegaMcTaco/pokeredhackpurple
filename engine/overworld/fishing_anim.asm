@@ -4,7 +4,7 @@ FishingAnim: ; 707b6 (1c:47b6)
 	ld hl, wd736
 	set 6, [hl] ; reserve the last 4 OAM entries
 	ld a, [wPlayerGender] ; added gender check
-    bit 2, a      ; added gender check
+    and a      ; added gender check
     jr z, .BoySpriteLoad
     ld de, GreenSprite
     ld hl, vNPCSprites
@@ -17,7 +17,7 @@ FishingAnim: ; 707b6 (1c:47b6)
 .KeepLoadingSpriteStuff
 	call CopyVideoData
 	ld a, [wPlayerGender] ; added gender check
-    bit 2, a      ; added gender check
+    and a      ; added gender check
     jr z, .BoyTiles ; skip loading Green's stuff if you're Red
 	ld a, $4
 	ld hl, GreenFishingTiles
