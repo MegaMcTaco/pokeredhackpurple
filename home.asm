@@ -811,8 +811,6 @@ UncompressMonSprite:: ; 1627 (0:1627)
 .GotBank
 	jp UncompressSpriteData
 
-	
-SECTION "LoadMonFrontSprite", ROM0[$1665]
 
 ; de: destination location
 LoadMonFrontSprite:: ; 1665 (0:1665)
@@ -3195,7 +3193,6 @@ LoadHpBarAndStatusTilePatterns:: ; 36c0 (0:36c0)
 IF GEN_2_GRAPHICS
 	callba LoadHPBarAndEXPBar
 	ret
-	ds $17
 ELSE
 	ld a, [rLCDC]
 	bit 7, a ; is the LCD enabled?

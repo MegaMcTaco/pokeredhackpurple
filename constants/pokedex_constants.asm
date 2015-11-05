@@ -105,9 +105,9 @@ const_value = 1
 	const DEX_EXEGGUTOR  ; 103
 	const DEX_CUBONE     ; 104
 	const DEX_MAROWAK    ; 105
-	const DEX_HITMONLEE  ; 106
-	const DEX_HITMONCHAN ; 107
-	const DEX_LICKITUNG  ; 108
+	const DEX_HITMONLEE  ; 106 - Trade only
+	const DEX_HITMONCHAN ; 107 - Trade only
+	const DEX_LICKITUNG  ; 108 - Trade only
 	const DEX_KOFFING    ; 109
 	const DEX_WEEZING    ; 110
 	const DEX_RHYHORN    ; 111
@@ -121,25 +121,25 @@ const_value = 1
 	const DEX_SEAKING    ; 119
 	const DEX_STARYU     ; 120
 	const DEX_STARMIE    ; 121
-	const DEX_MR_MIME    ; 122
-	const DEX_SCYTHER    ; 123
+	const DEX_MR_MIME    ; 122 - Trade only
+	const DEX_SCYTHER    ; 123 - Bug Gym Prize or Safari Zone
 	const DEX_JYNX       ; 124
 	const DEX_ELECTABUZZ ; 125
 	const DEX_MAGMAR     ; 126
-	const DEX_PINSIR     ; 127
+	const DEX_PINSIR     ; 127 - Bug Gym Prize or Safari Zone
 	const DEX_TAUROS     ; 128
 	const DEX_MAGIKARP   ; 129
 	const DEX_GYARADOS   ; 130
 	const DEX_LAPRAS     ; 131
 	const DEX_DITTO      ; 132
-	const DEX_EEVEE      ; 133
+	const DEX_EEVEE      ; 133 - Route 3 and 16
 	const DEX_VAPOREON   ; 134
 	const DEX_JOLTEON    ; 135
 	const DEX_FLAREON    ; 136
 	const DEX_PORYGON    ; 137
-	const DEX_OMANYTE    ; 138
+	const DEX_OMANYTE    ; 138 - Fossil or trade only
 	const DEX_OMASTAR    ; 139
-	const DEX_KABUTO     ; 140
+	const DEX_KABUTO     ; 140 - Fossil or trade only
 	const DEX_KABUTOPS   ; 141
 	const DEX_AERODACTYL ; 142
 	const DEX_SNORLAX    ; 143
@@ -156,12 +156,12 @@ const_value = 1
 	const DEX_GLACEON    ; 154
 	const DEX_ESPEON     ; 155
 	const DEX_SYLVEON    ; 156
-	const DEX_HERACROSS  ; 157
+	const DEX_HERACROSS  ; 157 - Vidirian Forest/Safari Zone only
 	const DEX_SCIZOR     ; 158
-	const DEX_SKARMORY   ; 159
-	const DEX_HOUNDOUR   ; 160
-	const DEX_HOUNDOOM   ; 161
-	const DEX_SPINARAK   ; 162
+	const DEX_SKARMORY   ; 159 - Celadon Mansion Outside only
+	const DEX_HOUNDOUR   ; 160 - Prize only
+	const DEX_HOUNDOOM   ; 161 
+	const DEX_SPINARAK   ; 162 - Prize only
 	const DEX_ARIADOS    ; 163
 	
 NUM_POKEMON    EQU 163

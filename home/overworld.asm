@@ -1992,6 +1992,11 @@ RunMapScript:: ; 101b (0:101b)
 
 LoadWalkingPlayerSpriteGraphics:: ; 104d (0:104d)
     ld de,RedSprite ; $4180
+	ld a, [wPlayerGender]
+	and a 
+	jr z, .AreGuy1
+	ld de,GreenSprite
+.AreGuy1
     ld hl,vNPCSprites
     jr LoadPlayerSpriteGraphicsCommon
 
@@ -2002,6 +2007,11 @@ LoadSurfingPlayerSpriteGraphics:: ; 1055 (0:1055)
 
 LoadBikePlayerSpriteGraphics:: ; 105d (0:105d)
     ld de,RedCyclingSprite
+	ld a, [wPlayerGender]
+	and a 
+	jr z, .AreGuy2
+	ld de,GreenCyclingSprite
+.AreGuy2
     ld hl,vNPCSprites
 	
 

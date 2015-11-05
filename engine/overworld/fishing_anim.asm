@@ -26,7 +26,7 @@ FishingAnim: ; 707b6 (1c:47b6)
     ld a, $4
 	ld hl, RedFishingTiles
 .ContinueRoutine
-	call LoadAnimSpriteGfx
+	call LoadAnimSpriteGfx2
 	ld a, [wSpriteStateData1 + 2]
 	ld c, a
 	ld b, $0
@@ -152,3 +152,35 @@ GreenFishingTiles: ; newly added table of Green's sprites
     dw RedFishingRodTiles
     db 3, BANK(RedFishingRodTiles)
     dw vNPCSprites2 + $7d0	
+	
+LoadAnimSpriteGfx2: ; 71771 (1c:5771)
+; Load animated sprite tile patterns into VRAM during V-blank. hl is the address
+; of an array of structures that contain arguments for CopyVideoData and a is
+; the number of structures in the array.
+    ld bc, $0
+.loop
+    push af
+    push bc
+    push hl
+    add hl, bc
+    ld a, [hli]
+    ld e, a
+    ld a, [hli]
+    ld d, a
+    ld a, [hli]
+    ld c, a
+    ld a, [hli]
+    ld b, a
+    ld a, [hli]
+    ld h, [hl]
+    ld l, a
+    call CopyVideoData
+    pop hl
+    pop bc
+    ld a, $6
+    add c
+    ld c, a
+    pop af
+    dec a
+    jr nz, .loop
+    ret
