@@ -277,6 +277,8 @@ OverworldLoopLessDelay::
 	bit 6,a ; jumping a ledge?
 	jr nz,.normalPlayerSpriteAdvancement
 	call BikeSpeedup ; if riding a bike and not jumping a ledge
+	call BikeSpeedup ; added
+	call BikeSpeedup ; added
 	jr .notRunning
 .normalPlayerSpriteAdvancement
 ; Add running shoes
