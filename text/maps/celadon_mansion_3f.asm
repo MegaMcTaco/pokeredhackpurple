@@ -69,16 +69,26 @@ _MeetMewGuyText::
    text "For completing"
    line "your #DEX..."
    cont "I have a surprise"
+   cont "for you!"
    
    para "Here is one last"
-   line "#MON as a reward!"
+   line "#MON for you"
+   cont "as a reward!"
    done
    
 _HeresYourMewText::
    text "MEW can learn"
-   line "every single move!"
-   cont "Many believe it"
-   cont "is the ancestor"
-   cont "of all #MON!"
+   line "every move!"
+   
+   para "Many believe"
+   line "that it is the"
+   cont "ancestor of"
+   cont "all #MON!"
    done
    
+_GaveMewText::
+   text "Congratulations"
+   line "once again for"
+   cont "completing your"
+   cont "#DEX!"
+   done

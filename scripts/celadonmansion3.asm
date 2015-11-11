@@ -32,6 +32,7 @@ DirectorText: ; 487b2 (12:47b2)
 	call CountSetBits
 	ld a, [wNumSetBits]
 	cp 150
+	jr nz, .gotmew
 	jr nc, .CompletedDex
 	ld hl, .GameDesigner
 	jr .done
@@ -55,18 +56,31 @@ DirectorText: ; 487b2 (12:47b2)
 .givemew
     ld hl, .MeetMewGuyText
     call PrintText
+	call z, WaitForTextScrollButtonPress
     lb bc, MEW, 5
     call GivePokemon
-    jr nc, .done
     ld a, [wSimulatedJoypadStatesEnd]
     and a
     call z, WaitForTextScrollButtonPress
     call EnableAutoTextBoxDrawing
     ld hl, .HeresYourMewText
     call PrintText
-    ld hl, wd72e
-    set 0, [hl]
-    jp TextScriptEnd
+	ld hl, wd72e
+	set 0, [hl]
+	jr z, .gotmew
+.gotmew
+    ld hl, .GaveMewText
+	call PrintText
+   	jp TextScriptEnd
+	
+.GaveMewText
+	TX_FAR _GaveMewText
+	db $6
+	TX_ASM
+	callab DisplayDiploma
+	ld a, $1
+	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
+	jp TextScriptEnd	
     
 .MeetMewGuyText
     TX_FAR _MeetMewGuyText
