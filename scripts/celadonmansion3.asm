@@ -49,9 +49,32 @@ DirectorText: ; 487b2 (12:47b2)
 	TX_FAR _CompletedDexText
 	db $6
 	TX_ASM
-	callab DisplayDiploma
-	ld a, $1
-	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
+    ld a, [wd72e]
+    and a ; got mew?
+    jr z, .givemew
+.givemew
+    ld hl, .MeetMewGuyText
+    call PrintText
+    lb bc, MEW, 5
+    call GivePokemon
+    jr nc, .done
+    ld a, [wSimulatedJoypadStatesEnd]
+    and a
+    call z, WaitForTextScrollButtonPress
+    call EnableAutoTextBoxDrawing
+    ld hl, .HeresYourMewText
+    call PrintText
+    ld hl, wd72e
+    set 0, [hl]
+    jp TextScriptEnd
+    
+.MeetMewGuyText
+    TX_FAR _MeetMewGuyText
+    db "@"
+
+.HeresYourMewText
+    TX_FAR _HeresYourMewText
+    db "@"
 	jp TextScriptEnd
 
 GameFreakPCText1: ; 487eb (12:47eb)

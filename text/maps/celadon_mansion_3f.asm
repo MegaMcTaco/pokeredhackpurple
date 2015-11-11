@@ -65,3 +65,20 @@ _CeladonMansion3Text8:: ; 9d189 (27:5189)
 	line "Development Room"
 	done
 
+_MeetMewGuyText:: 
+   text "For completing"
+   line "your #DEX..."
+   cont "I have a surprise"
+   
+   para "Here is one last"
+   line "#MON as a reward!"
+   done
+   
+_HeresYourMewText::
+   text "MEW can learn"
+   line "every single move!"
+   cont "Many believe it"
+   cont "is the ancestor"
+   cont "of all #MON!"
+   done
+   
