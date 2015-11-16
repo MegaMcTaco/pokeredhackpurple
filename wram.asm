@@ -3092,6 +3092,9 @@ wDayCareMon:: box_struct wDayCareMon ; da5f
 wPlayerGender::
     ds 1
 
+wExtraFlags::
+    ds 1	
+	
 wMainDataEnd::
 
 

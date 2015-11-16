@@ -32,7 +32,6 @@ DirectorText: ; 487b2 (12:47b2)
 	call CountSetBits
 	ld a, [wNumSetBits]
 	cp 150
-	jr nz, .gotmew
 	jr nc, .CompletedDex
 	ld hl, .GameDesigner
 	jr .done
@@ -50,9 +49,9 @@ DirectorText: ; 487b2 (12:47b2)
 	TX_FAR _CompletedDexText
 	db $6
 	TX_ASM
-    ld a, [wd72e]
+    ld a, [wExtraFlags]
     and a ; got mew?
-    jr z, .givemew
+	jr z, .givemew
 .givemew
     ld hl, .MeetMewGuyText
     call PrintText
@@ -65,7 +64,7 @@ DirectorText: ; 487b2 (12:47b2)
     call EnableAutoTextBoxDrawing
     ld hl, .HeresYourMewText
     call PrintText
-	ld hl, wd72e
+	ld hl, wExtraFlags
 	set 0, [hl]
 	jr z, .gotmew
 .gotmew

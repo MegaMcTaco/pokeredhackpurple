@@ -7482,6 +7482,10 @@ SECTION "fishing animation", ROMX,BANK[$3C]
 
 INCLUDE "engine/overworld/fishing_anim.asm"
 
+SECTION "random stuff", ROMX,BANK[$3A]
+
+INCLUDE "engine/splashscreens/players_in_intro.asm"
+
 IF DEF(_OPTION_BEACH_HOUSE)
 SECTION "bank3C",ROMX[$4314],BANK[$3C]
 

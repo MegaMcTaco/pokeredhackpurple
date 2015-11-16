@@ -65,6 +65,9 @@ ENDC
 	;ld a,[wd732]
 	;bit 1,a ; possibly a debug mode bit
 	;jp nz,.skipChoosingNames
+	
+	callba ShowPlayerLargePics
+	
 	ld hl,BoyGirlText  ; added to the same file as the other oak text
     call PrintText     ; show this text
     call BoyGirlChoice ; added routine at the end of this file
