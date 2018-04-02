@@ -13,10 +13,10 @@ IF DEF(_YELLOW)
 	db CUBONE,    MACHOKE,   2,"RICKY@@@@@@"
 ELSE
 	db POLIWAG,   CHARMANDER,0,"BLAZE@@@@@@" ; Route 11 - Only place (if not starter)
-	db ABRA,      MR_MIME,   0,"MARCEL@@@@@" ; Route 2 - Only place to find
+	db ABRA,      MR_MIME,   0,"KRUSTY@@@@@" ; Route 2 - Only place to find
 	db TANGELA,   OMANYTE,   2,"BONES@@@@@@" ; Pewter Museum - Only place (if not fossil)
 	db PONYTA,    HITMONLEE, 0,"BRUCE@@@@@@" ; Cinnabar Island - Only place to find
-	db FEAROW,    SKARMORY,  2,"TALON@@@@@@" ; Vermillion City - Only place to find
+	db FEAROW,    FARFETCH_D,2,"OLIVER@@@@@" ; Vermillion City - Only place to find
 	db SLOWBRO,   LICKITUNG, 0,"GENE@@@@@@@" ; Route 18 - Only place to find
 	db ODDISH,    SQUIRTLE,  1,"HYDRO@@@@@@" ; Cerulean City - Only place (if not starter)
 	db GROWLITHE, HITMONCHAN,1,"JACKIE@@@@@" ; Cinnabar Island - Only place to find

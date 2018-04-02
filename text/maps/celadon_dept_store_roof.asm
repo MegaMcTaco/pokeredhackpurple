@@ -53,9 +53,9 @@ _CeladonMartRoofText_4850f:: ; 9cca5 (27:4ca5)
 IF DEF(_YELLOW)
 	line "ROCK SLIDE!@@"
 ELSE
-	line "ROCK SLIDE!"
+	line "CONFUSION!"
 
-	para "It can spook the"
+	para "It can confuse the"
 	line "target sometimes!@@"
 ENDC
 

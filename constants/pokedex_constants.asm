@@ -156,8 +156,8 @@ const_value = 1
 	const DEX_GLACEON    ; 154
 	const DEX_ESPEON     ; 155
 	const DEX_SYLVEON    ; 156
-	const DEX_HERACROSS  ; 157 - Vidirian Forest/Safari Zone only
-	const DEX_SCIZOR     ; 158
+	const DEX_HERACROSS  ; 157 - Fighting Dojo Prize
+	const DEX_SCIZOR     ; 158 - Fighting Dojo Prize/Steel Stone
 	const DEX_SKARMORY   ; 159 - Celadon Mansion Outside only
 	const DEX_HOUNDOUR   ; 160 - Prize only
 	const DEX_HOUNDOOM   ; 161 

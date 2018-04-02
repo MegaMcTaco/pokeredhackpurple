@@ -54,12 +54,12 @@ _TM34ExplanationText:: ; 980c0 (26:40c0)
 	cont "carefully!"
 
 	para "TM34 contains"
-	line "BIDE!"
+	line "ROCK SLIDE!"
 
 	para "Your #MON will"
-	line "absorb damage in"
-	cont "battle then pay"
-	cont "it back double!"
+	line "inflict damage"
+	cont "that may cause"
+	cont "flinching!"
 	done
 
 _TM34NoRoomText:: ; 981ab (26:41ab)

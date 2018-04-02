@@ -3317,7 +3317,7 @@ ELSE
 	text " you"
 	line "traded to me"
 
-	para "went and evolved!"
+	para "is awesome!"
 ENDC
 	done
 

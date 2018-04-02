@@ -9,7 +9,7 @@ DungeonMons1:
 		db 52,SANDSLASH
 		db 54,VENOMOTH
 		db 54,PARASECT
-		db 55,DITTO
+		db 55,ELECTABUZZ
 		db 60,DITTO
 	ELSE
 		db 46,GOLBAT

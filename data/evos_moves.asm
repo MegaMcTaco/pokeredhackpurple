@@ -530,7 +530,7 @@ Mon123_EvosMoves: ; 3b324 (e:7324)
 	db 24,DOUBLE_TEAM
 	db 29,SLASH
 	db 35,SWORDS_DANCE
-	db 42,AGILITY
+	db 42,STEEL_WING
 	db 0
 
 Mon120_EvosMoves: ; 3b332 (e:7332)
@@ -1030,7 +1030,7 @@ Mon159_EvosMoves: ; 3b4e1 (e:74e1)
 	db 9,METAL_CLAW
 	db 12,AIR_CUTTER
 	db 17,FURY_ATTACK
-	db 20,QUICK_ATTACK
+	db 20,IRON_TAIL
 	db 23,SWIFT
 	db 31,AGILITY
 	db 34,STEEL_WING

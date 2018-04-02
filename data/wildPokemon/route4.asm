@@ -11,7 +11,7 @@ Route4Mons:
 		db 12,RATTATA
 		db 12,MEOWTH
 		db 8,JIGGLYPUFF
-		db 12,FARFETCH_D
+		db 12,EEVEE
 	ENDC
 
 	IF DEF(_BLUE) || DEF(_GREEN)

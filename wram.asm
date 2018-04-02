@@ -2278,7 +2278,7 @@ wNumBagItems:: ; d31d
 	ds 1
 wBagItems:: ; d31e
 ; item, quantity
-	ds 20 * 2
+	ds BAG_ITEM_CAPACITY * 2
 	ds 1 ; end
 
 wPlayerMoney:: ; d347
@@ -2591,7 +2591,7 @@ wNumBoxItems:: ; d53a
 	ds 1
 wBoxItems:: ; d53b
 ; item, quantity
-	ds 50 * 2
+	ds PC_ITEM_CAPACITY * 2
 	ds 1 ; end
 
 wCurrentBoxNum:: ; d5a0
@@ -2841,6 +2841,11 @@ W_ROUTE18GATECURSCRIPT:: ; d669
 
 	ds 78
 wGameProgressFlagsEnd::
+
+; unused bytes originally allocated with game progress flags
+	ds 114
+
+
 
 wEvolutionData::
 	ds 56

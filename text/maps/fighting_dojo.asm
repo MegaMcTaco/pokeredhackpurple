@@ -119,7 +119,7 @@ IF DEF(_YELLOW)
 ELSE
 	line "fast-slicing"
 ENDC
-	cont "SCYTHER?"
+	cont "SCIZOR?"
 	done
 
 _WantHitmonchanText:: ; a1b70 (28:5b70)
@@ -129,7 +129,7 @@ IF DEF(_YELLOW)
 ELSE
 	line "hard-crushing"
 ENDC
-	cont "PINSIR?"
+	cont "HERACROSS?"
 	done
 
 _OtherHitmonText:: ; a1b9a (28:5b9a)

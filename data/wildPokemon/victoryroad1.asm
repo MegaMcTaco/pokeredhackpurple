@@ -20,7 +20,7 @@ PlateauMons1:
 		db 39,SANDSLASH
 		db 42,RHYHORN
 		db 41,GRAVELER
-		db 41,GOLBAT
+		db 41,ELECTABUZZ
 		db 42,MACHOKE
 		db 43,MAROWAK
 	ENDC
