@@ -7486,6 +7486,7 @@ INCLUDE "engine/overworld/fishing_anim.asm"
 SECTION "random stuff", ROMX,BANK[$3A]
 
 INCLUDE "engine/splashscreens/players_in_intro.asm"
+INCLUDE "engine/mon_gender.asm"
 
 SeelSprite:           INCBIN "gfx/sprites/seel.2bpp"
 

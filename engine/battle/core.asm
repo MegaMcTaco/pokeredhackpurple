@@ -1913,6 +1913,9 @@ DrawPlayerHUDAndHPBar: ; 3cd60 (f:4d60)
 	coord hl, 10, 7
 IF GEN_2_GRAPHICS
 	call PlaceString
+	ld a, [wBattleMonSpecies]
+	ld [wGenderTemp], a
+	call PrintPlayerMonGender
 	call PrintEXPBar
 ELSE
 	call CenterMonName
@@ -1977,6 +1980,9 @@ DrawEnemyHUDAndHPBar: ; 3cdec (f:4dec)
 	coord hl, 1, 0
 	call CenterMonName
 	call PlaceString
+	ld a, [wEnemyMonSpecies]
+	ld [wGenderTemp], a
+	call PrintEnemyMonGender
 IF GEN_2_GRAPHICS
 	coord hl, 6, 1
 ELSE
@@ -8953,3 +8959,47 @@ BattleMonPartyAttr:
 	ld bc, wPartyMon2 - wPartyMon1
 	jp AddNTimes
 ENDC
+
+PrintEnemyMonGender: ; called during battle
+	; get gender
+	ld de, wEnemyMonDVs
+	callba GetMonGender
+	ld a, [wGenderTemp]
+	and a
+	jr z, .noGender
+	dec a
+	jr z, .male
+	; else female
+	ld a, "♀"
+	jr .printSymbol
+.male
+	ld a, "♂"
+	jr .printSymbol
+.noGender
+	ld a, " "
+.printSymbol
+	coord hl, 9, 1
+	ld [hl], a
+	ret
+
+PrintPlayerMonGender: ; called during battle
+	; get gender
+	ld de, wBattleMonDVs
+	callba GetMonGender
+	ld a, [wGenderTemp]
+	and a
+	jr z, .noGender
+	dec a
+	jr z, .male
+	; else female
+	ld a, "♀"
+	jr .printSymbol
+.male
+	ld a, "♂"
+	jr .printSymbol
+.noGender
+	ld a, " "
+.printSymbol
+	coord hl, 17, 8
+	ld [hl], a
+	ret
