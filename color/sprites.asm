@@ -408,6 +408,8 @@ SpritePaletteAssignments: ; Characters on the overworld
 	; 0x48: SPRITE_LYING_OLD_MAN
 	db 4
 
+	; 0X49: SPRITE_FOSSIL
+	db PAL_BROWN
 
 AnimationTileset1Palettes:
 	INCBIN "color/animtileset1palettes.bin"

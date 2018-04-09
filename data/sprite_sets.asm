@@ -549,3 +549,8 @@ SpriteSheetPointerTable: ; 17b27 (5:7b27)
 	dw LyingOldManSprite
 	db $40 ; byte count
 	db BANK(LyingOldManSprite)
+
+	; SPRITE_FOSSIL
+	dw FossilSprite
+	db $40 ; byte count
+	db BANK(FossilSprite)

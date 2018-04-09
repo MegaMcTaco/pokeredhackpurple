@@ -15,8 +15,8 @@ MtMoon3Object: ; 0x49fdb (size=102)
 	object SPRITE_ROCKET, $f, $16, STAY, DOWN, $3, OPP_ROCKET, $2
 	object SPRITE_ROCKET, $1d, $b, STAY, UP, $4, OPP_ROCKET, $3
 	object SPRITE_ROCKET, $1d, $11, STAY, LEFT, $5, OPP_ROCKET, $4
-	object SPRITE_OMANYTE, $c, $6, STAY, NONE, $6 ; person
-	object SPRITE_OMANYTE, $d, $6, STAY, NONE, $7 ; person
+	object SPRITE_FOSSIL, $c, $6, STAY, NONE, $6, DOME_FOSSIL
+	object SPRITE_FOSSIL, $d, $6, STAY, NONE, $7, HELIX_FOSSIL
 	object SPRITE_BALL, $19, $15, STAY, NONE, $8, HP_UP
 	object SPRITE_BALL, $1d, $5, STAY, NONE, $9, TM_01
 
