@@ -5562,7 +5562,6 @@ INCLUDE "engine/game_corner_slots.asm"
 SECTION "bankE",ROMX,BANK[$E]
 
 INCLUDE "data/moves.asm"
-BaseStats: INCLUDE "data/base_stats.asm"
 INCLUDE "data/cries.asm"
 INCLUDE "engine/battle/unused_stats_functions.asm"
 INCLUDE "engine/battle/scroll_draw_trainer_pic.asm"
@@ -7479,6 +7478,9 @@ ENDC
 SECTION "field moves", ROMX,BANK[$37]
 
 INCLUDE "engine/overworld/field_moves.asm"
+
+SECTION "bank39", ROMX,BANK[$39]
+BaseStats: INCLUDE "data/base_stats.asm"
 
 SECTION "fishing animation", ROMX,BANK[$3C]
 

@@ -2648,6 +2648,8 @@ GetSavedEndBattleTextPointer:: ; 33b7 (0:33b7)
 TrainerEndBattleText:: ; 33cf (0:33cf)
 	TX_FAR _TrainerNameText
 	TX_ASM
+	;TX_FAR _TrainerNameText
+	db $08
 	call GetSavedEndBattleTextPointer
 	call TextCommandProcessor
 	jp TextScriptEnd
@@ -4857,3 +4859,15 @@ DelayFrameHook:
 	pop de
 	pop bc
 	ret
+	
+SetCustomName:
+; INPUTS: hl = pointer to name
+; OUTPUTS: trainer name stored in wCurTrainerName, hl points to byte immediately after name
+	ld de, wCurTrainerName
+.loop
+	ld a, [hli]
+	ld [de],a
+	inc de
+	cp "@"
+	ret z
+	jr .loop

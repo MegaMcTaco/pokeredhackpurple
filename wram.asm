@@ -3095,6 +3095,11 @@ W_DAYCAREMONOT::   ds NAME_LENGTH ; da54
 
 wDayCareMon:: box_struct wDayCareMon ; da5f
 
+wCurTrainerName::
+; used to store individual trainer names
+; TODO: Same as wLinkEnemyTrainerName
+	ds 13
+
 wPlayerGender::
     ds 1
 
