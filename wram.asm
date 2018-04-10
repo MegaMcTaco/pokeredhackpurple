@@ -1560,8 +1560,15 @@ wBattleMon:: battle_struct wBattleMon ; d014
 W_TRAINERCLASS:: ; d031
 	ds 1
 
+; unused?	
 	ds 1
 
+wTrainerPicID::
+; Defaults to trainer class, can be changed with trainer type $FE
+	ds 1	
+	
+wTrainerPicBank:: ds 1
+	
 wTrainerPicPointer:: ; d033
 	ds 2
 	ds 1

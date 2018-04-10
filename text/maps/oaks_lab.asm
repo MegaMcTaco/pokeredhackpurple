@@ -22,7 +22,7 @@ ELSE
 	cont "greedy like you!"
 
 	para "Go ahead and"
-	line "choose, ", $52, "!"
+	line "choose, <PLAYER>!"
 	done
 ENDC
 
@@ -80,7 +80,7 @@ _OaksLabMonEnergeticText:: ; 94e80 (25:4e80)
 	prompt
 
 _OaksLabReceivedMonText:: ; 94ea0 (25:4ea0)
-	text $52, " received"
+	text "<PLAYER> received"
 	line "a @"
 	TX_RAM wcd6d
 	text "!@@"

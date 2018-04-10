@@ -4970,7 +4970,6 @@ SnorlaxSprite:         INCBIN "gfx/sprites/snorlax.2bpp"
 OldAmberSprite:        INCBIN "gfx/sprites/old_amber.2bpp"
 LyingOldManSprite:     INCBIN "gfx/sprites/lying_old_man.2bpp"
 
-
 SECTION "Graphics", ROMX, BANK[GFX]
 
 PokemonLogoGraphics:            INCBIN "gfx/gs/new_pokemon_logo.2bpp"
@@ -6618,7 +6617,6 @@ Interior_Block:    INCBIN "gfx/blocksets/interior.bst"
 Plateau_GFX:       INCBIN "gfx/tilesets/plateau.t10.2bpp"
 Plateau_Block:     INCBIN "gfx/blocksets/plateau.bst"
 
-
 SECTION "bank1A",ROMX,BANK[$1A]
 
 INCLUDE "engine/battle/decrement_pp.asm"
@@ -7482,6 +7480,26 @@ INCLUDE "engine/overworld/field_moves.asm"
 SECTION "bank39", ROMX,BANK[$39]
 BaseStats: INCLUDE "data/base_stats.asm"
 
+SECTION "trainer pics 2", ROMX,BANK[$41]
+
+ExecutiveFPic::  INCBIN "pic/trainer/executivef.pic"
+ExecutiveMPic::  INCBIN "pic/trainer/executivem.pic"
+RockerFPic::     INCBIN "pic/trainer/rockerf.pic"
+JessieJamesPic:: INCBIN "pic/trainer/jessiejames.pic"
+CosplayGirlPic:: INCBIN "pic/trainer/cosplaygirl.pic"
+JaninePic::      INCBIN "pic/trainer/janine.pic"
+TraceyPic::      INCBIN "pic/trainer/tracey.pic"
+PiTrainerPic::   INCBIN "pic/trainer/pi.pic"
+HexManiacPic::   INCBIN "pic/trainer/hex_maniac.pic"
+JessiePic::      INCBIN "pic/trainer/jessie.pic"
+JamesPic::       INCBIN "pic/trainer/james.pic"
+RocketFPic::     INCBIN "pic/trainer/rocketf.pic"
+FlanneryPic::    INCBIN "pic/trainer/flannery.pic"
+SwimmerFPic::    INCBIN "pic/trainer/swimmerf.pic"
+YoungCouplePic:: INCBIN "pic/trainer/young_couple.pic"
+
+INCLUDE "engine/battle/get_trainer_pic_pointers.asm"
+
 SECTION "fishing animation", ROMX,BANK[$3C]
 
 INCLUDE "engine/overworld/fishing_anim.asm"
@@ -7492,6 +7510,7 @@ INCLUDE "engine/splashscreens/players_in_intro.asm"
 INCLUDE "engine/mon_gender.asm"
 
 SeelSprite:           INCBIN "gfx/sprites/seel.2bpp"
+FlanneryOverworld:	  INCBIN "gfx/sprites/flannery.2bpp"
 
 IF DEF(_OPTION_BEACH_HOUSE)
 SECTION "bank3C",ROMX[$4314],BANK[$3C]

@@ -80,7 +80,6 @@ Mansion1TrainerHeader0: ; 44334 (11:4334)
 
 Mansion1Text1: ; 44341 (11:4341)
 	TX_ASM
-	db $08 ; asm
 	ld hl, Mansion1TrainerHeader0
 	call TalkToTrainer
 	jp TextScriptEnd

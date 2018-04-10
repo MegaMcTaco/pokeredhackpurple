@@ -71,4 +71,3 @@ const_value = 1
 	trainer_const FLANNERY      ; $3D
 	trainer_const JESSIE        ; $3E
 	trainer_const JAMES         ; $3F
-	trainer_const GIOVANNI_2    ; $40

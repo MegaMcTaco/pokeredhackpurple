@@ -25,7 +25,7 @@ _FuchsiaGymText9:: ; a0069 (28:4069)
 	done
 
 _ReceivedTM06Text:: ; a00eb (28:40eb)
-	text $52, " received"
+	text "<PLAYER> received"
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"
