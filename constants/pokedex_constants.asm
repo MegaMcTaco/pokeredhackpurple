@@ -156,12 +156,23 @@ const_value = 1
 	const DEX_GLACEON    ; 154
 	const DEX_ESPEON     ; 155
 	const DEX_SYLVEON    ; 156
-	const DEX_HERACROSS  ; 157 - Fighting Dojo Prize
+	const DEX_HERACROSS  ; 157 - Fighting Dojo Prize/Safari Zone 
 	const DEX_SCIZOR     ; 158 - Fighting Dojo Prize/Steel Stone
-	const DEX_SKARMORY   ; 159 - Celadon Mansion Outside only
-	const DEX_HOUNDOUR   ; 160 - Prize only
-	const DEX_HOUNDOOM   ; 161 
-	const DEX_SPINARAK   ; 162 - Prize only
-	const DEX_ARIADOS    ; 163
+	const DEX_SKARMORY   ; 159 - Celadon Mansion Outside Only
+	const DEX_HOUNDOUR   ; 160 - Prize Only
+	const DEX_HOUNDOOM   ; 161 - Level 24 Evolution
+	const DEX_SPINARAK   ; 162 - Prize Only
+	const DEX_ARIADOS    ; 163 - Level 22 Evolution
+	const DEX_MARILL     ; 164 - Prize Only 
+	const DEX_AZUMARILL  ; 165 - Level 18 Evolution
+	const DEX_STEELIX    ; 166 - Evolve Onix with Steel Stone 
+	const DEX_CROBAT     ; 167 - Evolve Golbat with Moon Stone 
+	const DEX_SLOWKING   ; 168 - Evolve Slowbro with Moon Stone 
+	const DEX_POLITOED   ; 169 - Evolve Poliwhirl with Moon Stone 
+	const DEX_KINGDRA    ; 170 - Evolve Seadra with Water Stone 
+	const DEX_BLISSEY    ; 171 - Evolve Chansey with Sun Stone 
+	const DEX_BELLOSSOM  ; 172 - Evolve Gloom with Sun Stone 
+	const DEX_TOGEPI     ; 173 - Game Corner Prize Only 
+	const DEX_LUGIA      ; 174 - Make Event in Seafoam Islands after beating Elite 4
 	
-NUM_POKEMON    EQU 163
+NUM_POKEMON    EQU 174

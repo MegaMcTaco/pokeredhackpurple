@@ -7185,7 +7185,33 @@ SpinarakPicFront::   INCBIN "pic/bmon/spinarak.pic"
 SpinarakPicBack::    INCBIN "pic/monback/spinarakb.pic"
 AriadosPicFront::    INCBIN "pic/bmon/ariados.pic"
 AriadosPicBack::     INCBIN "pic/monback/ariadosb.pic"
+MarillPicFront::		 INCBIN "pic/bmon/marill.pic"
+MarillPicBack::		 INCBIN "pic/monback/marill.pic"
+AzumarillPicFront::	 INCBIN "pic/bmon/azumarill.pic"
+AzumarillPicBack::    INCBIN "pic/monback/azumarill.pic"
+
+
 ENDC
+
+SECTION "bank42", ROMX, BANK[$42]
+SteelixPicFront::	 INCBIN "pic/bmon/steelix.pic"
+SteelixPicBack:: 	 INCBIN "pic/monback/steelix.pic"
+CrobatPicFront:: 	 INCBIN "pic/bmon/crobat.pic"
+CrobatPicBack::  	 INCBIN "pic/monback/crobat.pic"
+SlowkingPicFront:: 	 INCBIN "pic/bmon/slowking.pic"
+SlowkingPicBack:: 	 INCBIN "pic/monback/slowking.pic"
+PolitoedPicFront::	 INCBIN "pic/bmon/politoed.pic"
+PolitoedPicBack:: 	 INCBIN "pic/monback/politoed.pic"
+KingdraPicFront::	 INCBIN "pic/bmon/kingdra.pic"
+KingdraPicBack:: 	 INCBIN "pic/monback/kingdra.pic"
+BlisseyPicFront:: 	 INCBIN "pic/bmon/blissey.pic"
+BlisseyPicBack:: 	 INCBIN "pic/monback/blissey.pic"
+BellossomPicFront::	 INCBIN "pic/bmon/bellossom.pic"
+BellossomPicBack::	 INCBIN "pic/monback/bellossom.pic"
+TogepiPicFront::      INCBIN "pic/bmon/togepi.pic"
+TogepiPicBack::	 	 INCBIN "pic/monback/togepi.pic"
+LugiaPicFront::		 INCBIN "pic/bmon/lugia.pic"
+LugiaPicBack::		 INCBIN "pic/monback/lugiab.pic"
 
 IF !GEN_2_GRAPHICS
 SECTION "bank32",ROMX,BANK[$32]
@@ -7471,9 +7497,10 @@ JynxPicFront:        INCBIN "pic/bmon/jynx.pic"
 JynxPicBack:         INCBIN "pic/monback/jynxb.pic"
 MarowakPicFront:     INCBIN "pic/bmon/marowak.pic"
 MarowakPicBack:      INCBIN "pic/monback/marowakb.pic"
+
 ENDC
 
-SECTION "field moves", ROMX,BANK[$37]
+SECTION "field moves", ROMX,BANK[$38]
 
 INCLUDE "engine/overworld/field_moves.asm"
 
