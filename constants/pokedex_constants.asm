@@ -122,7 +122,7 @@ const_value = 1
 	const DEX_STARYU     ; 120
 	const DEX_STARMIE    ; 121
 	const DEX_MR_MIME    ; 122 - Trade only
-	const DEX_SCYTHER    ; 123 - Bug Gym Prize or Safari Zone
+	const DEX_SCYTHER    ; 123 
 	const DEX_JYNX       ; 124
 	const DEX_ELECTABUZZ ; 125
 	const DEX_MAGMAR     ; 126
@@ -156,14 +156,14 @@ const_value = 1
 	const DEX_GLACEON    ; 154
 	const DEX_ESPEON     ; 155
 	const DEX_SYLVEON    ; 156
-	const DEX_HERACROSS  ; 157 - Fighting Dojo Prize/Safari Zone 
-	const DEX_SCIZOR     ; 158 - Fighting Dojo Prize/Steel Stone
-	const DEX_SKARMORY   ; 159 - Celadon Mansion Outside Only
-	const DEX_HOUNDOUR   ; 160 - Prize Only
+	const DEX_HERACROSS  ; 157 - Fighting Dojo/Bug Gym Prize or Trade 
+	const DEX_SCIZOR     ; 158 - Fighting Dojo Prize/Bug Gym Prize or Steel Stone Evolution
+	const DEX_SKARMORY   ; 159 - Game Corner Prize Only
+	const DEX_HOUNDOUR   ; 160 - Game Corner Prize Only
 	const DEX_HOUNDOOM   ; 161 - Level 24 Evolution
-	const DEX_SPINARAK   ; 162 - Prize Only
+	const DEX_SPINARAK   ; 162 - Trade Only - Cinnabar Island
 	const DEX_ARIADOS    ; 163 - Level 22 Evolution
-	const DEX_MARILL     ; 164 - Prize Only 
+	const DEX_MARILL     ; 164 - Trade Only - Pewter Museum
 	const DEX_AZUMARILL  ; 165 - Level 18 Evolution
 	const DEX_STEELIX    ; 166 - Evolve Onix with Steel Stone 
 	const DEX_CROBAT     ; 167 - Evolve Golbat with Moon Stone 
@@ -172,7 +172,7 @@ const_value = 1
 	const DEX_KINGDRA    ; 170 - Evolve Seadra with Water Stone 
 	const DEX_BLISSEY    ; 171 - Evolve Chansey with Sun Stone 
 	const DEX_BELLOSSOM  ; 172 - Evolve Gloom with Sun Stone 
-	const DEX_TOGEPI     ; 173 - Game Corner Prize Only 
+	const DEX_TOGEPI     ; 173 - Celadon Mansion Outside Only
 	const DEX_LUGIA      ; 174 - Make Event in Seafoam Islands after beating Elite 4
 	
 NUM_POKEMON    EQU 174

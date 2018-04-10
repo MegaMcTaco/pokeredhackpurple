@@ -9,9 +9,9 @@ Route11Mons:
 		db 13,SPEAROW
 		db 13,DROWZEE
 		db 15,EKANS
-		db 17,SPEAROW
+		db 17,SANDSHREW
 		db 11,DROWZEE
-		db 15,DROWZEE
+		db 15,RATICATE
 	ENDC
 
 	IF DEF(_GREEN) || DEF(_BLUE)

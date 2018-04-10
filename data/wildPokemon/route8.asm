@@ -5,13 +5,13 @@ Route8Mons:
 		db 18,PIDGEY
 		db 18,MANKEY
 		db 17,EKANS
-		db 16,GROWLITHE
+		db 16,EEVEE
 		db 20,PIDGEY
 		db 20,MANKEY
 		db 19,EKANS
 		db 17,GROWLITHE
 		db 15,GROWLITHE
-		db 18,GROWLITHE
+		db 18,KADABRA
 	ENDC
 
 	IF DEF(_GREEN) || !DEF(_JAPAN) && DEF(_BLUE)

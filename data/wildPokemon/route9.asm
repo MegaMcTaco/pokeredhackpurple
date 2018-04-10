@@ -8,10 +8,10 @@ Route9Mons:
 		db 11,EKANS
 		db 13,SPEAROW
 		db 15,EKANS
-		db 17,RATTATA
-		db 17,SPEAROW
+		db 17,RATICATE
+		db 17,NIDORINO
 		db 13,EKANS
-		db 17,EKANS
+		db 17,NIDORINA
 	ENDC
 
 	IF DEF(_GREEN) || DEF(_BLUE)

@@ -12,14 +12,14 @@ IF DEF(_YELLOW)
 	db GROWLITHE, DEWGONG,   2,"CEZANNE@@@@"
 	db CUBONE,    MACHOKE,   2,"RICKY@@@@@@"
 ELSE
-	db POLIWAG,   CHARMANDER,0,"BLAZE@@@@@@" ; Route 11 - Only place (if not starter)
+	db VULPIX,    CHARMANDER,0,"BLAZE@@@@@@" ; Route 11 - Only place (if not starter)
 	db ABRA,      MR_MIME,   0,"KRUSTY@@@@@" ; Route 2 - Only place to find
-	db TANGELA,   OMANYTE,   2,"BONES@@@@@@" ; Pewter Museum - Only place (if not fossil)
+	db PIKACHU,   MARILL,    2,"MICKEY@@@@@" ; Pewter Museum - Only place to find
 	db PONYTA,    HITMONLEE, 0,"BRUCE@@@@@@" ; Cinnabar Island - Only place to find
 	db FEAROW,    FARFETCH_D,2,"OLIVER@@@@@" ; Vermillion City - Only place to find
-	db SLOWBRO,   LICKITUNG, 0,"GENE@@@@@@@" ; Route 18 - Only place to find
-	db ODDISH,    SQUIRTLE,  1,"HYDRO@@@@@@" ; Cerulean City - Only place (if not starter)
+	db TANGELA,   CHANSEY,   0,"EGGO@@@@@@@" ; Route 18 - Only place to find
+	db NIDORINA,  SQUIRTLE,  1,"HYDRO@@@@@@" ; Cerulean City - Only place (if not starter)
 	db GROWLITHE, HITMONCHAN,1,"JACKIE@@@@@" ; Cinnabar Island - Only place to find
-	db VENONAT,   KABUTO,    2,"CHOPS@@@@@@" ; Cinnabar Island - Only place (if not fossil)
-	db NIDORAN_M, BULBASAUR, 2,"MOW@@@@@@@@" ; Route 5 - Only place (if not starter)
+	db VENONAT,   SPINARAK,  2,"SPIDEY@@@@@" ; Cinnabar Island - Only place to find
+	db BELLSPROUT, BULBASAUR,2,"SPLIFF@@@@@" ; Route 5 - Only place (if not starter)
 ENDC

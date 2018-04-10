@@ -18,7 +18,7 @@ Route17Mons:
 		db 25,RATICATE
 		db 24,DODUO
 		db 27,RATICATE
-		db 26,DODUO
+		db 26,PONYTA
 		db 28,DODRIO
 		db 29,PERSIAN
 		db 25,DITTO

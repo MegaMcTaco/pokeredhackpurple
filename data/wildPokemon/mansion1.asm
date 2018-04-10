@@ -6,7 +6,7 @@ MansionMons1:
 		db 34,PONYTA
 		db 30,PONYTA
 		db 34,GROWLITHE
-		db 32,PONYTA
+		db 32,GRIMER
 		db 30,GRIMER
 		db 28,WEEZING
 		db 37,MUK
