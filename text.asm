@@ -1,18 +1,19 @@
-
+INCLUDE "charmap.asm"
 TEXT_1  EQU $20
-TEXT_2  EQU $21
-TEXT_3  EQU $22
-TEXT_4  EQU $23
-TEXT_5  EQU $24
-TEXT_6  EQU $25
-TEXT_7  EQU $26
-TEXT_8  EQU $27
-TEXT_9  EQU $28
-TEXT_10 EQU $29
-TEXT_11 EQU $2a
+TEXT_2  EQU TEXT_1 + 1
+TEXT_3  EQU TEXT_2 + 1
+TEXT_4  EQU TEXT_3 + 1
+TEXT_5  EQU TEXT_4 + 1
+TEXT_6  EQU TEXT_5 + 1
+TEXT_7  EQU TEXT_6 + 1
+TEXT_8  EQU TEXT_7 + 1
+TEXT_9  EQU TEXT_8 + 1
+TEXT_10 EQU TEXT_9 + 1
+TEXT_11 EQU TEXT_10 + 1
 
-POKEDEX_TEXT EQU $2b
-MOVE_NAMES   EQU $2c
+POKEDEX_TEXT   EQU TEXT_11 + 1
+POKEDEX_TEXT_2 EQU $37
+MOVE_NAMES     EQU POKEDEX_TEXT + 1
 
 INCLUDE "macros.asm"
 INCLUDE "hram.asm"
@@ -78,7 +79,7 @@ _PokeCenterSignText:: ; 800fc (20:40fc)
 	done
 
 _FoundItemText:: ; 80119 (20:4119)
-	text $52, " found"
+	text "<PLAYER> found"
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"
@@ -103,7 +104,7 @@ _OaksAideHiText:: ; 80143 (20:4143)
 	TX_RAM wOaksAideRewardItemName
 	text "!"
 
-	para "So, ", $52, "! Have"
+	para "So, <PLAYER>! Have"
 	line "you caught at"
 	cont "least @"
 	TX_NUM hOaksAideRequirement, 1, 3
@@ -152,7 +153,7 @@ _OaksAideHereYouGoText:: ; 8028c (20:428c)
 	prompt
 
 _OaksAideGotItemText:: ; 802d9 (20:42d9)
-	text $52, " got the"
+	text "<PLAYER> got the"
 	line "@"
 	TX_RAM wOaksAideRewardItemName
 	text "!@@"
@@ -244,14 +245,19 @@ INCLUDE "text/maps/seafoam_islands_b4f.asm"
 
 _AIBattleWithdrawText:: ; 880be (22:40be)
 	TX_RAM W_TRAINERNAME
-	text " with-"
-	line "drew @"
+	text " @"
+	TX_RAM wCurTrainerName
+	db $0
+	line "withdrew"
+	cont "@"
 	TX_RAM wEnemyMonNick
 	text "!"
 	prompt
 
 _AIBattleUseItemText:: ; 880d5 (22:40d5)
 	TX_RAM W_TRAINERNAME
+	text " @"
+	TX_RAM wCurTrainerName
 	db $0
 	line "used @"
 	TX_RAM wcd6d
@@ -270,7 +276,7 @@ _TradeWentToText:: ; 880ef (22:40ef)
 	done
 
 _TradeForText:: ; 88103 (22:4103)
-	text "For ", $52, "'s"
+	text "For <PLAYER>'s"
 	line "@"
 	TX_RAM wcf4b
 	text ","
@@ -312,7 +318,7 @@ _TradeWillTradeText:: ; 8816a (22:416a)
 	done
 
 _TradeforText:: ; 88180 (22:4180)
-	text "for ", $52, "'s"
+	text "for <PLAYER>'s"
 	line "@"
 	TX_RAM wcf4b
 	text "."
@@ -382,7 +388,7 @@ _GymStatueText1:: ; 88275 (22:4275)
 	db $0
 
 	para "WINNING TRAINERS:"
-	line $53
+	line "<RIVAL>"
 	done
 
 _GymStatueText2:: ; 882a5 (22:42a5)
@@ -394,8 +400,8 @@ _GymStatueText2:: ; 882a5 (22:42a5)
 	db $0
 
 	para "WINNING TRAINERS:"
-	line $53
-	cont $52
+	line "<RIVAL>"
+	cont "<PLAYER>"
 	done
 
 _ViridianCityPokecenterGuyText:: ; 882d7 (22:42d7)
@@ -646,7 +652,7 @@ _BillsHouseMonitorText:: ; 889cf (22:49cf)
 	done
 
 _BillsHouseInitiatedText:: ; 889fb (22:49fb)
-	text $52, " initiated"
+	text "<PLAYER> initiated"
 	line "TELEPORTER's Cell"
 	cont "Separator!@@"
 
@@ -820,7 +826,7 @@ _IndigoPlateauHQText:: ; 88f08 (22:4f08)
 	done
 
 _RedBedroomSNESText:: ; 88f27 (22:4f27)
-	text $52, " is"
+	text "<PLAYER> is"
 	line "playing the SNES!"
 	cont "...Okay!"
 	cont "It's time to go!"
@@ -1001,25 +1007,25 @@ _VermilionGymTrashFailText:: ; 8948c (22:548c)
 	cont "locks were reset!@@"
 
 _FoundHiddenItemText:: ; 894d0 (22:54d0)
-	text $52, " found"
+	text "<PLAYER> found"
 	line "@"
 	TX_RAM wcd6d
 	text "!@@"
 
 _HiddenItemBagFullText:: ; 894e1 (22:54e1)
-	text "But, ", $52, " has"
+	text "But, <PLAYER> has"
 	line "no more room for"
 	cont "other items!"
 	done
 
 _FoundHiddenCoinsText:: ; 8950b (22:550b)
-	text $52, " found"
+	text "<PLAYER> found"
 	line "@"
 	TX_BCD hCoins, $c2
 	text " coins!@@"
 
 _FoundHiddenCoins2Text:: ; 89523 (22:5523)
-	text $52, " found"
+	text "<PLAYER> found"
 	line "@"
 	TX_BCD hCoins, $c2
 	text " coins!@@"
@@ -1113,17 +1119,22 @@ _EnemyMonFaintedText:: ; 0x896c7
 	prompt
 
 _MoneyForWinningText:: ; 896dd (22:56dd)
-	text $52, " got ¥@"
+	text "<PLAYER> got ¥@"
 	TX_BCD wAmountMoneyWon, $c3
 	db $0
 	line "for winning!"
 	prompt
 
 _TrainerDefeatedText:: ; 896f9 (22:56f9)
-	text $52, " defeated"
+	text "<PLAYER> defeated"
 	line "@"
 	TX_RAM W_TRAINERNAME
 	text "!"
+	TX_RAM W_TRAINERNAME ; 0x89706
+	text " @"
+	TX_RAM wCurTrainerName
+	db $0
+	line "was defeated!"
 	prompt
 
 _PlayerMonFaintedText:: ; 8970c (22:570c)
@@ -1137,20 +1148,20 @@ _UseNextMonText:: ; 8971a (22:571a)
 	done
 
 _Sony1WinText:: ; 8972a (22:572a)
-	text $53, ": Yeah! Am"
+	text "<RIVAL>: Yeah! Am"
 	line "I great or what?"
 	prompt
 
 _PlayerBlackedOutText2:: ; 89748 (22:5748)
-	text $52, " is out of"
+	text "<PLAYER> is out of"
 	line "useable #MON!"
 
-	para $52, " blacked"
+	para "<PLAYER> blacked"
 	line "out!"
 	prompt
 
 _LinkBattleLostText:: ; 89772 (22:5772)
-	text $52, " lost to"
+	text "<PLAYER> lost to"
 	line "@"
 	TX_RAM W_TRAINERNAME
 	text "!"
@@ -1158,20 +1169,25 @@ _LinkBattleLostText:: ; 89772 (22:5772)
 
 _TrainerAboutToUseText:: ; 89784 (22:5784)
 	TX_RAM W_TRAINERNAME
-	text " is"
-	line "about to use"
+	text " @"
+	TX_RAM wCurTrainerName
+	db $0
+	line "is about to use"
 	cont"@"
 	TX_RAM wEnemyMonNick
 	text "!"
 
-	para "Will ", $52
+	para "Will <PLAYER>"
 	line "change #MON?"
 	done
 
 _TrainerSentOutText:: ; 897b4 (22:57b4)
 	TX_RAM W_TRAINERNAME
-	text " sent"
-	line "out @"
+	text " @"
+	TX_RAM wCurTrainerName
+	db $0
+	line "sent out"
+	cont "@"
 	TX_RAM wEnemyMonNick
 	text "!"
 	done
@@ -1501,8 +1517,10 @@ _EnemyAppearedText:: ; 89c4f (22:5c4f)
 
 _TrainerWantsToFightText:: ; 89c5e (22:5c5e)
 	TX_RAM W_TRAINERNAME
-	text " wants"
-	line "to fight!"
+	text " @"
+	TX_RAM wCurTrainerName
+	db $0
+	line "wants to fight!"
 	prompt
 
 _UnveiledGhostText:: ; 89c73 (22:5c73)
@@ -1578,7 +1596,7 @@ _SafariZoneAngryText:: ; 89d6a (22:5d6a)
 
 ; money related
 _PickUpPayDayMoneyText:: ; 89d80 (22:5d80)
-	text $52, " picked up"
+	text "<PLAYER> picked up"
 	line "¥@"
 	TX_BCD wTotalPayDayMoney, $c3
 	text "!"
@@ -1687,7 +1705,7 @@ _RareCandyText:: ; 89ee2 (22:5ee2)
 	text "!@@"
 
 _TurnedOnPC1Text:: ; 89efe (22:5efe)
-	text $52, " turned on"
+	text "<PLAYER> turned on"
 	line "the PC."
 	prompt
 
@@ -1715,7 +1733,7 @@ _AccessedMyPCText:: ; 89f7a (22:5f7a)
 	prompt
 
 _TurnedOnPC2Text:: ; 89fa9 (22:5fa9)
-	text $52, " turned on"
+	text "<PLAYER> turned on"
 	line "the PC."
 	prompt
 
@@ -1963,13 +1981,13 @@ _DoYouWantToNicknameText:: ; 0x8a605
 
 _YourNameIsText:: ; 8a62f (22:662f)
 	text "Right! So your"
-	line "name is ", $52, "!"
+	line "name is <PLAYER>!"
 	prompt
 
 _HisNameIsText:: ; 8a64a (22:664a)
 	text "That's right! I"
 	line "remember now! His"
-	cont "name is ", $53, "!"
+	cont "name is <RIVAL>!"
 	prompt
 
 _WillBeTradedText:: ; 8a677 (22:6677)
@@ -2188,7 +2206,7 @@ _WouldYouLikeToSaveText:: ; 9460e (25:460e)
 	done
 
 _GameSavedText:: ; 94630 (25:4630)
-	text $52, " saved"
+	text "<PLAYER> saved"
 	line "the game!"
 	done
 
@@ -2614,10 +2632,10 @@ _PokemonFaintedText:: ; a25b7 (28:65b7)
 	done
 
 _PlayerBlackedOutText:: ; a25c5 (28:65c5)
-	text $52, " is out of"
+	text "<PLAYER> is out of"
 	line "useable #MON!"
 
-	para $52, " blacked"
+	para "<PLAYER> blacked"
 	line "out!"
 	prompt
 
@@ -2897,7 +2915,7 @@ _CannotGetOffHereText:: ; a4168 (29:4168)
 	prompt
 
 _GotMonText:: ; a4180 (29:4180)
-	text $52, " got"
+	text "<PLAYER> got"
 	line "@"
 	TX_RAM wcd6d
 	text "!@@"
@@ -2994,7 +3012,7 @@ _ItemUseBallText06:: ; a6835 (29:6835)
 	text "!@@"
 
 _SurfingGotOnText:: ; a685e (29:685e)
-	text $52, " got on"
+	text "<PLAYER> got on"
 	line "@"
 	TX_RAM wcd6d
 	text "!"
@@ -3019,12 +3037,12 @@ _VitaminNoEffectText:: ; a689e (29:689e)
 	prompt
 
 _ThrewBaitText:: ; a68b8 (29:68b8)
-	text $52, " threw"
+	text "<PLAYER> threw"
 	line "some BAIT."
 	done
 
 _ThrewRockText:: ; a68cc (29:68cc)
-	text $52, " threw a"
+	text "<PLAYER> threw a"
 	line "ROCK."
 	done
 
@@ -3042,7 +3060,7 @@ _FluteWokeUpText:: ; a690c (29:690c)
 	prompt
 
 _PlayedFluteHadEffectText:: ; a6928 (29:6928)
-	text $52, " played the"
+	text "<PLAYER> played the"
 	line "# FLUTE.@@"
 
 _CoinCaseNumCoinsText:: ; a6940 (29:6940)
@@ -3124,7 +3142,7 @@ _MonCannotLearnMachineMoveText:: ; a6a6e (29:6a6e)
 	prompt
 
 _ItemUseNotTimeText:: ; a6aa6 (29:6aa6)
-	text "OAK: ", $52, "!"
+	text "OAK: <PLAYER>!"
 	line "This isn't the"
 	cont "time to use that! "
 	prompt
@@ -3170,7 +3188,7 @@ _BoxFullCannotThrowBallText:: ; a6b69 (29:6b69)
 SECTION "Text 11", ROMX, BANK[TEXT_11]
 
 _ItemUseText001:: ; a8000 (2a:4000)
-	text $52," used@@"
+	text "<PLAYER> used@@"
 
 _ItemUseText002:: ; a8009 (2a:4009)
 	TX_RAM wcf4b
@@ -3178,7 +3196,7 @@ _ItemUseText002:: ; a8009 (2a:4009)
 	done
 
 _GotOnBicycleText1:: ; a800f (2a:400f)
-	text $52, " got on the@@"
+	text "<PLAYER> got on the@@"
 
 _GotOnBicycleText2:: ; a801e (2a:401e)
 	TX_RAM wcf4b
@@ -3186,8 +3204,8 @@ _GotOnBicycleText2:: ; a801e (2a:401e)
 	prompt
 
 _GotOffBicycleText1:: ; a8024 (2a:4024)
-	text $52, " got off@@"
-
+	text "<PLAYER> got off@@"
+	
 _GotOffBicycleText2:: ; a8030 (2a:4030)
 	text "the @"
 	TX_RAM wcf4b
@@ -3227,7 +3245,7 @@ _ConnectCableText:: ; a809a (2a:409a)
 	prompt
 
 _TradedForText:: ; a80bc (2a:40bc)
-	text $52, " traded"
+	text "<PLAYER> traded"
 	line "@"
 	TX_RAM wInGameTradeGiveMonName
 	text " for"
@@ -3383,6 +3401,9 @@ SECTION "Pokedex Text", ROMX, BANK[POKEDEX_TEXT]
 
 INCLUDE "text/pokedex.asm"
 
+SECTION "Pokedex Text 2", ROMX, BANK[POKEDEX_TEXT_2]
+
+INCLUDE "text/pokedex2.asm"
 
 SECTION "Move Names", ROMX, BANK[MOVE_NAMES]
 

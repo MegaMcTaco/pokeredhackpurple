@@ -80,4 +80,9 @@ MonPartyData: ; 7190d (1c:590d)
 	dn SPRITE_BUG, SPRITE_BUG               ;Heracross/Scizor
 	dn SPRITE_BIRD_M, SPRITE_QUADRUPED      ;Skarmory/Houndour
 	dn SPRITE_QUADRUPED, SPRITE_BUG         ;Houndoom/Spinarak
-	dn SPRITE_BUG, SPRITE_BUG               ;Ariados/
+	dn SPRITE_BUG, SPRITE_FAIRY             ;Ariados/Marill
+	dn SPRITE_FAIRY, SPRITE_SNAKE			;Azumarill/Steelix
+	dn SPRITE_MON, SPRITE_MON				;Crobat/Slowking
+	dn SPRITE_MON, SPRITE_WATER				;Politoed/Kingdra
+	dn SPRITE_FAIRY, SPRITE_GRASS			;Blissey/Bellossom
+	dn SPRITE_FAIRY, SPRITE_BIRD_M			;Togepi/Lugia

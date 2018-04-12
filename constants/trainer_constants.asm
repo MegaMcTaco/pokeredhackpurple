@@ -18,7 +18,7 @@ const_value = 1
 	trainer_const BIKER         ; $0A
 	trainer_const BURGLAR       ; $0B
 	trainer_const ENGINEER      ; $0C
-	trainer_const JUGGLER_X     ; $0D
+	trainer_const COUPLE        ; $0D
 	trainer_const FISHER        ; $0E
 	trainer_const SWIMMER       ; $0F
 	trainer_const CUE_BALL      ; $10
@@ -31,8 +31,8 @@ const_value = 1
 	trainer_const BIRD_KEEPER   ; $17
 	trainer_const BLACKBELT     ; $18
 	trainer_const SONY1         ; $19
-	trainer_const PROF_OAK      ; $1A
-	trainer_const CHIEF         ; $1B
+	trainer_const SWIMMER_F     ; $1A
+	trainer_const ROCKET_F      ; $1B
 	trainer_const SCIENTIST     ; $1C
 	trainer_const GIOVANNI      ; $1D
 	trainer_const ROCKET        ; $1E
@@ -53,3 +53,21 @@ const_value = 1
 	trainer_const CHANNELER     ; $2D
 	trainer_const AGATHA        ; $2E
 	trainer_const LANCE         ; $2F
+	trainer_const HEX_MANIAC    ; $30
+	trainer_const PKMN_TRAINER  ; $31
+
+	; Entries below this are only sprites, not actual classes
+	trainer_const TRACEY        ; $32
+	trainer_const EXECUTIVE_F   ; $33
+	trainer_const EXECUTIVE_M   ; $34
+	trainer_const ROCKER_F      ; $35
+	trainer_const JESSIE_JAMES  ; $36
+	trainer_const COSPLAY_GIRL  ; $37
+	trainer_const JANINE        ; $38
+	trainer_const PLAYER_M      ; $39
+	trainer_const PLAYER_F      ; $3A
+	trainer_const PROF_OAK      ; $3B
+	trainer_const PI_TRAINER    ; $3C
+	trainer_const FLANNERY      ; $3D
+	trainer_const JESSIE        ; $3E
+	trainer_const JAMES         ; $3F

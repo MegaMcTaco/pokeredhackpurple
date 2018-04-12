@@ -28,7 +28,7 @@ ENDC
 	done
 
 _ReceivedTM24Text:: ; 9c0e0 (27:40e0)
-	text $52, " received "
+	text "<PLAYER> received "
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"

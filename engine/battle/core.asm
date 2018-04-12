@@ -6911,8 +6911,10 @@ InitBattleCommon: ; 3ef3d (f:6f3d)
 	sub 200
 	jp c, InitWildBattle
 	ld [W_TRAINERCLASS], a
+	ld [wTrainerPicID], a ; new
 	call GetTrainerInformation
 	callab ReadTrainer
+	callab LoadTrainerPicPointer ; new
 	call DoBattleTransitionAndInitBattleVariables
 	call _LoadTrainerPic
 	xor a

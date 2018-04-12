@@ -8,9 +8,9 @@ MansionMons3:
 		db 34,MAGMAR
 		db 40,WEEZING
 		db 34,GRIMER
-		db 38,WEEZING
+		db 38,PONYTA
 		db 36,GROWLITHE
-		db 42,PONYTA
+		db 42,RAPIDASH
 	ENDC
 
 	IF DEF(_GREEN) || !DEF(_JAPAN) && DEF(_BLUE)

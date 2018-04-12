@@ -107,7 +107,7 @@ const_value = 1
 	const DEX_MAROWAK    ; 105
 	const DEX_HITMONLEE  ; 106 - Trade only
 	const DEX_HITMONCHAN ; 107 - Trade only
-	const DEX_LICKITUNG  ; 108 - Trade only
+	const DEX_LICKITUNG  ; 108 
 	const DEX_KOFFING    ; 109
 	const DEX_WEEZING    ; 110
 	const DEX_RHYHORN    ; 111
@@ -122,24 +122,24 @@ const_value = 1
 	const DEX_STARYU     ; 120
 	const DEX_STARMIE    ; 121
 	const DEX_MR_MIME    ; 122 - Trade only
-	const DEX_SCYTHER    ; 123 - Bug Gym Prize or Safari Zone
+	const DEX_SCYTHER    ; 123 
 	const DEX_JYNX       ; 124
 	const DEX_ELECTABUZZ ; 125
 	const DEX_MAGMAR     ; 126
-	const DEX_PINSIR     ; 127 - Bug Gym Prize or Safari Zone
+	const DEX_PINSIR     ; 127 
 	const DEX_TAUROS     ; 128
 	const DEX_MAGIKARP   ; 129
 	const DEX_GYARADOS   ; 130
 	const DEX_LAPRAS     ; 131
 	const DEX_DITTO      ; 132
-	const DEX_EEVEE      ; 133 - Route 3 and 16
+	const DEX_EEVEE      ; 133 
 	const DEX_VAPOREON   ; 134
 	const DEX_JOLTEON    ; 135
 	const DEX_FLAREON    ; 136
 	const DEX_PORYGON    ; 137
-	const DEX_OMANYTE    ; 138 - Fossil or trade only
+	const DEX_OMANYTE    ; 138 
 	const DEX_OMASTAR    ; 139
-	const DEX_KABUTO     ; 140 - Fossil or trade only
+	const DEX_KABUTO     ; 140 
 	const DEX_KABUTOPS   ; 141
 	const DEX_AERODACTYL ; 142
 	const DEX_SNORLAX    ; 143
@@ -156,12 +156,23 @@ const_value = 1
 	const DEX_GLACEON    ; 154
 	const DEX_ESPEON     ; 155
 	const DEX_SYLVEON    ; 156
-	const DEX_HERACROSS  ; 157 - Fighting Dojo Prize
-	const DEX_SCIZOR     ; 158 - Fighting Dojo Prize/Steel Stone
-	const DEX_SKARMORY   ; 159 - Celadon Mansion Outside only
-	const DEX_HOUNDOUR   ; 160 - Prize only
-	const DEX_HOUNDOOM   ; 161 
-	const DEX_SPINARAK   ; 162 - Prize only
-	const DEX_ARIADOS    ; 163
+	const DEX_HERACROSS  ; 157 - Fighting Dojo/Bug Gym Prize 
+	const DEX_SCIZOR     ; 158 - Fighting Dojo Prize/Bug Gym Prize or Steel Stone Evolution
+	const DEX_SKARMORY   ; 159 - Game Corner Prize Only
+	const DEX_HOUNDOUR   ; 160 - Game Corner Prize Only
+	const DEX_HOUNDOOM   ; 161 - Level 24 Evolution
+	const DEX_SPINARAK   ; 162 - Trade Only - Cinnabar Island
+	const DEX_ARIADOS    ; 163 - Level 22 Evolution
+	const DEX_MARILL     ; 164 - Trade Only - Pewter Museum
+	const DEX_AZUMARILL  ; 165 - Level 18 Evolution
+	const DEX_STEELIX    ; 166 - Evolve Onix with Steel Stone 
+	const DEX_CROBAT     ; 167 - Evolve Golbat with Moon Stone 
+	const DEX_SLOWKING   ; 168 - Evolve Slowbro with Moon Stone 
+	const DEX_POLITOED   ; 169 - Evolve Poliwhirl with Moon Stone 
+	const DEX_KINGDRA    ; 170 - Evolve Seadra with Water Stone 
+	const DEX_BLISSEY    ; 171 - Evolve Chansey with Sun Stone 
+	const DEX_BELLOSSOM  ; 172 - Evolve Gloom with Sun Stone 
+	const DEX_TOGEPI     ; 173 - Celadon Mansion Outside Only
+	const DEX_LUGIA      ; 174 - Make Event in Seafoam Islands after beating Elite 4
 	
-NUM_POKEMON    EQU 163
+NUM_POKEMON    EQU 174

@@ -4,10 +4,10 @@ IslandMonsB1:
 		db 30,STARYU
 		db 30,HORSEA
 		db 32,SHELLDER
-		db 32,HORSEA
+		db 32,PSYDUCK
 		db 28,SLOWPOKE
 		db 30,SEEL
-		db 30,SLOWPOKE
+		db 30,SLOWBRO
 		db 28,JYNX
 		db 38,DEWGONG
 		db 37,SEADRA

@@ -65,7 +65,7 @@ ENDC
 	done
 
 _ReceivedTM11Text:: ; 98b7d (26:4b7d)
-	text $52, " received"
+	text "<PLAYER> received"
 	line "TM11!@@"
 
 _CeruleanGymText_5c7d3:: ; 98b90 (26:4b90)

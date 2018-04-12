@@ -3,12 +3,12 @@ IslandMonsB2:
 	IF DEF(_RED)
 		db 30,SEEL
 		db 30,SLOWPOKE
-		db 32,SEEL
+		db 32,KRABBY
 		db 32,SLOWPOKE
 		db 28,HORSEA
 		db 30,STARYU
-		db 30,HORSEA
-		db 28,SHELLDER
+		db 30,KINGLER
+		db 28,JYNX
 		db 30,GOLBAT
 		db 37,SLOWBRO
 	ENDC

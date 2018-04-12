@@ -1,7 +1,7 @@
 ZoneMonsCenter:
 	db $1E
 	IF DEF(_RED)
-		db 22,NIDORAN_M
+		db 22,DODUO
 		db 25,RHYHORN
 		db 22,VENONAT
 		db 24,EXEGGCUTE
@@ -10,7 +10,7 @@ ZoneMonsCenter:
 		db 31,NIDORINA
 		db 30,PARASECT
 		db 23,SCYTHER
-		db 23,CHANSEY
+		db 23,PINSIR
 	ENDC
 
 	IF DEF(_GREEN) || (!DEF(_JAPAN) && DEF(_BLUE))
