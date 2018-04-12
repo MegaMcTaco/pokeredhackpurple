@@ -1560,15 +1560,8 @@ wBattleMon:: battle_struct wBattleMon ; d014
 W_TRAINERCLASS:: ; d031
 	ds 1
 
-; unused?	
 	ds 1
 
-wTrainerPicID::
-; Defaults to trainer class, can be changed with trainer type $FE
-	ds 1	
-	
-wTrainerPicBank:: ds 1
-	
 wTrainerPicPointer:: ; d033
 	ds 2
 	ds 1
@@ -3101,11 +3094,6 @@ W_DAYCAREMONNAME:: ds NAME_LENGTH ; da49
 W_DAYCAREMONOT::   ds NAME_LENGTH ; da54
 
 wDayCareMon:: box_struct wDayCareMon ; da5f
-
-wCurTrainerName::
-; used to store individual trainer names
-; TODO: Same as wLinkEnemyTrainerName
-	ds 13
 
 wPlayerGender::
     ds 1

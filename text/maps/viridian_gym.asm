@@ -64,7 +64,7 @@ _ViridianGymText12:: ; 95fcc (25:5fcc)
 	done
 
 _ReceivedTM27Text:: ; 96082 (25:6082)
-	text "<PLAYER> received"
+	text $52, " received"
 	line "TM27!@@"
 
 _TM27ExplanationText:: ; 96095 (25:6095)

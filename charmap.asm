@@ -148,8 +148,6 @@ charmap "ょ", $E2
 charmap "ー", $E3
 
 charmap "@", $50
-charmap "<PLAYER>",$52
-charmap "<RIVAL>",$53
 charmap "#", $54
 ;charmap "POKé", $54
 charmap "…", $75

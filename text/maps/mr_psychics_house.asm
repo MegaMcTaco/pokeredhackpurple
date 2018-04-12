@@ -6,7 +6,7 @@ _TM29PreReceiveText:: ; a24fe (28:64fe)
 	prompt
 
 _ReceivedTM29Text:: ; a252a (28:652a)
-	text "<PLAYER> received"
+	text $52, " received"
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"

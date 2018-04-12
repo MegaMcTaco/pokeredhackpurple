@@ -34,7 +34,7 @@ ViridianMartParcelQuestText:: ; 95c79 (25:5c79)
 	line "Will you take it"
 	cont "to him?"
 
-	para "<PLAYER> got"
+	para $52, " got"
 	line "OAK's PARCEL!@@"
 
 _ViridianMartText2:: ; 95cd5 (25:5cd5)

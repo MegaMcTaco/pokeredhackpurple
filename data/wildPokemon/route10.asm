@@ -7,11 +7,11 @@ Route10Mons:
 		db 14,VOLTORB
 		db 11,EKANS
 		db 13,SPEAROW
-		db 15,RATTATA
-		db 17,MAGNEMITE
-		db 17,SANDSHREW
+		db 15,EKANS
+		db 17,VOLTORB
+		db 17,SPEAROW
 		db 13,EKANS
-		db 17,MACHOP
+		db 17,EKANS
 	ENDC
 
 	IF DEF(_BLUE) || DEF(_GREEN)

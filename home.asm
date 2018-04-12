@@ -1006,6 +1006,7 @@ GroundRoseText:: ; 24e0 (0:24e0)
 
 BoulderText:: ; 24e5 (0:24e5)
 	TX_FAR _BoulderText
+	db $08 ; asm
 	
 	ld a, [W_OBTAINEDBADGES]
 	bit 3,a ; RAINBOWBADGE
@@ -2647,7 +2648,6 @@ GetSavedEndBattleTextPointer:: ; 33b7 (0:33b7)
 TrainerEndBattleText:: ; 33cf (0:33cf)
 	TX_FAR _TrainerNameText
 	TX_ASM
-	;TX_FAR _TrainerNameText
 	call GetSavedEndBattleTextPointer
 	call TextCommandProcessor
 	jp TextScriptEnd
@@ -2964,20 +2964,19 @@ GetTrainerInformation:: ; 3566 (0:3566)
 	ld a, [wLinkState]
 	and a
 	jr nz, .linkBattle
-	ret nz
 	ld a, Bank(TrainerPicAndMoneyPointers)
 	call BankswitchHome
 	ld a, [W_TRAINERCLASS]
 	dec a
 	ld hl, TrainerPicAndMoneyPointers
-	ld bc, $3 ;originally 5
+	ld bc, $5
 	call AddNTimes
-;	ld de, wTrainerPicPointer
-;	ld a, [hli]
-;	ld [de], a
-;	inc de
-;	ld a, [hli]
-;	ld [de], a
+	ld de, wTrainerPicPointer
+	ld a, [hli]
+	ld [de], a
+	inc de
+	ld a, [hli]
+	ld [de], a
 	ld de, wTrainerBaseMoney
 	ld a, [hli]
 	ld [de], a
@@ -2986,12 +2985,12 @@ GetTrainerInformation:: ; 3566 (0:3566)
 	ld [de], a
 	jp BankswitchBack
 .linkBattle
-;	ld hl, wTrainerPicPointer
-;	ld de, RedPicFront
-;	ld [hl], e
-;	inc hl
-;	ld [hl], d
-;	ret
+	ld hl, wTrainerPicPointer
+	ld de, RedPicFront
+	ld [hl], e
+	inc hl
+	ld [hl], d
+	ret
 
 GetTrainerName:: ; 359e (0:359e)
 	jpba GetTrainerName_
@@ -4858,15 +4857,3 @@ DelayFrameHook:
 	pop de
 	pop bc
 	ret
-	
-SetCustomName:
-; INPUTS: hl = pointer to name
-; OUTPUTS: trainer name stored in wCurTrainerName, hl points to byte immediately after name
-	ld de, wCurTrainerName
-.loop
-	ld a, [hli]
-	ld [de],a
-	inc de
-	cp "@"
-	ret z
-	jr .loop

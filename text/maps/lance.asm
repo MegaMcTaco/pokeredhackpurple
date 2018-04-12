@@ -28,7 +28,7 @@ ENDC
 
 	para "Your LEAGUE"
 	line "challenge ends"
-	cont "with me, <PLAYER>!"
+	cont "with me, ", $52, "!"
 	done
 
 _LanceEndBattleText:: ; 85e64 (21:5e64)
@@ -43,7 +43,7 @@ _LanceAfterBattleText:: ; 85e9e (21:5e9e)
 	text "I still can't"
 	line "believe my"
 	cont "dragons lost to"
-	cont "you, <PLAYER>!"
+	cont "you, ", $52, "!"
 
 	para "You are now the"
 	line "#MON LEAGUE"
@@ -58,7 +58,7 @@ _LanceAfterBattleText:: ; 85e9e (21:5e9e)
 	line "another trainer!"
 	cont "His name is..."
 
-	para "<RIVAL>!"
+	para $53, "!"
 	line "He beat the ELITE"
 	cont "FOUR before you!"
 

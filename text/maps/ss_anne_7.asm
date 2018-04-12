@@ -3,7 +3,7 @@ _SSAnne7RubText:: ; 812dd (20:52dd)
 	line "I feel hideous..."
 	cont "Urrp! Seasick..."
 
-	para "<PLAYER> rubbed"
+	para $52, " rubbed"
 	line "the CAPTAIN's"
 	cont "back!"
 
@@ -35,7 +35,7 @@ ENDC
 	prompt
 
 _ReceivedHM01Text:: ; 8140d (20:540d)
-	text "<PLAYER> got"
+	text $52, " got"
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"

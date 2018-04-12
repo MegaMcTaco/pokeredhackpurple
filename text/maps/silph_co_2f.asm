@@ -10,7 +10,7 @@ _SilphCo2Text_59ded:: ; 82454 (20:6454)
 	prompt
 
 _ReceivedTM36Text:: ; 824ba (20:64ba)
-	text "<PLAYER> got"
+	text $52, " got"
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"

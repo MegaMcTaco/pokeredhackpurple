@@ -7,7 +7,7 @@ _CeladonPrizeRoomText1:: ; 9dee6 (27:5ee6)
 	done
 
 _CeladonPrizeRoomText2:: ; 9df24 (27:5f24)
-	text "New Johto #MON"
-	line "arrived today!"
+	text "I had a major"
+	line "haul today!"
 	done
 

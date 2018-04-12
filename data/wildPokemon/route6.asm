@@ -4,14 +4,14 @@ Route6Mons:
 	IF DEF(_RED)
 		db 13,ODDISH
 		db 13,PIDGEY
-		db 15,SPEAROW
+		db 15,PIDGEY
 		db 10,MANKEY
-		db 12,MEOWTH
+		db 12,MANKEY
 		db 15,ODDISH
-		db 16,BELLSPROUT
-		db 18,PIDGEOTTO
+		db 16,ODDISH
+		db 16,PIDGEY
 		db 14,MANKEY
-		db 16,ABRA
+		db 16,MANKEY
 		db $00
 	ENDC
 

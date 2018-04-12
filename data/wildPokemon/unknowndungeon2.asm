@@ -23,7 +23,7 @@ DungeonMons2:
 			db 52,MAROWAK
 		ENDC
 		db 52,ELECTRODE
-		db 56,KADABRA
+		db 56,CHANSEY
 		db 54,WIGGLYTUFF
 		db 55,DITTO
 		db 60,DITTO

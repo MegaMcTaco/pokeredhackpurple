@@ -78,22 +78,22 @@ PokedexEntryPointers: ; 4047e (10:447e)
 	dw MeowthDexEntry
 	dw KrabbyDexEntry
 	dw AriadosDexEntry
-	dw MarillDexEntry
-	dw AzumarillDexEntry
+	dw MissingNoDexEntry
+	dw MissingNoDexEntry
 	dw VulpixDexEntry
 	dw NinetalesDexEntry
 	dw PikachuDexEntry
 	dw RaichuDexEntry
-	dw SteelixDexEntry
-	dw CrobatDexEntry
+	dw MissingNoDexEntry
+	dw MissingNoDexEntry
 	dw DratiniDexEntry
 	dw DragonairDexEntry
 	dw KabutoDexEntry
 	dw KabutopsDexEntry
 	dw HorseaDexEntry
 	dw SeadraDexEntry
-	dw SlowkingDexEntry
-	dw PolitoedDexEntry
+	dw MissingNoDexEntry
+	dw MissingNoDexEntry
 	dw SandshrewDexEntry
 	dw SandslashDexEntry
 	dw OmanyteDexEntry
@@ -113,26 +113,26 @@ PokedexEntryPointers: ; 4047e (10:447e)
 	dw WeedleDexEntry
 	dw KakunaDexEntry
 	dw BeedrillDexEntry
-	dw KingdraDexEntry
+	dw MissingNoDexEntry
 	dw DodrioDexEntry
 	dw PrimeapeDexEntry
 	dw DugtrioDexEntry
 	dw VenomothDexEntry
 	dw DewgongDexEntry
-	dw BlisseyDexEntry
-	dw BellossomDexEntry
+	dw MissingNoDexEntry
+	dw MissingNoDexEntry
 	dw CaterpieDexEntry
 	dw MetapodDexEntry
 	dw ButterfreeDexEntry
 	dw MachampDexEntry
-	dw TogepiDexEntry
+	dw MissingNoDexEntry
 	dw GolduckDexEntry
 	dw HypnoDexEntry
 	dw GolbatDexEntry
 	dw MewtwoDexEntry
 	dw SnorlaxDexEntry
 	dw MagikarpDexEntry
-	dw LugiaDexEntry
+	dw MissingNoDexEntry
 	dw MissingNoDexEntry
 	dw MukDexEntry
 	dw MissingNoDexEntry
@@ -748,20 +748,6 @@ AriadosDexEntry:
 	TX_FAR _AriadosDexEntry
 	db "@"	
 	
-MarillDexEntry:
-	db "AQUA MOUSE@"
-	db 1,4
-	dw 180
-	TX_FAR _MarillDexEntry
-	db "@"	
-	
-AzumarillDexEntry:
-	db "AQUA RABBIT@"
-	db 2,7
-	dw 620
-	TX_FAR _AzumarillDexEntry
-	db "@"	
-	
 VulpixDexEntry: ; 40a71 (10:4a71)
 	db "FOX@"
 	db 2,0
@@ -790,20 +776,6 @@ RaichuDexEntry: ; 40a9a (10:4a9a)
 	TX_FAR _RaichuDexEntry
 	db "@"
 
-SteelixDexEntry:
-	db "Iron Snake@"
-	db 30,2
-	dw 8818
-	TX_FAR _SteelixDexEntry
-	db "@"
-
-CrobatDexEntry:
-	db "Bat@"
-	db 5,11
-	dw 1653
-	TX_FAR _CrobatDexEntry
-	db "@"	
-	
 DratiniDexEntry: ; 40aa9 (10:4aa9)
 	db "DRAGON@"
 	db 5,11
@@ -846,20 +818,6 @@ SeadraDexEntry: ; 40aff (10:4aff)
 	TX_FAR _SeadraDexEntry
 	db "@"
 
-SlowkingDexEntry:
-	db "Royal@"
-	db 6,7
-	dw 1753
-	TX_FAR _SlowkingDexEntry
-	db "@"
-
-PolitoedDexEntry:
-	db "Frog@"
-	db 3,7
-	dw 747
-	TX_FAR _PolitoedDexEntry
-	db "@"	
-	
 SandshrewDexEntry: ; 40b0f (10:4b0f)
 	db "MOUSE@"
 	db 2,0
@@ -993,13 +951,6 @@ BeedrillDexEntry: ; 40c3f (10:4c3f)
 	TX_FAR _BeedrillDexEntry
 	db "@"
 
-KingdraDexEntry:
-	db "Dragon@"
-	db 5,11
-	dw 3351
-	TX_FAR _KingdraDexEntry
-	db "@"	
-	
 DodrioDexEntry: ; 40c53 (10:4c53)
 	db "TRIPLEBIRD@"
 	db 5,11
@@ -1035,20 +986,6 @@ DewgongDexEntry: ; 40c9d (10:4c9d)
 	TX_FAR _DewgongDexEntry
 	db "@"
 
-BlisseyDexEntry:
-	db "Happiness@"
-	db 4,11
-	dw 1032
-	TX_FAR _BlisseyDexEntry
-	db "@"
-	
-BellossomDexEntry:
-	db "Flower@"
-	db 1,4
-	dw 128
-	TX_FAR _BellossomDexEntry
-	db "@"	
-	
 CaterpieDexEntry: ; 40caf (10:4caf)
 	db "WORM@"
 	db 1,0
@@ -1077,13 +1014,6 @@ MachampDexEntry: ; 40ce0 (10:4ce0)
 	TX_FAR _MachampDexEntry
 	db "@"
 
-TogepiDexEntry:
-	db "Spike Ball@"
-	db 1,0
-	dw 33
-	TX_FAR _TogepiDexEntry
-	db "@"	
-	
 GolduckDexEntry: ; 40cf4 (10:4cf4)
 	db "DUCK@"
 	db 5,7
@@ -1126,13 +1056,6 @@ MagikarpDexEntry: ; 40d44 (10:4d44)
 	TX_FAR _MagikarpDexEntry
 	db "@"
 
-LugiaDexEntry:
-	db "Diving@"
-	db 17,1
-	dw 4762
-	TX_FAR _LugiaDexEntry
-	db "@"	
-	
 MukDexEntry: ; 40d52 (10:4d52)
 	db "SLUDGE@"
 	db 3,11
