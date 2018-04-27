@@ -57,7 +57,7 @@ FishingGroup3: ; e987 (3:6987)
 FishingGroup4: ; e98e (3:698e)
 	db 2
 	db 15,KRABBY
-	db 15,SHELLDER
+	db 15,POLIWAG
 
 FishingGroup5: ; e993 (3:6993)
 	db 2

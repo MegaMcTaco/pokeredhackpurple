@@ -14,7 +14,7 @@ ItemPrices: ; 4608 (1:4608)
 	money 250   ; ICE_HEAL
 	money 200   ; AWAKENING
 	money 200   ; PARLYZ_HEAL
-	money 3000  ; FULL_RESTORE
+	money 0  ; FULL_RESTORE
 	money 2500  ; MAX_POTION
 	money 1500  ; HYPER_POTION
 	money 700   ; SUPER_POTION
@@ -33,12 +33,12 @@ ItemPrices: ; 4608 (1:4608)
 	money 2100  ; FIRE_STONE
 	money 2100  ; THUNDER_STONE
 	money 2100  ; WATER_STONE
-	money 9800  ; HP_UP
+	money 0  ; HP_UP
 	money 9800  ; PROTEIN
 	money 9800  ; IRON
 	money 9800  ; CARBOS
 	money 9800  ; CALCIUM
-	money 9800  ; RARE_CANDY
+	money 0  ; RARE_CANDY
 	money 0     ; DOME_FOSSIL
 	money 0     ; HELIX_FOSSIL
 	money 0     ; SECRET_KEY
@@ -50,7 +50,7 @@ ItemPrices: ; 4608 (1:4608)
 	money 10000 ; NUGGET
 	money 9800  ; XXX PP_UP
 	money 1000  ; POKE_DOLL
-	money 600   ; FULL_HEAL
+	money 0   ; FULL_HEAL
 	money 1500  ; REVIVE
 	money 4000  ; MAX_REVIVE
 	money 700   ; GUARD_SPEC_

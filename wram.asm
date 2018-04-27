@@ -283,6 +283,7 @@ wSerialEnemyMonsPatchList:: ; c5d0
 
 	ds 80
 
+wTempDVs::	
 wGenderTemp::
 wTempPic::
 wOverworldMap:: ; c6e8

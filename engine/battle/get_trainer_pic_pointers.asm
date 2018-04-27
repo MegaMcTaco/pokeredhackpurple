@@ -1,8 +1,10 @@
 LoadTrainerPicPointer:: ; New function to load the pointer for the trainer's pic
 	ld a, [wLinkState]
 	and a
-	jr nz, .linkBattle
+	ld a, PLAYER_M
+	jr nz, .linkBattle ; If it is a link battle, skip checking wTrainerPicID and load Red's sprite
 	ld a, [wTrainerPicID]
+.linkBattle
 	dec a
 	ld hl, TrainerPicPointers
 	ld bc, $3 ; length of each entry
@@ -16,15 +18,6 @@ LoadTrainerPicPointer:: ; New function to load the pointer for the trainer's pic
 	inc de
 	ld a, [hl] ; get last byte of pointer
 	ld [de], a
-	ret
-.linkBattle
-	ld hl, wTrainerPicBank
-	ld a, BANK(RedPicFront)
-	ld [hli], a
-	ld de, RedPicFront
-	ld [hl],e
-	inc hl
-	ld [hl],d
 	ret
 
 
@@ -77,7 +70,7 @@ TrainerPicPointers:
 	add_pic ChannelerPic
 	add_pic AgathaPic
 	add_pic LancePic
-	add_pic FlanneryPic
+	add_pic HexManiacPic
 	add_pic RedPicFront ; placeholder, pic is loaded manually in trainer data
 	add_pic TraceyPic
 	add_pic ExecutiveFPic
@@ -90,4 +83,7 @@ TrainerPicPointers:
 	add_pic GreenPicFront
 	add_pic ProfOakPic
 	add_pic PiTrainerPic
-	add_pic HexManiacPic
+	add_pic FlanneryPic
+	add_pic JessiePic
+	add_pic JamesPic
+	

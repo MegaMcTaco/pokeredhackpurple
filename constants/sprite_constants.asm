@@ -14,7 +14,6 @@ const_value = 0
 
 ; overworld sprites
 const_value = 1
-
 	const SPRITE_RED                       ; $01
 	const SPRITE_BLUE                      ; $02
 	const SPRITE_OAK                       ; $03
@@ -64,7 +63,7 @@ const_value = 1
 	const SPRITE_FISHER2                   ; $2f
 	const SPRITE_BLACKBELT                 ; $30
 	const SPRITE_GUARD                     ; $31
-	const SPRITE_COP_GUARD                 ; $32
+	const SPRITE_ROCKET_F                  ; $32
 	const SPRITE_MOM                       ; $33
 	const SPRITE_BALDING_GUY               ; $34
 	const SPRITE_YOUNG_BOY                 ; $35
@@ -82,12 +81,14 @@ const_value = 1
 	const SPRITE_BOOK_MAP_DEX              ; $41
 	const SPRITE_CLIPBOARD                 ; $42
 	const SPRITE_SNORLAX                   ; $43
-	const SPRITE_OLD_AMBER_COPY            ; $44
+	const SPRITE_FOSSIL                    ; $44
 	const SPRITE_OLD_AMBER                 ; $45
-	const SPRITE_LYING_OLD_MAN_UNUSED_1    ; $46
-	const SPRITE_LYING_OLD_MAN_UNUSED_2    ; $47
+	const SPRITE_JESSIE                    ; $46
+	const SPRITE_JAMES                     ; $47
 	const SPRITE_LYING_OLD_MAN             ; $48
-	const SPRITE_FOSSIL					   ; $49
+	const SPRITE_SWIMMER_F				   ; $49
+	const SPRITE_PROF_OAK                  ; $4a
+	const SPRITE_FLANNERY				   ; $4b
 
 ; different kinds of people events
 ITEM    EQU $80

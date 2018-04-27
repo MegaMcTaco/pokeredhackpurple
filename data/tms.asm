@@ -1,14 +1,14 @@
 TechnicalMachines: ; 13773 (4:7773)
 	db MEGA_PUNCH ; TM1 - Location: Mt. Moon, Celadon Store
 	db RAZOR_WIND ;TM2 - Location: Rocket Hideout, Celadon Store 
-	db FLAME_WHEEL ;TM3 - Location: Silph Co.
+	db FLAME_WHEEL ;TM3 - used to be Swords Dance - Location: Silph Co.
 	db FIRE_PUNCH ;TM4 - used to be Whirlwind - Location: Route 4 
 	db MEGA_KICK ;TM5 - Location: Victory Road, Celadon Store
 	db TOXIC ;TM6 - Location: Prize for defeating Koga
 	db HORN_DRILL ;TM7 - Location: Rocket Hidedout, Celadon Store 
 	db BODY_SLAM ;TM8 - Location: S.S. Anne
-	db ICY_WIND ;TM9 - Location: Silph Co. Celadon Store 
-	db SHEER_COLD ;TM10 - Location: Rocket Hideout 
+	db ICY_WIND ;TM9 - used to be Take Down - Location: Silph Co. Celadon Store 
+	db SHEER_COLD ;TM10 - used to be Double-Edge - Location: Rocket Hideout 
 	db BUBBLEBEAM ;TM11 - Location: Prize for defeating Misty
 	db WATER_GUN ;TM12 - Location: Mt. Moon 
 	db ICE_BEAM ;TM13 - Location: Celadon Store Roof
@@ -16,7 +16,7 @@ TechnicalMachines: ; 13773 (4:7773)
 	db HYPER_BEAM ;TM15 - Location: Rocket Game Corner
 	db PAY_DAY ;TM16 - Location: Route 12
 	db HYPER_FANG ;TM17 - used to be Submission - Location: Victory Road, Celadon Store
-	db AERIAL_ACE ;TM18 - Location: Celadon Store
+	db AERIAL_ACE ;TM18 - used to be Counter - Location: Celadon Store
 	db SEISMIC_TOSS ;TM19 - Location: Route 25
 	db AURORA_BEAM ;TM20 - used to be Rage - Location: Route 15
 	db MEGA_DRAIN ;TM21 - Location: Prize for defeating Erika
@@ -30,7 +30,7 @@ TechnicalMachines: ; 13773 (4:7773)
 	db PSYCHIC_M ;TM29 - Location: Saffron City 
 	db TELEPORT ;TM30 - Location: Route 9
 	db MIMIC ;TM31 - Location: Saffron City
-	db SHADOW_BALL ;TM32 - Location: Fuchsia City, Celadon Store
+	db SHADOW_BALL ;TM32 - used to be Double Team - Location: Fuchsia City, Celadon Store
 	db REFLECT ;TM33 - Location: Powerplant, Celadon Store
 	db ROCK_SLIDE ;TM34 - used to be Bide - Location: Prize for defeating Brock
 	db METRONOME ;TM35 - Location: Pokemon Lab
@@ -38,7 +38,7 @@ TechnicalMachines: ; 13773 (4:7773)
 	db THUNDERPUNCH ;TM37 - used to be Egg Bomb - Location: Fuchsia City, Celadon Store 
 	db FIRE_BLAST ;TM38 - Location: Prize for defeating Blaine
 	db SWIFT ;TM39 - Location: Route 12 
-	db FRENZY_PLANT ;TM40 - Location: Safari Zone
+	db FRENZY_PLANT ;TM40 - used to be Skull Bash - Location: Safari Zone
 	db ICE_PUNCH ;TM41 - used to be Softboiled - Location: Celadon City
 	db DREAM_EATER ;TM42 - Location: Viridian City 
 	db SKY_ATTACK ;TM43 - Location: Victory Road
@@ -49,8 +49,9 @@ TechnicalMachines: ; 13773 (4:7773)
 	db CONFUSION ;TM48 - used to be Rock Slide - Location: Celadon Store Roof
 	db FLAMETHROWER ;TM49 - used to be Tri Attack - Location: Celadon Store Roof
 	db DISCHARGE ;TM50 - used to be Substitute - Location: Rocket Game Corner 
-	db CUT ;HM01 - Location: S.S. Anne - Cascade Badge to use outside of battle
-	db FLY ;HM02 - Location: Route 16 - Thunder Badge to use outside of battle 
-	db SURF ;HM03 - Location: Safari Zone - Soul Badge to use outside of battle 
-	db STRENGTH ;HM04 - Location: Fuchsia City - Rainbow Badge to use outside of battle 
-	db FLASH ;HM05 - Location: Route 2 - Boulder Badge to use outside of battle 
+	db CUT ;HM01 - Location: S.S. Anne - Cascade Badge to use outside of battle (51)
+	db FLY ;HM02 - Location: Route 16 - Thunder Badge to use outside of battle  (52)
+	db SURF ;HM03 - Location: Safari Zone - Soul Badge to use outside of battle (53)
+	db STRENGTH ;HM04 - Location: Fuchsia City - Rainbow Badge to use outside of battle (54) 
+	db FLASH ;HM05 - Location: Route 2 - Boulder Badge to use outside of battle (55)
+	

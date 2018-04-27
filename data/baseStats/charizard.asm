@@ -28,6 +28,6 @@ db 3 ; growth rate
 IF DEF(_YELLOW)
 	tmlearn 50,51,52,54
 ELSE
-	tmlearn 49,50,51,54
+	tmlearn 49,50,51,52,54
 ENDC
 db BANK(CharizardPicFront)

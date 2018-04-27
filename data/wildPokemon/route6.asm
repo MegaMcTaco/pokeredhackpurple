@@ -10,7 +10,7 @@ Route6Mons:
 		db 15,ODDISH
 		db 16,BELLSPROUT
 		db 18,PIDGEOTTO
-		db 14,MANKEY
+		db 14,POLIWAG
 		db 16,ABRA
 		db $00
 	ENDC

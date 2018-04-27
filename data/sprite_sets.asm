@@ -83,7 +83,7 @@ SpriteSets: ; 17ab9 (5:7ab9)
 	db SPRITE_LASS
 	db SPRITE_BLACK_HAIR_BOY_1
 	db SPRITE_BALL
-	db SPRITE_LYING_OLD_MAN_UNUSED_2
+	db SPRITE_JAMES
 
 ; sprite set $03
 	db SPRITE_LITTLE_GIRL
@@ -94,9 +94,9 @@ SpriteSets: ; 17ab9 (5:7ab9)
 	db SPRITE_SLOWBRO
 	db SPRITE_LASS
 	db SPRITE_BLACK_HAIR_BOY_1
-	db SPRITE_GUARD
+	db SPRITE_OAK
 	db SPRITE_BALL
-	db SPRITE_LYING_OLD_MAN_UNUSED_2
+	db SPRITE_JAMES
 
 ; sprite set $04
 	db SPRITE_FOULARD_WOMAN
@@ -109,7 +109,7 @@ SpriteSets: ; 17ab9 (5:7ab9)
 	db SPRITE_LASS
 	db SPRITE_BLACK_HAIR_BOY_1
 	db SPRITE_BALL
-	db SPRITE_LYING_OLD_MAN_UNUSED_2
+	db SPRITE_JAMES
 
 ; sprite set $05
 	db SPRITE_LITTLE_GIRL
@@ -135,7 +135,7 @@ SpriteSets: ; 17ab9 (5:7ab9)
 	db SPRITE_GUARD
 	db SPRITE_GAMBLER
 	db SPRITE_BALL
-	db SPRITE_LYING_OLD_MAN_UNUSED_2
+	db SPRITE_JAMES
 
 ; sprite set $07
 	db SPRITE_ROCKET
@@ -148,7 +148,7 @@ SpriteSets: ; 17ab9 (5:7ab9)
 	db SPRITE_BLACK_HAIR_BOY_1
 	db SPRITE_SLOWBRO
 	db SPRITE_BALL
-	db SPRITE_LYING_OLD_MAN_UNUSED_2
+	db SPRITE_JAMES
 
 ; sprite set $08
 	db SPRITE_BIKER
@@ -435,10 +435,10 @@ SpriteSheetPointerTable: ; 17b27 (5:7b27)
 	db $c0 ; byte count
 	db BANK(GuardSprite)
 
-	; $32
-	dw GuardSprite
+	; SPRITE_ROCKET_F
+	dw RocketFSprite
 	db $c0 ; byte count
-	db BANK(GuardSprite)
+	db BANK(RocketFSprite)
 
 	; SPRITE_MOM
 	dw MomSprite
@@ -525,32 +525,27 @@ SpriteSheetPointerTable: ; 17b27 (5:7b27)
 	db $40 ; byte count
 	db BANK(SnorlaxSprite)
 
-	; SPRITE_OLD_AMBER_COPY
-	dw OldAmberSprite
+	; SPRITE_FOSSIL
+	dw FossilSprite
 	db $40 ; byte count
-	db BANK(OldAmberSprite)
+	db BANK(FossilSprite)
 
 	; SPRITE_OLD_AMBER
 	dw OldAmberSprite
 	db $40 ; byte count
 	db BANK(OldAmberSprite)
 
-	; SPRITE_LYING_OLD_MAN_UNUSED_1
-	dw LyingOldManSprite
+	; SPRITE_JESSIE
+	dw JessieSprite
 	db $40 ; byte count
-	db BANK(LyingOldManSprite)
+	db BANK(JessieSprite)
 
-	; SPRITE_LYING_OLD_MAN_UNUSED_2
-	dw LyingOldManSprite
+	; SPRITE_JAMES
+	dw JamesSprite
 	db $40 ; byte count
-	db BANK(LyingOldManSprite)
+	db BANK(JamesSprite)
 
 	; SPRITE_LYING_OLD_MAN
 	dw LyingOldManSprite
 	db $40 ; byte count
 	db BANK(LyingOldManSprite)
-
-	; SPRITE_FOSSIL
-	dw FossilSprite
-	db $40 ; byte count
-	db BANK(FossilSprite)

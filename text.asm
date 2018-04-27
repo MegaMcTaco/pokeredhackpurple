@@ -1126,14 +1126,10 @@ _MoneyForWinningText:: ; 896dd (22:56dd)
 	prompt
 
 _TrainerDefeatedText:: ; 896f9 (22:56f9)
-	text "<PLAYER> defeated"
-	line "@"
 	TX_RAM W_TRAINERNAME
-	text "!"
-	TX_RAM W_TRAINERNAME ; 0x89706
 	text " @"
 	TX_RAM wCurTrainerName
-	db $0
+	text ""
 	line "was defeated!"
 	prompt
 

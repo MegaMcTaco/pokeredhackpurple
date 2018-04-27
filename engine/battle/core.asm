@@ -2123,7 +2123,7 @@ DisplayBattleMenu: ; 3ceb3 (f:4eb3)
 	jp nz, .handleBattleMenuInput ; handle menu input if it's not the old man tutorial
 ; the following happens for the old man tutorial
 	ld hl, wPlayerName
-	ld de, W_GRASSRATE
+	ld de, wCurTrainerName
 	ld bc, NAME_LENGTH
 	call CopyData  ; temporarily save the player name in unused space,
 	               ; which is supposed to get overwritten when entering a
@@ -6232,10 +6232,14 @@ LoadEnemyMonData: ; 3eb01 (f:6b01)
 	jr nz, .storeDVs
 	ld a, [W_ISINBATTLE]
 	cp $2 ; is it a trainer battle?
-; fixed DVs for trainer mon
-	ld a, $98
-	ld b, $88
-	jr z, .storeDVs
+	jr nz, .notTrainer
+; Get trainer DVs from a table
+	callba GetTrainerMonDVs
+	ld hl, wTempDVs
+	ld a, [hli]
+	ld b, [hl]
+	jr .storeDVs
+.notTrainer
 ; random DVs for wild mon
 	call BattleRandom
 	ld b, a
@@ -7023,18 +7027,19 @@ _InitBattleCommon: ; 3efeb (f:6feb)
 .emptyString
 	db "@"
 
-_LoadTrainerPic: ; 3f04b (f:704b)
+_LoadTrainerPic:
 ; wd033-wd034 contain pointer to pic
 	ld a, [wTrainerPicPointer]
 	ld e, a
 	ld a, [wTrainerPicPointer + 1]
 	ld d, a ; de contains pointer to trainer pic
-	ld a, [wLinkState]
-	and a
-	ld a, Bank(TrainerPics) ; this is where all the trainer pics are (not counting Red's)
-	jr z, .loadSprite
-	ld a, Bank(RedPicFront)
-.loadSprite
+	ld a, [wTrainerPicBank] ; new
+;	ld a, [wLinkState]
+;	and a
+;	ld a, Bank(TrainerPics) ; this is where all the trainer pics are (not counting Red's)
+;	jr z, .loadSprite
+;	ld a, Bank(RedPicFront)
+;.loadSprite
 	call UncompressSpriteFromDE
 	ld de, vFrontPic
 	ld a, $77

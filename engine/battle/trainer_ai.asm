@@ -288,7 +288,7 @@ TrainerClassMoveChoiceModifications: ; 3989b (e:589b)
 	db 1,0    ; BIKER
 	db 1,3,0  ; BURGLAR
 	db 1,0    ; ENGINEER
-	db 1,2,0  ; JUGGLER_X
+	db 1,2,0  ; COUPLE
 	db 1,3,0  ; FISHER
 	db 1,3,0  ; SWIMMER
 	db 0      ; CUE_BALL
@@ -301,8 +301,8 @@ TrainerClassMoveChoiceModifications: ; 3989b (e:589b)
 	db 1,0    ; BIRD_KEEPER
 	db 1,0    ; BLACKBELT
 	db 1,0    ; SONY1
-	db 1,3,0  ; PROF_OAK
-	db 1,2,0  ; CHIEF
+	db 1,3,0  ; SWIMMER_F
+	db 1,2,0  ; ROCKET_F
 	db 1,2,0  ; SCIENTIST
 	db 1,3,0  ; GIOVANNI
 	db 1,0    ; ROCKET
@@ -323,7 +323,9 @@ TrainerClassMoveChoiceModifications: ; 3989b (e:589b)
 	db 1,0    ; CHANNELER
 	db 1,0    ; AGATHA
 	db 1,3,0  ; LANCE
-
+	db 1,0    ; HEX_MANIAC
+	db 1,4,0  ; TRAINER
+	
 INCLUDE "engine/battle/trainer_pic_money_pointers.asm"
 
 INCLUDE "text/trainer_names.asm"
@@ -419,6 +421,8 @@ TrainerAIPointers: ; 3a55c (e:655c)
 	dbw 3,GenericAI
 	dbw 2,AgathaAI ; agatha
 	dbw 1,LanceAI ; lance
+	dbw 3,GenericAI ; hex maniac
+	dbw 3,GenericAI ; trainer (usually overwritten in trainer data)	
 
 JugglerAI: ; 3a5e9 (e:65e9)
 	cp $40

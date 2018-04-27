@@ -116,11 +116,8 @@ DetermineBackSpritePaletteID_NoStatusCheck:
 	and a
 	jr nz,.getPaletteID ; Check if trainer?
 
-IF GEN_2_GRAPHICS
-	ld a, PAL_HERO
-ELSE
+
 	ld a, PAL_REDMON
-ENDC
 	ret
 .getPaletteID
 	ld e, a

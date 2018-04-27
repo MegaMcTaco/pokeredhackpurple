@@ -48,3 +48,4 @@ TrainerNames:
 	db "Elite Four@"
 	db "Hex Maniac@"
 	db "Trainer@"
+	

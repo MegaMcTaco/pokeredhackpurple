@@ -69,9 +69,12 @@ _MtMoon3AfterBattleText2:: ; 80b09 (20:4b09)
 	done
 
 _MtMoon3BattleText3:: ; 80b3b (20:4b3b)
-	text "We, TEAM ROCKET,"
-	line "are #MON"
-	cont "gangsters!"
+	text "E-he-he-he! What"
+	line "do we have here?"
+	
+	para "A little twerp"
+	line "looking to get"
+	cont "in the way!"
 	done
 
 _MtMoon3EndBattleText3:: ; 80b61 (20:4b61)
@@ -81,14 +84,13 @@ _MtMoon3EndBattleText3:: ; 80b61 (20:4b61)
 
 _MtMoon3AfterBattleText3:: ; 80b6d (20:4b6d)
 	text "Darn it all! My"
-	line "associates won't"
+	line "partner won't"
 	cont "stand for this!"
 	done
 
 _MtMoon3BattleText4:: ; 80b9e (20:4b9e)
-	text "We're pulling a"
-	line "big job here!"
-	cont "Get lost, kid!"
+	text "Get lost, you"
+	line "little brat!"
 	done
 
 _MtMoon3EndBattleText4:: ; 80bcb (20:4bcb)

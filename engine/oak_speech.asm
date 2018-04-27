@@ -23,7 +23,7 @@ SetDefaultNames: ; 60ca (1:60ca)
 	and a
 	call z, InitOptions
 	ld hl, NintenText
-	ld de, wPlayerName
+	ld de, wCurTrainerName
 	ld bc, NAME_LENGTH
 	call CopyData
 	ld hl, SonyText
@@ -54,7 +54,7 @@ OakSpeech: ; 6115 (1:6115)
 	xor a
 	ld [hTilesetType],a
 IF GEN_2_GRAPHICS
-	ld a, PAL_OAK
+	ld a, PAL_PROF_OAK
 ELSE
 	ld a, PAL_BROWNMON
 ENDC

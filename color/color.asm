@@ -398,12 +398,9 @@ SetPal_TitleScreen:
 	ld d, PAL_BLACK
 	ld e,3
 	callba LoadSGBPalette
-
-IF GEN_2_GRAPHICS
-	ld d, PAL_HERO
-ELSE
+	
+	
 	ld d, PAL_REDMON
-ENDC
 	ld e,0
 	callba LoadSGBPalette_Sprite
 
@@ -687,11 +684,7 @@ SetPal_TrainerCard:
 	ld e,3
 	callba LoadSGBPalette
 	; Red's palette
-	IF GEN_2_GRAPHICS
-		ld d, PAL_HERO
-	ELSE
 		ld d, PAL_REDMON
-	ENDC
 	ld e,4
 	callba LoadSGBPalette
 

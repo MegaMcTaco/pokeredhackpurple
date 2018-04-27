@@ -228,13 +228,13 @@ IF GEN_2_GRAPHICS
 	const PAL_BEAUTY        ; $CD
 	const PAL_PSYCHIC       ; $CE
 	const PAL_ROCKER        ; $CF
-	const PAL_JUGGLER2      ; $D0
+	const PAL_COUPLE        ; $D0
 	const PAL_TAMER         ; $D1
 	const PAL_BIRDKEEPER    ; $D2
 	const PAL_BLACKBELT     ; $D3
 	const PAL_GARY1         ; $D4
-	const PAL_OAK           ; $D5
-	const PAL_CHIEF         ; $D6
+	const PAL_PROF_OAK      ; $D5
+	const PAL_ROCKET_F      ; $D6
 	const PAL_SCIENTIST     ; $D7
 	const PAL_GIOVANNI      ; $D8
 	const PAL_ROCKET        ; $D9
@@ -256,4 +256,20 @@ IF GEN_2_GRAPHICS
 	const PAL_AGATHA        ; $E9
 	const PAL_LANCE         ; $EA
 	const PAL_HERO          ; $EB
+	const PAL_HEX_MANIAC    ; $EC
+	const PAL_PKMN_TRAINER  ; $ED
+	const PAL_TRACEY        ; $EE 
+	const PAL_EXECUTIVE_F   ; $EF
+	const PAL_EXECUTIVE_M
+	const PAL_ROCKER_F
+	const PAL_JESSIE_JAMES
+	const PAL_COSPLAY_GIRL
+	const PAL_JANINE
+	const PAL_PLAYER_M
+	const PAL_PLAYER_F
+	const PAL_PI_TRAINER
+	const PAL_FLANNERY
+	const PAL_JESSIE
+	const PAL_JAMES
+	const PAL_SWIMMER_F
 ENDC

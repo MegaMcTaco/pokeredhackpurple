@@ -2056,11 +2056,7 @@ ENDC
 
 GetRedPalID:
 	call ClearScreen
-IF GEN_2_GRAPHICS
-	ld a, PAL_HERO
-ELSE
 	ld a, PAL_REDMON
-ENDC
 	jr GotPalID
 
 GetRivalPalID:
@@ -4959,16 +4955,6 @@ SsCaptainSprite:       INCBIN "gfx/sprites/ss_captain.2bpp"
 Fisher2Sprite:         INCBIN "gfx/sprites/fisher2.2bpp"
 BlackbeltSprite:       INCBIN "gfx/sprites/blackbelt.2bpp"
 GuardSprite:           INCBIN "gfx/sprites/guard.2bpp"
-BallSprite:            INCBIN "gfx/sprites/ball.2bpp"
-OmanyteSprite:         INCBIN "gfx/sprites/omanyte.2bpp"
-FossilSprite:          INCBIN "gfx/sprites/fossil.2bpp"
-BoulderSprite:         INCBIN "gfx/sprites/boulder.2bpp"
-PaperSheetSprite:      INCBIN "gfx/sprites/paper_sheet.2bpp"
-BookMapDexSprite:      INCBIN "gfx/sprites/book_map_dex.2bpp"
-ClipboardSprite:       INCBIN "gfx/sprites/clipboard.2bpp"
-SnorlaxSprite:         INCBIN "gfx/sprites/snorlax.2bpp"
-OldAmberSprite:        INCBIN "gfx/sprites/old_amber.2bpp"
-LyingOldManSprite:     INCBIN "gfx/sprites/lying_old_man.2bpp"
 
 SECTION "Graphics", ROMX, BANK[GFX]
 
@@ -5928,56 +5914,6 @@ SafariZoneSecretHouseBlocks: INCBIN "maps/safarizonesecrethouse.blk"
 SECTION "bank13",ROMX,BANK[$13]
 
 TrainerPics::
-IF GEN_2_GRAPHICS
-YoungsterPic::     INCBIN "pic/gstrainer/youngster.pic"
-BugCatcherPic::    INCBIN "pic/gstrainer/bugcatcher.pic"
-LassPic::          INCBIN "pic/gstrainer/lass.pic"
-SailorPic::        INCBIN "pic/gstrainer/sailor.pic"
-JrTrainerMPic::    INCBIN "pic/gstrainer/jr.trainerm.pic"
-JrTrainerFPic::    INCBIN "pic/gstrainer/jr.trainerf.pic"
-PokemaniacPic::    INCBIN "pic/gstrainer/pokemaniac.pic"
-SuperNerdPic::     INCBIN "pic/gstrainer/supernerd.pic"
-HikerPic::         INCBIN "pic/gstrainer/hiker.pic"
-BikerPic::         INCBIN "pic/gstrainer/biker.pic"
-BurglarPic::       INCBIN "pic/gstrainer/burglar.pic"
-EngineerPic::      INCBIN "pic/gstrainer/engineer.pic"
-FisherPic::        INCBIN "pic/gstrainer/fisher.pic"
-SwimmerPic::       INCBIN "pic/gstrainer/swimmer.pic"
-CueBallPic::       INCBIN "pic/gstrainer/cueball.pic"
-GamblerPic::       INCBIN "pic/gstrainer/gambler.pic"
-BeautyPic::        INCBIN "pic/gstrainer/beauty.pic"
-PsychicPic::       INCBIN "pic/gstrainer/psychic.pic"
-RockerPic::        INCBIN "pic/gstrainer/rocker.pic"
-JugglerPic::       INCBIN "pic/gstrainer/juggler.pic"
-TamerPic::         INCBIN "pic/gstrainer/tamer.pic"
-BirdKeeperPic::    INCBIN "pic/gstrainer/birdkeeper.pic"
-BlackbeltPic::     INCBIN "pic/gstrainer/blackbelt.pic"
-Rival1Pic::        INCBIN "pic/gstrainer/rival1.pic"
-ProfOakPic::       INCBIN "pic/gstrainer/prof.oak.pic"
-ChiefPic::
-ScientistPic::     INCBIN "pic/gstrainer/scientist.pic"
-GiovanniPic::      INCBIN "pic/gstrainer/giovanni.pic"
-RocketPic::        INCBIN "pic/gstrainer/rocket.pic"
-CooltrainerMPic::  INCBIN "pic/gstrainer/cooltrainerm.pic"
-CooltrainerFPic::  INCBIN "pic/gstrainer/cooltrainerf.pic"
-BrunoPic::         INCBIN "pic/gstrainer/bruno.pic"
-BrockPic::         INCBIN "pic/gstrainer/brock.pic"
-MistyPic::         INCBIN "pic/gstrainer/misty.pic"
-LtSurgePic::       INCBIN "pic/gstrainer/lt.surge.pic"
-ErikaPic::         INCBIN "pic/gstrainer/erika.pic"
-KogaPic::          INCBIN "pic/gstrainer/koga.pic"
-BlainePic::        INCBIN "pic/gstrainer/blaine.pic"
-SabrinaPic::       INCBIN "pic/gstrainer/sabrina.pic"
-GentlemanPic::     INCBIN "pic/gstrainer/gentleman.pic"
-Rival2Pic::        INCBIN "pic/gstrainer/rival2.pic"
-Rival3Pic::        INCBIN "pic/gstrainer/rival3.pic"
-LoreleiPic::       INCBIN "pic/gstrainer/lorelei.pic"
-ChannelerPic::     INCBIN "pic/gstrainer/channeler.pic"
-AgathaPic::        INCBIN "pic/gstrainer/agatha.pic"
-LancePic::         INCBIN "pic/gstrainer/lance.pic"
-ENDC
-
-IF !GEN_2_GRAPHICS
 YoungsterPic::     INCBIN "pic/trainer/youngster.pic"
 BugCatcherPic::    INCBIN "pic/trainer/bugcatcher.pic"
 LassPic::          INCBIN "pic/trainer/lass.pic"
@@ -6002,8 +5938,8 @@ TamerPic::         INCBIN "pic/trainer/tamer.pic"
 BirdKeeperPic::    INCBIN "pic/trainer/birdkeeper.pic"
 BlackbeltPic::     INCBIN "pic/trainer/blackbelt.pic"
 Rival1Pic::        INCBIN "pic/trainer/rival1.pic"
-ProfOakPic::       INCBIN "pic/trainer/prof.oak.pic"
-ChiefPic::
+SwimmerFPic::      INCBIN "pic/trainer/swimmerf.pic"
+RocketFPic::       INCBIN "pic/trainer/rocketf.pic"
 ScientistPic::     INCBIN "pic/trainer/scientist.pic"
 GiovanniPic::      INCBIN "pic/trainer/giovanni.pic"
 RocketPic::        INCBIN "pic/trainer/rocket.pic"
@@ -6024,9 +5960,8 @@ LoreleiPic::       INCBIN "pic/trainer/lorelei.pic"
 ChannelerPic::     INCBIN "pic/trainer/channeler.pic"
 AgathaPic::        INCBIN "pic/trainer/agatha.pic"
 LancePic::         INCBIN "pic/trainer/lance.pic"
-ENDC
 
-	ORG $13, $7d04
+SECTION "movedthis",ROMX,BANK[$43]
 
 INCLUDE "data/mapHeaders/tradecenter.asm"
 INCLUDE "scripts/tradecenter.asm"
@@ -7185,10 +7120,10 @@ SpinarakPicFront::   INCBIN "pic/bmon/spinarak.pic"
 SpinarakPicBack::    INCBIN "pic/monback/spinarakb.pic"
 AriadosPicFront::    INCBIN "pic/bmon/ariados.pic"
 AriadosPicBack::     INCBIN "pic/monback/ariadosb.pic"
-MarillPicFront::		 INCBIN "pic/bmon/marill.pic"
+MarillPicFront::     INCBIN "pic/bmon/marill.pic"
 MarillPicBack::		 INCBIN "pic/monback/marill.pic"
 AzumarillPicFront::	 INCBIN "pic/bmon/azumarill.pic"
-AzumarillPicBack::    INCBIN "pic/monback/azumarill.pic"
+AzumarillPicBack::   INCBIN "pic/monback/azumarill.pic"
 
 
 ENDC
@@ -7208,10 +7143,23 @@ BlisseyPicFront:: 	 INCBIN "pic/bmon/blissey.pic"
 BlisseyPicBack:: 	 INCBIN "pic/monback/blissey.pic"
 BellossomPicFront::	 INCBIN "pic/bmon/bellossom.pic"
 BellossomPicBack::	 INCBIN "pic/monback/bellossom.pic"
-TogepiPicFront::      INCBIN "pic/bmon/togepi.pic"
+TogepiPicFront::     INCBIN "pic/bmon/togepi.pic"
 TogepiPicBack::	 	 INCBIN "pic/monback/togepi.pic"
 LugiaPicFront::		 INCBIN "pic/bmon/lugia.pic"
 LugiaPicBack::		 INCBIN "pic/monback/lugiab.pic"
+
+SECTION "bank2F",ROMX,BANK[$2F]
+
+BallSprite:            INCBIN "gfx/sprites/ball.2bpp"
+OmanyteSprite:         INCBIN "gfx/sprites/omanyte.2bpp"
+BoulderSprite:         INCBIN "gfx/sprites/boulder.2bpp"
+PaperSheetSprite:      INCBIN "gfx/sprites/paper_sheet.2bpp"
+BookMapDexSprite:      INCBIN "gfx/sprites/book_map_dex.2bpp"
+ClipboardSprite:       INCBIN "gfx/sprites/clipboard.2bpp"
+SnorlaxSprite:         INCBIN "gfx/sprites/snorlax.2bpp"
+FossilSprite:          INCBIN "gfx/sprites/fossil.2bpp"
+OldAmberSprite:        INCBIN "gfx/sprites/old_amber.2bpp"
+LyingOldManSprite:     INCBIN "gfx/sprites/lying_old_man.2bpp"
 
 IF !GEN_2_GRAPHICS
 SECTION "bank32",ROMX,BANK[$32]
@@ -7509,6 +7457,8 @@ BaseStats: INCLUDE "data/base_stats.asm"
 
 SECTION "trainer pics 2", ROMX,BANK[$41]
 
+TrainerPics2::
+ProfOakPic::     INCBIN "pic/trainer/prof.oak.pic"
 ExecutiveFPic::  INCBIN "pic/trainer/executivef.pic"
 ExecutiveMPic::  INCBIN "pic/trainer/executivem.pic"
 RockerFPic::     INCBIN "pic/trainer/rockerf.pic"
@@ -7518,12 +7468,10 @@ JaninePic::      INCBIN "pic/trainer/janine.pic"
 TraceyPic::      INCBIN "pic/trainer/tracey.pic"
 PiTrainerPic::   INCBIN "pic/trainer/pi.pic"
 HexManiacPic::   INCBIN "pic/trainer/hex_maniac.pic"
+YoungCouplePic:: INCBIN "pic/trainer/young_couple.pic"
+FlanneryPic::    INCBIN "pic/trainer/flannery.pic"
 JessiePic::      INCBIN "pic/trainer/jessie.pic"
 JamesPic::       INCBIN "pic/trainer/james.pic"
-RocketFPic::     INCBIN "pic/trainer/rocketf.pic"
-FlanneryPic::    INCBIN "pic/trainer/flannery.pic"
-SwimmerFPic::    INCBIN "pic/trainer/swimmerf.pic"
-YoungCouplePic:: INCBIN "pic/trainer/young_couple.pic"
 
 INCLUDE "engine/battle/get_trainer_pic_pointers.asm"
 
@@ -7538,6 +7486,10 @@ INCLUDE "engine/mon_gender.asm"
 
 SeelSprite:           INCBIN "gfx/sprites/seel.2bpp"
 FlanneryOverworld:	  INCBIN "gfx/sprites/flannery.2bpp"
+JessieSprite:		  INCBIN "gfx/sprites/jessie.2bpp"
+JamesSprite:		  INCBIN "gfx/sprites/james.2bpp"
+RocketFSprite:		  INCBIN "gfx/sprites/rocketf.2bpp"
+SwimmerFSprite:		  INCBIN "gfx/sprites/swimmer_f.2bpp"
 
 IF DEF(_OPTION_BEACH_HOUSE)
 SECTION "bank3C",ROMX[$4314],BANK[$3C]

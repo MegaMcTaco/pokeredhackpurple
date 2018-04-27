@@ -178,7 +178,6 @@ IF GEN_2_GRAPHICS
 	
 	
 TrainerPalettes: ; Gen II trainer sprites are given their own palettes
-	db PAL_HERO
 	db PAL_YOUNGSTER
 	db PAL_BUGCATCHER
 	db PAL_LASS
@@ -199,13 +198,13 @@ TrainerPalettes: ; Gen II trainer sprites are given their own palettes
 	db PAL_BEAUTY
 	db PAL_PSYCHIC
 	db PAL_ROCKER
-	db PAL_JUGGLER2
+	db PAL_COUPLE
 	db PAL_TAMER
 	db PAL_BIRDKEEPER
 	db PAL_BLACKBELT
 	db PAL_GARY1
-	db PAL_OAK
-	db PAL_CHIEF
+	db PAL_PROF_OAK
+	db PAL_ROCKET_F
 	db PAL_SCIENTIST
 	db PAL_GIOVANNI
 	db PAL_ROCKET
@@ -226,6 +225,22 @@ TrainerPalettes: ; Gen II trainer sprites are given their own palettes
 	db PAL_CHANNELER
 	db PAL_AGATHA
 	db PAL_LANCE
+	db PAL_HEX_MANIAC
+	db PAL_PKMN_TRAINER
+	db PAL_TRACEY
+	db PAL_EXECUTIVE_F
+	db PAL_EXECUTIVE_M
+	db PAL_ROCKER_F
+	db PAL_JESSIE_JAMES
+	db PAL_COSPLAY_GIRL
+	db PAL_JANINE
+	db PAL_PLAYER_M
+	db PAL_PLAYER_F
+	db PAL_PI_TRAINER
+	db PAL_FLANNERY
+	db PAL_JESSIE
+	db PAL_JAMES
+	db PAL_SWIMMER_F
 ELSE
 	db PAL_MEWMON    ; MISSINGNO
 	db PAL_GREENMON  ; BULBASAUR
