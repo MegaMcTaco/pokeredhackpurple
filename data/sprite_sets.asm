@@ -94,9 +94,9 @@ SpriteSets: ; 17ab9 (5:7ab9)
 	db SPRITE_SLOWBRO
 	db SPRITE_LASS
 	db SPRITE_BLACK_HAIR_BOY_1
-	db SPRITE_OAK
+	db SPRITE_GUARD
 	db SPRITE_BALL
-	db SPRITE_JAMES
+	db SPRITE_ROCKET
 
 ; sprite set $04
 	db SPRITE_FOULARD_WOMAN
@@ -489,7 +489,37 @@ SpriteSheetPointerTable: ; 17b27 (5:7b27)
 	dw SeelSprite
 	db $c0 ; byte count
 	db BANK(SeelSprite)
+	
+	; SPRITE_JESSIE
+	dw JessieSprite
+	db $40 ; byte count
+	db BANK(JessieSprite)
 
+	; SPRITE_JAMES
+	dw JamesSprite
+	db $40 ; byte count
+	db BANK(JamesSprite)
+
+	; SPRITE_LYING_OLD_MAN
+	dw LyingOldManSprite
+	db $40 ; byte count
+	db BANK(LyingOldManSprite)
+
+	; SPRITE_SWIMMER_F
+	dw SwimmerFSprite
+	db $40 ; byte count 
+	db BANK(SwimmerFSprite)
+	
+	; SPRITE_FLANNERY
+	dw FlanneryOverworld
+	db $40 ; byte count
+	db BANK(FlanneryOverworld)
+	
+	; SPRITE_LAPRAS
+	dw SurfingLapras
+	db $40 ; byte count
+	db BANK(SurfingLapras)
+	
 	; SPRITE_BALL
 	dw BallSprite
 	db $40 ; byte count
@@ -534,18 +564,3 @@ SpriteSheetPointerTable: ; 17b27 (5:7b27)
 	dw OldAmberSprite
 	db $40 ; byte count
 	db BANK(OldAmberSprite)
-
-	; SPRITE_JESSIE
-	dw JessieSprite
-	db $40 ; byte count
-	db BANK(JessieSprite)
-
-	; SPRITE_JAMES
-	dw JamesSprite
-	db $40 ; byte count
-	db BANK(JamesSprite)
-
-	; SPRITE_LYING_OLD_MAN
-	dw LyingOldManSprite
-	db $40 ; byte count
-	db BANK(LyingOldManSprite)

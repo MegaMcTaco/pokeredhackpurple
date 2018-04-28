@@ -7484,12 +7484,12 @@ SECTION "random stuff", ROMX,BANK[$3A]
 INCLUDE "engine/splashscreens/players_in_intro.asm"
 INCLUDE "engine/mon_gender.asm"
 
+RocketFSprite:		  INCBIN "gfx/sprites/rocketf.2bpp"
 SeelSprite:           INCBIN "gfx/sprites/seel.2bpp"
-FlanneryOverworld:	  INCBIN "gfx/sprites/flannery.2bpp"
 JessieSprite:		  INCBIN "gfx/sprites/jessie.2bpp"
 JamesSprite:		  INCBIN "gfx/sprites/james.2bpp"
-RocketFSprite:		  INCBIN "gfx/sprites/rocketf.2bpp"
 SwimmerFSprite:		  INCBIN "gfx/sprites/swimmer_f.2bpp"
+FlanneryOverworld:	  INCBIN "gfx/sprites/flannery.2bpp"
 
 IF DEF(_OPTION_BEACH_HOUSE)
 SECTION "bank3C",ROMX[$4314],BANK[$3C]

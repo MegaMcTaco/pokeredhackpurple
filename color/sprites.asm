@@ -371,7 +371,25 @@ SpritePaletteAssignments: ; Characters on the overworld
 
 	; 0x3c: SPRITE_SEEL
 	db PAL_ORANGE
+	
+	; 0x46: SPRITE_JESSIE
+	db PAL_ORANGE
 
+	; 0x47: SPRITE_JAMES
+	db PAL_BLUE
+
+	; 0x48: SPRITE_LYING_OLD_MAN
+	db 4	
+	
+	; 0x49: SPRITE_SWIMMER_F
+	db PAL_GREEN
+
+	; 0x4b: SPRITE_FLANNERY
+	db PAL_ORANGE
+	
+	; 0x4c: SPRITE_LAPRAS
+	db PAL_BLUE
+	
 	; 0x3d: SPRITE_BALL
 	db PAL_ORANGE
 
@@ -399,23 +417,6 @@ SpritePaletteAssignments: ; Characters on the overworld
 	; 0x45: SPRITE_OLD_AMBER
 	db PAL_BROWN
 
-	; 0x46: SPRITE_JESSIE
-	db PAL_ORANGE
-
-	; 0x47: SPRITE_JAMES
-	db PAL_BLUE
-
-	; 0x48: SPRITE_LYING_OLD_MAN
-	db 4	
-	
-	; 0x49: SPRITE_SWIMMER_F
-	db PAL_GREEN
-	
-	; 0x4a: SPRITE_PROF_OAK
-	db PAL_BROWN
-
-	; 0x4b: SPRITE_FLANNERY
-	db PAL_BROWN
 
 
 AnimationTileset1Palettes:

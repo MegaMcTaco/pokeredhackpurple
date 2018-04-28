@@ -178,69 +178,70 @@ IF GEN_2_GRAPHICS
 	
 	
 TrainerPalettes: ; Gen II trainer sprites are given their own palettes
-	db PAL_YOUNGSTER
-	db PAL_BUGCATCHER
-	db PAL_LASS
-	db PAL_SAILOR
-	db PAL_JR_TRAINER_M
-	db PAL_JR_TRAINER_F
-	db PAL_POKEMANIAC
-	db PAL_SUPERNERD
-	db PAL_HIKER
-	db PAL_BIKER
-	db PAL_BURGLAR
-	db PAL_ENGINEER
-	db PAL_JUGGLER
-	db PAL_FISHERMAN
-	db PAL_SWIMMER
-	db PAL_CUEBALL
-	db PAL_GAMBLER
-	db PAL_BEAUTY
-	db PAL_PSYCHIC
-	db PAL_ROCKER
-	db PAL_COUPLE
-	db PAL_TAMER
-	db PAL_BIRDKEEPER
-	db PAL_BLACKBELT
-	db PAL_GARY1
-	db PAL_PROF_OAK
-	db PAL_ROCKET_F
-	db PAL_SCIENTIST
-	db PAL_GIOVANNI
-	db PAL_ROCKET
-	db PAL_COOLTRAINER_M
-	db PAL_COOLTRAINER_F
-	db PAL_BRUNO
-	db PAL_BROCK
-	db PAL_MISTY
-	db PAL_LT_SURGE
-	db PAL_ERIKA
-	db PAL_KOGA
-	db PAL_BLAINE
-	db PAL_SABRINA
-	db PAL_GENTLEMAN
-	db PAL_GARY2
-	db PAL_GARY3
-	db PAL_LORELEI
-	db PAL_CHANNELER
-	db PAL_AGATHA
-	db PAL_LANCE
-	db PAL_HEX_MANIAC
-	db PAL_PKMN_TRAINER
-	db PAL_TRACEY
-	db PAL_EXECUTIVE_F
-	db PAL_EXECUTIVE_M
-	db PAL_ROCKER_F
-	db PAL_JESSIE_JAMES
-	db PAL_COSPLAY_GIRL
-	db PAL_JANINE
-	db PAL_PLAYER_M
-	db PAL_PLAYER_F
-	db PAL_PI_TRAINER
-	db PAL_FLANNERY
-	db PAL_JESSIE
-	db PAL_JAMES
-	db PAL_SWIMMER_F
+	db PAL_GREYMON			 ; Unused
+	db PAL_BLUEMON	         ; Youngster
+	db PAL_GREENMON          ; Bug Catcher
+	db PAL_BLUEMON           ; Lass
+	db PAL_BLUEMON           ; Sailor
+	db PAL_GREENMON          ; Camper
+	db PAL_GREENMON          ; Picnicker
+	db PAL_MEWMON            ; Pokemaniac
+	db PAL_PURPLEMON         ; Super Nerd
+	db PAL_PURPLEMON         ; Hiker
+	db PAL_BROWNMON          ; Biker
+	db PAL_BLUEMON           ; Burglar
+	db PAL_YELLOWMON         ; Engineer
+	db PAL_BLUEMON           ; Young Couple
+	db PAL_CYANMON           ; Fisher
+	db PAL_BLUEMON      	 ; Swimmer (Male)
+	db PAL_BROWNMON     	 ; Cue Ball
+	db PAL_BLUEMON      	 ; Gambler
+	db PAL_CYANMON      	 ; Beauty
+	db PAL_BLUEMON      	 ; Psychic
+	db PAL_REDMON            ; Rocker
+	db PAL_PURPLEMON         ; Juggler
+	db PAL_MEWMON            ; Tamer
+	db PAL_BLUEMON     	     ; Bird Keeper
+	db PAL_BROWNMON    	     ; Blackbelt
+	db PAL_MEWMON            ; Gary 1
+	db PAL_CYANMON     	     ; Swimmer (Female)
+	db PAL_MEWMON            ; Rocket (Female Grunt)
+	db PAL_BLUEMON           ; Scientist
+	db PAL_MEWMON            ; Giovanni
+	db PAL_MEWMON            ; Rocket (Male Grunt)
+	db PAL_REDMON      	     ; Ace Trainer (Male)
+	db PAL_REDMON      	     ; Ace Trainer (Female)
+	db PAL_BROWNMON    	     ; Bruno
+	db PAL_BROWNMON    	     ; Brock
+	db PAL_REDMON      	     ; Misty
+	db PAL_GREENMON    	     ; Lt. Surge
+	db PAL_GREENMON  	     ; Erika
+	db PAL_PURPLEMON   	     ; Koga
+	db PAL_CYANMON  	     ; Blaine
+	db PAL_REDMON     	     ; Sabrina
+	db PAL_MEWMON            ; Gentleman
+	db PAL_MEWMON            ; Gary 2
+	db PAL_MEWMON            ; Gary 3
+	db PAL_REDMON      		 ; Lorelei
+	db PAL_BLUEMON     		 ; Channeler
+	db PAL_PURPLEMON    	 ; Agatha
+	db PAL_REDMON       	 ; Lance
+	db PAL_MEWMON            ; Hex Maniac
+	db PAL_MEWMON            ; Pokemon_Trainer (Placeholder)
+	db PAL_GREENMON    		 ; Tracey
+	db PAL_MEWMON            ; Executive F
+	db PAL_MEWMON            ; Executive M
+	db PAL_REDMON      		 ; Rocker F
+	db PAL_REDMON      		 ; Jessie James
+	db PAL_YELLOWMON  		 ; Cosplay Girl
+	db PAL_PURPLEMON   		 ; Janine
+	db PAL_MEWMON            ; Male Player
+	db PAL_MEWMON            ; Female Player
+	db PAL_MEWMON            ; Professor Oak
+	db PAL_BROWNMON          ; P.I.
+	db PAL_REDMON       	 ; Flannery
+	db PAL_REDMON      		 ; Jessie
+	db PAL_BLUEMON     		 ; James
 ELSE
 	db PAL_MEWMON    ; MISSINGNO
 	db PAL_GREENMON  ; BULBASAUR
